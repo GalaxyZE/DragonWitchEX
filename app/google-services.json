@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "956660193277",
+    "firebase_url": "https://fgohelper.firebaseio.com",
+    "project_id": "fgohelper",
+    "storage_bucket": "fgohelper.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956660193277:android:92e32f4fe6c1155a",
+        "android_client_info": {
+          "package_name": "com.example.zillusion.fgohelper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956660193277-qfffu9r0rff4ao5tckre96dol8rah5qs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zillusion.fgohelper",
+            "certificate_hash": "6aca437ddd00a7d4d3f40311a63114ab41b5195a"
+          }
+        },
+        {
+          "client_id": "956660193277-bsd0npoimt143vjv3vkb53v2or3snrho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU6XTBKBZ_qirZVJdvNdhyjr9k-ohEkhk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956660193277-bsd0npoimt143vjv3vkb53v2or3snrho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

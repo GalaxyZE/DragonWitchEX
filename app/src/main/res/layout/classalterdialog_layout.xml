@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkbox_Saber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox_saber"
+                 />
+
+            <CheckBox
+                android:id="@+id/checkbox_Archer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox_archer"
+                 />
+
+            <CheckBox
+                android:id="@+id/checkbox_Lancer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox_lancer"
+                 />
+
+            <CheckBox
+                android:id="@+id/checkbox_Other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox_other"
+                 />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_span="4"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <CheckBox
+                android:id="@+id/checkbox_Rider"
+                android:button="@drawable/custom_checkbox_rider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox_Caster"
+                android:button="@drawable/custom_checkbox_caster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <CheckBox
+                android:id="@+id/checkbox_Assassin"
+                android:button="@drawable/custom_checkbox_assassin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <CheckBox
+                android:id="@+id/checkbox_Berserker"
+                android:button="@drawable/custom_checkbox_berserker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_span="4"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="4"
+                android:background="@color/colorDarkBlack"
+                android:text="Star"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_span="4"
+                />
+        </TableRow>
+
+        <TableRow>
+                <CheckBox
+                    android:id="@+id/Star5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="@string/Star5" />
+
+                <CheckBox
+                    android:id="@+id/Star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="@string/Star4" />
+
+                <CheckBox
+                    android:id="@+id/Star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:text="@string/Star3" />
+        </TableRow>
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/Star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/Star2" />
+
+            <CheckBox
+                android:id="@+id/Star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/Star1" />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

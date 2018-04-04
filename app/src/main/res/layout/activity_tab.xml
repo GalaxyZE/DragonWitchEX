@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="com.example.zillusion.fgohelper.test">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="*">
+                        <!-- 表格大小-->
+                        <TableRow
+                            android:id="@+id/SkillTitleRow"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/s00"
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:text="        " />
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:text="        " />
+
+                            <TextView
+
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:text="          "
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:text="        " />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:text="        " />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="1dp"
+                                android:text="        " />
+                        </TableRow>
+
+                        <!-- 靈基一覽圖 -->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/AscensionTitle"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:textColor="@color/colorWhite"
+                                android:background="@color/colorDarkBule"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_span="6"
+                                android:text="Ascension"
+                                />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/StaheGraphRow01"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RadioGroup
+                                    android:id="@+id/RDGStage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButtonS1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="true"
+                                        android:text="@string/radioButtonS1" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButtonS2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/radioButtonS2" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButtonS3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/radioButtonS3" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButtonS4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/radioButtonS4" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButtonS5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/radioButtonS5" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/image_servent_stage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_gravity="left"
+                                android:layout_span="5"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/test_servent01" />
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/AscensionTitle01"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:textColor="@color/colorWhite"
+                                android:background="@color/colorDarkBule"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_span="6"
+                                android:text="Ascension"
+                                />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/BStageGraphRow01"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RadioGroup
+                                    android:id="@+id/RDGBStage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <RadioButton
+                                        android:id="@+id/radioButtonBS1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="true"
+                                        android:text="@string/radioButtonS1" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButtonBS2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/radioButtonS2" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButtonBS3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/radioButtonS3" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioButtonBS4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/radioButtonS4" />
+
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/image_servent_BStage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="300dp"
+                                android:layout_gravity="left"
+                                android:layout_span="5"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/test_servent03" />
+
+                        </TableRow>
+
+                        <!-- Status Define(Servent Details)-->
+                        <TableRow
+                            android:id="@+id/StatusTitleRow01"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent">
+                            <TextView
+                                android:id="@+id/StatusTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/Status_Title"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorWhite"
+                                android:background="@color/colorDarkBule"
+                                android:layout_span="6"
+                                />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/StatusName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+                            <TextView
+                                android:id="@+id/StatusNameTextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_Name"
+                                />
+
+                            <TextView
+                                android:id="@+id/StatusNameEditTextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/app_name"
+                                android:layout_span="5"
+                                />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/NOandIDRow"
+                            >
+
+                            <TextView
+                                android:id="@+id/NoTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_No"
+                                />
+
+                            <TextView
+                                android:id="@+id/StatusNoEditTextview"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/app_name"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_Rarity"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_Rarity"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_Rarity_EditTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/app_name"
+                                android:layout_span="3"
+                                />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/StatuseClassRow"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_Class"
+                                />
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/class_avenger"
+                                />
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:id="@+id/Status_Class_EditTextView"
+                                android:textAlignment="center"
+                                android:text="@string/app_name"
+                                android:layout_span="4"
+                                />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ATKinfoRow01"
+                            >
+                            <TextView
+                                android:id="@+id/StatusATKLV1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_Atk_LV1"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_AtkLV1_EditTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/app_name"
+                                android:layout_span="2"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_HPLV1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_HP_LV1"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_HPLV1_EditTextView"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/app_name"
+                                android:layout_span="2"
+                                />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ATKinfoRow02"
+                            >
+                            <TextView
+                                android:id="@+id/StatusATKLV90"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_Atk_LV90"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_AtkLV90_EditTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/app_name"
+                                android:layout_span="2"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_HPLV90"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_HP_LV90"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_HPLV90_EditTextView"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/app_name"
+                                android:layout_span="2"
+                                />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/ATKinfoRow03"
+                            >
+                            <TextView
+                                android:id="@+id/StatusATKLV100"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_Atk_LV100"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_AtkLV100_EditTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/app_name"
+                                android:layout_span="2"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_HPLV100"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_HP_LV100"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_HPLV100_EditTextView"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/app_name"
+                                android:layout_span="2"
+                                />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillTitleinit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="6"
+                                android:background="@color/colorDarkBule"
+                                android:text="@string/Skill"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold"
+
+                                />
+
+                        </TableRow>
+                        <!--First Skill Define-->
+
+                        <TableRow
+                            android:id="@+id/SkillImageRow01"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_Skill_01"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/test_skillicon01" />
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_span="2"
+                                android:text="TextView" />
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:layout_span="2"
+                                android:text="TextView" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillLvTitleRow01"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Lvtitle01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV1" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV2" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV3" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV4" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV5" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillEditLvTitleRow01_05"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorGray">
+
+                            <TextView
+                                android:id="@+id/EditSkillLv01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV1" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV2" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV3" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV4" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV5" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillLvTitleRow02"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Lvtitle06"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV6" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle07"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV7" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle08"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV8" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle09"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV9" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV10" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillEditLvTitleRow06_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorGray">
+
+                            <TextView
+                                android:id="@+id/EditSkillLv06"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV6" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv07"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV7" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv08"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV8" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv09"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV9" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV10" />
+                        </TableRow>
+
+                        <!-- Second Skill Define-->
+
+                        <TableRow
+                            android:id="@+id/SkillImageRow12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_Skill_02"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/test_skillicon02" />
+
+                            <TextView
+                                android:id="@+id/Skill_Describe11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_span="2"
+                                android:text="TextView" />
+
+                            <TextView
+                                android:id="@+id/Skill_Describe12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:layout_span="2"
+                                android:text="TextView" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillLvTitleRow11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Lvtitle11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV1" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV2" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV3" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV4" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV5" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillEditLvTitleRow1_01_05"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorGray">
+
+                            <TextView
+                                android:id="@+id/EditSkillLv11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV1" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV2" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV3" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV4" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV5" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillLvTitleRow12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Lvtitle16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV6" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV7" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV8" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV9" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle110"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV10" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillEditLvTitleRow1_06_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorGray">
+
+                            <TextView
+                                android:id="@+id/EditSkillLv16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV6" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV7" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV8" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV9" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv110"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV10" />
+                        </TableRow>
+
+                        <!-- Third Skill Define-->
+
+                        <TableRow
+                            android:id="@+id/SkillImageRow22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_Skill_03"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/test_skillicon03" />
+
+                            <TextView
+                                android:id="@+id/Skill_Describe21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_span="2"
+                                android:text="TextView" />
+
+                            <TextView
+                                android:id="@+id/Skill_Describe22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:layout_span="2"
+                                android:text="TextView" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillLvTitleRow21"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Lvtitle21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV1" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV2" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV3" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV4" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV5" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillEditLvTitleRow2_01_05"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorGray">
+
+                            <TextView
+                                android:id="@+id/EditSkillLv21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV1" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv22"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV2" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV3" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV4" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV5" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillLvTitleRow22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Lvtitle26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV6" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV7" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV8" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV9" />
+
+                            <TextView
+                                android:id="@+id/Lvtitle210"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV10" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/SkillEditLvTitleRow2_06_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorGray">
+
+                            <TextView
+                                android:id="@+id/EditSkillLv26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:text="@string/LV6" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:text="@string/LV7" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:text="@string/LV8" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="4"
+                                android:text="@string/LV9" />
+
+                            <TextView
+                                android:id="@+id/EditSkillLv210"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_column="5"
+                                android:text="@string/LV10" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/DivideLine0"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/WhiteLine0"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:layout_span="6"
+                                android:background="@color/colorWhite" />
+
+                        </TableRow>
+                        <!-- Class Skill Define-->
+                        <TableRow
+                            android:id="@+id/Titleclassskill"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/TitleTextViewclassskill"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="6"
+                                android:background="@color/colorDarkBule"
+                                android:text="@string/ClassSkill_Title"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorWhite" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/ClassSkillRow01"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_ClassSkill01"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/test_classskill_01" />
+
+                            <TextView
+                                android:id="@+id/Edit_ClassSkill01"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="5"
+                                android:text="@string/ClassDescribe" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/ClassSkillRow02"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_ClassSkill02"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/test_classskill_02" />
+
+                            <TextView
+                                android:id="@+id/Edit_ClassSkill02"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="5"
+                                android:text="@string/ClassDescribe" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/ClassSkillRow03"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_ClassSkill03"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                app:srcCompat="@drawable/test_classskill_03" />
+
+                            <TextView
+                                android:id="@+id/Edit_ClassSkill03"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="5"
+                                android:text="@string/ClassDescribe" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/DivideLine1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view3"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:layout_gravity="center"
+                                android:layout_span="6"
+                                android:background="@color/colorWhite" />
+                        </TableRow>
+                        <!-- Commabd Card Define -->
+                        <TableRow
+                            android:id="@+id/Title_CommandCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/Title_CommandCard_textView"
+                                android:layout_span="6"
+                                android:background="@color/colorDarkBule"
+                                android:text="@string/CommandCard_Title"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorWhite"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/DivideLine2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img_CommandCard_01"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_column="1"
+                                app:srcCompat="@drawable/card_buster"/>
+
+                            <ImageView
+                                android:id="@+id/img_CommandCard_02"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_column="2"
+                                app:srcCompat="@drawable/card_buster"/>
+
+                            <ImageView
+                                android:id="@+id/img_CommandCard_03"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_column="3"
+                                app:srcCompat="@drawable/card_buster"/>
+
+                            <ImageView
+                                android:id="@+id/img_CommandCard_04"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_column="4"
+                                app:srcCompat="@drawable/card_buster"/>
+
+                            <ImageView
+                                android:id="@+id/img_CommandCard_05"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_column="5"
+                                app:srcCompat="@drawable/card_buster"/>
+                        </TableRow>
+
+                        <!-- 寶具 Define-->
+                        <TableRow
+                            android:id="@+id/NPTitleRow0"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <TextView
+                                android:id="@+id/Status_NPTitleTextView"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:layout_span="6"
+                                android:textAlignment="center"
+                                android:background="@color/colorDarkBule"
+                                android:textColor="@color/colorWhite"
+                                android:text="@string/Status_Noble_Phantasm"
+                                />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/NPTitleRow1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <TextView
+                                android:id="@+id/Status_NPName"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_span="3"
+                                android:text="@string/Status_Name"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_NP_Rank"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:text="@string/Status_NP_Rank"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_NP_Type"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:layout_span="2"
+                                android:textAlignment="center"
+                                android:text="@string/Status_NP_Type"
+                                />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/NPTitleRow2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <TextView
+                                android:id="@+id/Status_NPName_EditTextView"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:layout_span="3"
+                                android:text="@string/app_name"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_Rank_EditTextView"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:text="@string/app_name"
+                                />
+
+                            <TextView
+                                android:id="@+id/Status_Rank_Type_EditTextView"
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_span="2"
+                                android:text="@string/app_name"
+                                />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/NPTitleRow3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_NoblePhantasm"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/card_buster"
+                                />
+
+                            <TextView
+                                android:id="@+id/NPLV_EditTextView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="100"
+                                />
+
+                            <TextView
+                                android:id="@+id/NPLV_EditTextView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="200"
+                                />
+
+                            <TextView
+                                android:id="@+id/NPLV_EditTextView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="300"
+                                />
+
+                            <TextView
+                                android:id="@+id/NPLV_EditTextView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="400"
+                                />
+
+                            <TextView
+                                android:id="@+id/NPLV_EditTextView5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="500"
+                                />
+                        </TableRow>
+
+
+
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

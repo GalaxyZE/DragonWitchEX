@@ -279,6 +279,8 @@
                                 android:layout_marginTop="3dp">
 
                                 <TextView
+                                    android:background="@drawable/table_row_last_bg"
+                                    android:layout_marginStart="1dp"
                                     android:id="@+id/StatusNameTextview"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -286,12 +288,16 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:background="@drawable/table_row_last_bg"
+                                    android:layout_marginStart="1dp"
+                                    android:layout_marginEnd="1dp"
                                     android:id="@+id/StatusNameEditTextview"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_span="5"
                                     android:text="@string/app_name"
-                                    android:textAlignment="viewStart" />
+
+                                    android:textAlignment="center" />
 
                             </TableRow>
 
@@ -302,6 +308,8 @@
                                 android:layout_marginTop="3dp">
 
                                 <TextView
+                                    android:layout_margin="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/NoTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -312,10 +320,13 @@
                                     android:id="@+id/StatusNoEditTextview"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="@string/app_name"
-                                    android:textAlignment="viewStart" />
+                                    android:layout_margin="1dp"
+                                    android:background="@drawable/table_row_last_bg"
+                                    android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_margin="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_Rarity"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -323,24 +334,29 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_margin="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_Rarity_EditTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_span="3"
                                     android:text="@string/app_name"
                                     android:textAlignment="center" />
-
                             </TableRow>
 
                             <TableRow android:layout_marginTop="3dp">
 
                                 <TextView
+                                    android:layout_margin="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/Status_Cost"
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_margin="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_CostEditTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -348,17 +364,21 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_margin="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/Status_Max_Lv."
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_margin="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_MaxLVEditTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:layout_span="2"
-                                    android:textAlignment="viewStart"
+                                    android:textAlignment="center"
 
                                     />
 
@@ -372,18 +392,25 @@
                                 android:layout_marginTop="3dp">
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="@string/Status_Class"
                                     android:textAlignment="center" />
 
                                 <ImageView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/img_Status_Class"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
                                     android:src="@drawable/class_avenger" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
+                                    android:layout_marginEnd="1dp"
                                     android:id="@+id/Status_Class_EditTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -399,6 +426,8 @@
                                 android:layout_marginTop="3dp">
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/StatusATKLV1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -406,6 +435,8 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_AtkLV1_EditTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -414,6 +445,8 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_HPLV1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -421,6 +454,9 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:layout_marginEnd="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_HPLV1_EditTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -437,6 +473,8 @@
                                 android:layout_marginTop="3dp">
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/StatusATKLV90"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -444,6 +482,8 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_AtkLV90_EditTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -452,6 +492,8 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_HPLV90"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -459,6 +501,9 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:layout_marginEnd="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_HPLV90_EditTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -475,6 +520,8 @@
                                 android:layout_marginTop="3dp">
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/StatusATKLV100"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -482,6 +529,8 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_AtkLV100_EditTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -490,6 +539,8 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_HPLV100"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -497,6 +548,9 @@
                                     android:textAlignment="center" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:layout_marginEnd="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Status_HPLV100_EditTextView"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -525,15 +579,43 @@
                                     />
 
                             </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="3dp"
+                                >
+
+                                <TextView
+                                    android:layout_height="match_parent"
+                                    android:layout_width="match_parent"
+                                    android:textAlignment="center"
+                                    android:text="@string/SkillDescribeTittle"
+                                    android:layout_column="1"
+                                    android:layout_span="3"
+                                    />
+
+                                <TextView
+                                    android:layout_height="match_parent"
+                                    android:layout_width="match_parent"
+                                    android:textAlignment="center"
+                                    android:text="@string/SkillTargetCD_Title"
+                                    android:layout_span="2"
+
+                                    />
+
+                            </TableRow>
                             <!--First Skill Define-->
 
                             <TableRow
                                 android:id="@+id/SkillImageRow01"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:layout_marginTop="3dp">
+                                android:layout_marginTop="3dp"
+                                >
 
                                 <ImageView
+
                                     android:id="@+id/img_Skill_01"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
@@ -541,18 +623,22 @@
 
                                 <TextView
                                     android:id="@+id/Skill_Describe01"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_column="1"
                                     android:layout_span="3"
                                     android:text="TextView" />
 
                                 <TextView
+                                    android:layout_marginStart="1dp"
+                                    android:layout_marginEnd="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Skill_Describe02"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_column="3"
                                     android:layout_span="2"
+                                    android:textAlignment="center"
                                     android:text="TextView" />
                             </TableRow>
 
@@ -759,9 +845,13 @@
                                     android:text="TextView" />
 
                                 <TextView
+                                    android:textAlignment="center"
+                                    android:layout_marginStart="1dp"
+                                    android:layout_marginEnd="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Skill_Describe12"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_column="3"
                                     android:layout_span="2"
                                     android:text="TextView" />
@@ -970,9 +1060,13 @@
                                     android:text="TextView" />
 
                                 <TextView
+                                    android:textAlignment="center"
+                                    android:layout_marginStart="1dp"
+                                    android:layout_marginEnd="1dp"
+                                    android:background="@drawable/table_row_last_bg"
                                     android:id="@+id/Skill_Describe22"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
                                     android:layout_column="3"
                                     android:layout_span="2"
                                     android:text="TextView" />

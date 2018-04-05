@@ -89,6 +89,8 @@
     <string name="Status_CostQP">Cost QP</string>
     <string name="Status_RequiredMaterials">Required Materials</string>
     <string name="Status_Count">*77</string>
+    <string name="SkillDescribeTittle">Describe</string>
+    <string name="SkillTargetCD_Title">Target and CD</string>
     <string name="Ascension1">\n1st Ascension</string>
     <string name="Ascension2">\n2nd Ascension</string>
     <string name="Ascension3">\n3rd Ascension</string>
@@ -120,6 +122,7 @@
     <string name="Star2">★★☆☆☆</string>
     <string name="Star1">★☆☆☆☆</string>
     <string name="ClassDialogShowTitle">Select</string>
+
 
 
 </resources>

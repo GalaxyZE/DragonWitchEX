@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity
         }
         else if(id==R.id.action_WebVersion)
         {
-            Intent myIntent = new Intent(this,serventactivity.class);
+            Intent myIntent = new Intent(this,test.class);
             this.startActivity(myIntent);
             return true;
         }

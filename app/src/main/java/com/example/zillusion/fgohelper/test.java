@@ -1,70 +1,78 @@
 package com.example.zillusion.fgohelper;
 
+import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 public class test extends AppCompatActivity {
     //region TestValue
-    Integer[] imgid={
-            R.drawable.s001,R.drawable.s002,R.drawable.s003,R.drawable.s004,R.drawable.s005,R.drawable.s006,R.drawable.s007,R.drawable.s008,R.drawable.s009,R.drawable.s010,
-            R.drawable.s011,R.drawable.s012,R.drawable.s013,R.drawable.s014,R.drawable.s015,R.drawable.s016,R.drawable.s107,R.drawable.s018,R.drawable.s019,R.drawable.s020
-    };
-    //endregion
-
-    @Override
+    private String TAG="---Test---";
+      @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-        RadioGroup rgp1= findViewById(R.id.RDGStage);
-        RadioGroup rgp2= findViewById(R.id.RDGBStage);
-        rgp1.setOnCheckedChangeListener(listener);
-        rgp2.setOnCheckedChangeListener(listener);
+        super.getSupportActionBar().setTitle("Test Region");
+        super.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
+          //region  Read from the database
+          FirebaseFirestore db = FirebaseFirestore.getInstance();
+          db.collection("WeekMission")
+                  .get()
+                  .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                      @Override
+                      public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                          if (task.isSuccessful()) {
+                              for (QueryDocumentSnapshot document : task.getResult()) {
+                                  Log.d(TAG, document.getId() + " => " + document.getData());
+
+                              }
+
+                          } else {
+                              Log.w(TAG, "Error getting documents.", task.getException());
+                          }
+                      }
+                  });
+          //endregion
 
 
 
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {// Backbutton
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // todo: goto back activity from here
+                Intent intent = new Intent(test.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                //startActivity(intent);
+                finish();
+                return true;
 
-    //region BAD
-    RadioGroup.OnCheckedChangeListener listener = new RadioGroup.OnCheckedChangeListener() {
-
-
-        public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-            ImageView img= findViewById(R.id.image_servent_stage);
-            ImageView img1=findViewById(R.id.image_servent_BStage);
-            //img.setImageResource(R.drawable.my_image);
-            switch (checkedId) {
-                case R.id.radioButtonS1:
-                    img.setImageResource(R.drawable.test_servent01);
-                    break;
-                case R.id.radioButtonS2:
-                    img.setImageResource(R.drawable.test_servent02);
-                    break;
-                case R.id.radioButtonS3:
-                    img.setImageResource(R.drawable.test_servent03);
-                    break;
-                case R.id.radioButtonS4:
-                    img.setImageResource(R.drawable.test_servent04);
-                    break;
-                case R.id.radioButtonS5:
-                    img.setImageResource(R.drawable.test_skillicon01);
-                    break;
-                case R.id.radioButtonBS1:
-                    img1.setImageResource(R.drawable.test_servent01);
-                    break;
-                case R.id.radioButtonBS2:
-                    img1.setImageResource(imgid[10]);
-                     break;
-                case R.id.radioButtonBS3:
-                    img1.setImageResource(R.drawable.test_servent03);
-                     break;
-            }
+            default:
+                return super.onOptionsItemSelected(item);
         }
-    };
-//endregion
+    }
+
+
 }

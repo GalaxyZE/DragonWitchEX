@@ -202,6 +202,9 @@ public class FGO_SkillData8 {
             {"12,000,000","咒獸膽石","15",null,null,null,null,null,null},
             {"12,000,000","鳳凰之羽","15","精靈根","10",null,null,null,null},
             {"6,000,000","宵哭的鐵釘","45","魔術髓液","60",null,null,null,null},
-
+            {"12,000,000","禁斷書頁","18","火藥","72",null,null,null,null},
+            {"6,000,000","渾沌之爪","12","火藥","45",null,null,null,null},
+            {"3,000,000","結冰","12","火藥","48",null,null,null,null},
+            {"3,000,000","智慧聖甲蟲","12",null,null,null,null,null,null},
     };
 }

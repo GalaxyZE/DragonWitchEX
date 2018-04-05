@@ -1473,967 +1473,983 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
 
         new Thread(new Runnable() {
             public void run() {
-                
-                //region 靈基素材判斷
-                if (str_RequiredMaterials[GetValue][0]!=null)
-                {
-                    for (int i = 0; i < 4; i++)//靈基有4階段拆成4組
+                try{
+
+                    //region 靈基素材判斷
+                    if (str_RequiredMaterials[GetValue][0]!=null)
                     {
-                        for (int j = 0; j < 9; j++)//靈基1組9筆資料
+                        for (int i = 0; i < 4; i++)//靈基有4階段拆成4組
                         {
-                            if (str_RequiredMaterials[GetValue][j + (i * 9)] != null)
+                            for (int j = 0; j < 9; j++)//靈基1組9筆資料
                             {
-                                switch (i)
+                                if (str_RequiredMaterials[GetValue][j + (i * 9)] != null)
                                 {
-                                    case 0:
-                                        //region switch j
-                                        switch (j) {
-                                            case 0://QP
-                                                EditQP01.setText("\n"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                    switch (i)
+                                    {
+                                        case 0:
+                                            //region switch j
+                                            switch (j) {
+                                                case 0://QP
+                                                    EditQP01.setText("\n"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 1:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 1:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM01.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM01.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 2:
-                                                EditItemAM00.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 2:
+                                                    EditItemAM00.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 3:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 3:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM02.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM02.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 4:
-                                                EditItemAM01.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 4:
+                                                    EditItemAM01.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 5:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 5:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM03.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM03.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 6:
-                                                EditItemAM02.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 6:
+                                                    EditItemAM02.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 7:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 7:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM04.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM04.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 8:
-                                                EditItemAM03.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
-                                        }
-                                        //endregion
-                                        break;
+                                                case 8:
+                                                    EditItemAM03.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
+                                            }
+                                            //endregion
+                                            break;
 
-                                    case 1:
-                                        //region switch j
-                                        switch (j) {
-                                            case 0://QP
-                                                EditQP02.setText("\n"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                        case 1:
+                                            //region switch j
+                                            switch (j) {
+                                                case 0://QP
+                                                    EditQP02.setText("\n"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 1:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 1:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM11.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM11.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 2:
-                                                EditItemAM10.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 2:
+                                                    EditItemAM10.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 3:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 3:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM12.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM12.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 4:
-                                                EditItemAM11.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 4:
+                                                    EditItemAM11.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 5:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 5:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM13.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM13.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 6:
-                                                EditItemAM12.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 6:
+                                                    EditItemAM12.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 7:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 7:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM14.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM14.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 8:
-                                                EditItemAM13.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
-                                        }
-                                        //endregion
-                                        break;
-                                    case 2:
-                                        //region switch j
-                                        switch (j) {
-                                            case 0://QP
-                                                EditQP03.setText("\n"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 8:
+                                                    EditItemAM13.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
+                                            }
+                                            //endregion
+                                            break;
+                                        case 2:
+                                            //region switch j
+                                            switch (j) {
+                                                case 0://QP
+                                                    EditQP03.setText("\n"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 1:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 1:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM21.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM21.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 2:
-                                                EditItemAM20.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 2:
+                                                    EditItemAM20.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 3:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 3:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM22.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM22.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 4:
-                                                EditItemAM21.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 4:
+                                                    EditItemAM21.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 5:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 5:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM23.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM23.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 6:
-                                                EditItemAM22.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 6:
+                                                    EditItemAM22.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 7:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 7:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM24.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM24.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 8:
-                                                EditItemAM23.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
-                                        }
-                                        //endregion
-                                        break;
-                                    case 3:
-                                        //region switch j
-                                        switch (j) {
-                                            case 0://QP
-                                                EditQP04.setText("\n"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 8:
+                                                    EditItemAM23.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
+                                            }
+                                            //endregion
+                                            break;
+                                        case 3:
+                                            //region switch j
+                                            switch (j) {
+                                                case 0://QP
+                                                    EditQP04.setText("\n"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 1:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 1:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM31.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM31.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 2:
-                                                EditItemAM30.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 2:
+                                                    EditItemAM30.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 3:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 3:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM32.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM32.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 4:
-                                                EditItemAM31.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 4:
+                                                    EditItemAM31.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 5:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 5:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM33.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM33.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 6:
-                                                EditItemAM32.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
+                                                case 6:
+                                                    EditItemAM32.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
 
-                                            case 7:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                case 7:
+                                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
-                                                        img_item_AM34.setImageResource(img_Required_Materials[materials]);
+                                                        if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
+                                                        {
+                                                            img_item_AM34.setImageResource(img_Required_Materials[materials]);
+                                                        }
                                                     }
-                                                }
-                                                break;
+                                                    break;
 
-                                            case 8:
-                                                EditItemAM33.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
-                                                break;
-                                        }
-                                        //endregion
-                                        break;
+                                                case 8:
+                                                    EditItemAM33.setText("x"+str_RequiredMaterials[GetValue][j + (i * 9)]);
+                                                    break;
+                                            }
+                                            //endregion
+                                            break;
+
+                                    }
 
                                 }
-
                             }
                         }
                     }
+                    //endregion
                 }
-                //endregion
+                catch (Exception e)
+                {
+                    Log.d("靈基素材判斷", "run: 靈基素材判斷");
+                }
+
             }
         }).start();
 
 
         new Thread(new Runnable() {
             public void run() {
-                //region 技能素材判斷
+                try{
+                    //region 技能素材判斷
 
-                //region LV1-LV2
-                if (str_SkillRequiredMaterials_part1[GetValue][0]!=null)
-                {
+                    //region LV1-LV2
+                    if (str_SkillRequiredMaterials_part1[GetValue][0]!=null)
+                    {
                         for (int j = 0; j < 9; j++)//靈基1組9筆資料
                         {
                             if (str_SkillRequiredMaterials_part1[GetValue][j] != null)
                             {
-                                        //region switch j
-                                        switch (j) {
-                                            case 0://QP
-                                                Edit_SkillQP0.setText("\n"+str_SkillRequiredMaterials_part1[GetValue][j]);
-                                                break;
+                                //region switch j
+                                switch (j) {
+                                    case 0://QP
+                                        Edit_SkillQP0.setText("\n"+str_SkillRequiredMaterials_part1[GetValue][j]);
+                                        break;
 
-                                            case 1:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                                    {
-                                                        img_SkillMaterials00.setImageResource(img_Required_Materials[materials]);
-                                                    }
-                                                }
-                                                break;
-
-                                            case 2:
-                                                Edit_SkillMaterials00.setText("x"+str_SkillRequiredMaterials_part1[GetValue][j]);
-                                                break;
-
-                                            case 3:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                                    {
-                                                        img_SkillMaterials01.setImageResource(img_Required_Materials[materials]);
-                                                    }
-                                                }
-                                                break;
-
-                                            case 4:
-                                                Edit_SkillMaterials01.setText("x"+str_SkillRequiredMaterials_part1[GetValue][j]);
-                                                break;
-
-                                            case 5:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                                    {
-                                                        img_SkillMaterials02.setImageResource(img_Required_Materials[materials]);
-                                                    }
-                                                }
-                                                break;
-
-                                            case 6:
-                                                Edit_SkillMaterials02.setText("x"+str_SkillRequiredMaterials_part1[GetValue][j]);
-                                                break;
-
-                                            case 7:
-                                                for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                                {
-                                                    if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                                    {
-                                                        img_SkillMaterials03.setImageResource(img_Required_Materials[materials]);
-                                                    }
-                                                }
-                                                break;
-
-                                            case 8:
-                                                Edit_SkillMaterials03.setText("x"+str_SkillRequiredMaterials_part1[GetValue][j]);
-                                                break;
-                                        }
-
-                            }
-                        }
-                }
-                //endregion
-
-                //region LV2-LV3
-                if (str_SkillRequiredMaterials_part2[GetValue][0]!=null)
-                {
-                    for (int j = 0; j < 9; j++)//靈基1組9筆資料
-                    {
-                        if (str_SkillRequiredMaterials_part2[GetValue][j] != null)
-                        {
-                            //region switch j
-                            switch (j) {
-                                case 0://QP
-                                    Edit_SkillQP1.setText("\n"+str_SkillRequiredMaterials_part2[GetValue][j]);
-                                    break;
-
-                                case 1:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 1:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials10.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials00.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 2:
-                                    Edit_SkillMaterials10.setText("x"+str_SkillRequiredMaterials_part2[GetValue][j]);
-                                    break;
+                                    case 2:
+                                        Edit_SkillMaterials00.setText("x"+str_SkillRequiredMaterials_part1[GetValue][j]);
+                                        break;
 
-                                case 3:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 3:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials11.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials01.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 4:
-                                    Edit_SkillMaterials11.setText("x"+str_SkillRequiredMaterials_part2[GetValue][j]);
-                                    break;
+                                    case 4:
+                                        Edit_SkillMaterials01.setText("x"+str_SkillRequiredMaterials_part1[GetValue][j]);
+                                        break;
 
-                                case 5:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 5:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials12.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials02.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 6:
-                                    Edit_SkillMaterials12.setText("x"+str_SkillRequiredMaterials_part2[GetValue][j]);
-                                    break;
+                                    case 6:
+                                        Edit_SkillMaterials02.setText("x"+str_SkillRequiredMaterials_part1[GetValue][j]);
+                                        break;
 
-                                case 7:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 7:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials13.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials03.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 8:
-                                    Edit_SkillMaterials13.setText("x"+str_SkillRequiredMaterials_part2[GetValue][j]);
-                                    break;
+                                    case 8:
+                                        Edit_SkillMaterials03.setText("x"+str_SkillRequiredMaterials_part1[GetValue][j]);
+                                        break;
+                                }
+
                             }
                         }
                     }
-                }
-                //endregion
+                    //endregion
 
-                //region LV3-LV4
-                if (str_SkillRequiredMaterials_part3[GetValue][0]!=null)
-                {
-                    for (int j = 0; j < 9; j++)//靈基1組9筆資料
+                    //region LV2-LV3
+                    if (str_SkillRequiredMaterials_part2[GetValue][0]!=null)
                     {
-                        if (str_SkillRequiredMaterials_part3[GetValue][j] != null)
+                        for (int j = 0; j < 9; j++)//靈基1組9筆資料
                         {
-                            //region switch j
-                            switch (j) {
-                                case 0://QP
-                                    Edit_SkillQP2.setText("\n"+str_SkillRequiredMaterials_part3[GetValue][j]);
-                                    break;
+                            if (str_SkillRequiredMaterials_part2[GetValue][j] != null)
+                            {
+                                //region switch j
+                                switch (j) {
+                                    case 0://QP
+                                        Edit_SkillQP1.setText("\n"+str_SkillRequiredMaterials_part2[GetValue][j]);
+                                        break;
 
-                                case 1:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 1:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials20.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials10.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 2:
-                                    Edit_SkillMaterials20.setText("x"+str_SkillRequiredMaterials_part3[GetValue][j]);
-                                    break;
+                                    case 2:
+                                        Edit_SkillMaterials10.setText("x"+str_SkillRequiredMaterials_part2[GetValue][j]);
+                                        break;
 
-                                case 3:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 3:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials21.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials11.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 4:
-                                    Edit_SkillMaterials21.setText("x"+str_SkillRequiredMaterials_part3[GetValue][j]);
-                                    break;
+                                    case 4:
+                                        Edit_SkillMaterials11.setText("x"+str_SkillRequiredMaterials_part2[GetValue][j]);
+                                        break;
 
-                                case 5:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 5:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials22.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials12.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 6:
-                                    Edit_SkillMaterials22.setText("x"+str_SkillRequiredMaterials_part3[GetValue][j]);
-                                    break;
+                                    case 6:
+                                        Edit_SkillMaterials12.setText("x"+str_SkillRequiredMaterials_part2[GetValue][j]);
+                                        break;
 
-                                case 7:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 7:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials23.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials13.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
-                                case 8:
-                                    Edit_SkillMaterials23.setText("x"+str_SkillRequiredMaterials_part3[GetValue][j]);
-                                    break;
+                                        break;
+
+                                    case 8:
+                                        Edit_SkillMaterials13.setText("x"+str_SkillRequiredMaterials_part2[GetValue][j]);
+                                        break;
+                                }
                             }
                         }
                     }
-                }
-                //endregion
+                    //endregion
 
-                //region LV4-LV5
-                if (str_SkillRequiredMaterials_part4[GetValue][0]!=null)
-                {
-                    for (int j = 0; j < 9; j++)//靈基1組9筆資料
+                    //region LV3-LV4
+                    if (str_SkillRequiredMaterials_part3[GetValue][0]!=null)
                     {
-                        if (str_SkillRequiredMaterials_part4[GetValue][j] != null)
+                        for (int j = 0; j < 9; j++)//靈基1組9筆資料
                         {
-                            //region switch j
-                            switch (j) {
-                                case 0://QP
-                                    Edit_SkillQP3.setText("\n"+str_SkillRequiredMaterials_part4[GetValue][j]);
-                                    break;
+                            if (str_SkillRequiredMaterials_part3[GetValue][j] != null)
+                            {
+                                //region switch j
+                                switch (j) {
+                                    case 0://QP
+                                        Edit_SkillQP2.setText("\n"+str_SkillRequiredMaterials_part3[GetValue][j]);
+                                        break;
 
-                                case 1:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 1:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials30.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials20.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 2:
-                                    Edit_SkillMaterials30.setText("x"+str_SkillRequiredMaterials_part4[GetValue][j]);
-                                    break;
+                                    case 2:
+                                        Edit_SkillMaterials20.setText("x"+str_SkillRequiredMaterials_part3[GetValue][j]);
+                                        break;
 
-                                case 3:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 3:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials31.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials21.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 4:
-                                    Edit_SkillMaterials31.setText("x"+str_SkillRequiredMaterials_part4[GetValue][j]);
-                                    break;
+                                    case 4:
+                                        Edit_SkillMaterials21.setText("x"+str_SkillRequiredMaterials_part3[GetValue][j]);
+                                        break;
 
-                                case 5:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 5:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials32.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials22.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 6:
-                                    Edit_SkillMaterials32.setText("x"+str_SkillRequiredMaterials_part4[GetValue][j]);
-                                    break;
+                                    case 6:
+                                        Edit_SkillMaterials22.setText("x"+str_SkillRequiredMaterials_part3[GetValue][j]);
+                                        break;
 
-                                case 7:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 7:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials33.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials23.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
-
-                                case 8:
-                                    Edit_SkillMaterials33.setText("x"+str_SkillRequiredMaterials_part4[GetValue][j]);
-                                    break;
+                                        break;
+                                    case 8:
+                                        Edit_SkillMaterials23.setText("x"+str_SkillRequiredMaterials_part3[GetValue][j]);
+                                        break;
+                                }
                             }
                         }
                     }
-                }
-                //endregion
+                    //endregion
 
-                //region LV5-LV6
-                if (str_SkillRequiredMaterials_part5[GetValue][0]!=null)
-                {
-                    for (int j = 0; j < 9; j++)//靈基1組9筆資料
+                    //region LV4-LV5
+                    if (str_SkillRequiredMaterials_part4[GetValue][0]!=null)
                     {
-                        if (str_SkillRequiredMaterials_part5[GetValue][j] != null)
+                        for (int j = 0; j < 9; j++)//靈基1組9筆資料
                         {
-                            //region switch j
-                            switch (j) {
-                                case 0://QP
-                                    Edit_SkillQP4.setText("\n"+str_SkillRequiredMaterials_part5[GetValue][j]);
-                                    break;
+                            if (str_SkillRequiredMaterials_part4[GetValue][j] != null)
+                            {
+                                //region switch j
+                                switch (j) {
+                                    case 0://QP
+                                        Edit_SkillQP3.setText("\n"+str_SkillRequiredMaterials_part4[GetValue][j]);
+                                        break;
 
-                                case 1:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 1:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials40.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials30.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 2:
-                                    Edit_SkillMaterials40.setText("x"+str_SkillRequiredMaterials_part5[GetValue][j]);
-                                    break;
+                                    case 2:
+                                        Edit_SkillMaterials30.setText("x"+str_SkillRequiredMaterials_part4[GetValue][j]);
+                                        break;
 
-                                case 3:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 3:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials41.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials31.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 4:
-                                    Edit_SkillMaterials41.setText("x"+str_SkillRequiredMaterials_part5[GetValue][j]);
-                                    break;
+                                    case 4:
+                                        Edit_SkillMaterials31.setText("x"+str_SkillRequiredMaterials_part4[GetValue][j]);
+                                        break;
 
-                                case 5:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 5:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials42.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials32.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 6:
-                                    Edit_SkillMaterials42.setText("x"+str_SkillRequiredMaterials_part5[GetValue][j]);
-                                    break;
+                                    case 6:
+                                        Edit_SkillMaterials32.setText("x"+str_SkillRequiredMaterials_part4[GetValue][j]);
+                                        break;
 
-                                case 7:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                    case 7:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                         {
-                                            img_SkillMaterials43.setImageResource(img_Required_Materials[materials]);
+                                            if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials33.setImageResource(img_Required_Materials[materials]);
+                                            }
                                         }
-                                    }
-                                    break;
+                                        break;
 
-                                case 8:
-                                    Edit_SkillMaterials43.setText("x"+str_SkillRequiredMaterials_part5[GetValue][j]);
-                                    break;
-                            }
-
-                        }
-                    }
-                }
-                //endregion
-
-                //region LV6-LV7
-                if (str_SkillRequiredMaterials_part6[GetValue][0]!=null)
-                {
-                    for (int j = 0; j < 9; j++)//靈基1組9筆資料
-                    {
-                        if (str_SkillRequiredMaterials_part6[GetValue][j] != null)
-                        {
-                            //region switch j
-                            switch (j) {
-                                case 0://QP
-                                    Edit_SkillQP5.setText("\n"+str_SkillRequiredMaterials_part6[GetValue][j]);
-                                    break;
-
-                                case 1:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials50.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 2:
-                                    Edit_SkillMaterials50.setText("x"+str_SkillRequiredMaterials_part6[GetValue][j]);
-                                    break;
-
-                                case 3:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials51.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 4:
-                                    Edit_SkillMaterials51.setText("x"+str_SkillRequiredMaterials_part6[GetValue][j]);
-                                    break;
-
-                                case 5:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials52.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 6:
-                                    Edit_SkillMaterials52.setText("x"+str_SkillRequiredMaterials_part6[GetValue][j]);
-                                    break;
-
-                                case 7:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials53.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 8:
-                                    Edit_SkillMaterials53.setText("x"+str_SkillRequiredMaterials_part6[GetValue][j]);
-                                    break;
-                            }
-
-                        }
-                    }
-                }
-                //endregion
-
-                //region LV7-LV8
-                if (str_SkillRequiredMaterials_part7[GetValue][0]!=null)
-                {
-                    for (int j = 0; j < 9; j++)//靈基1組9筆資料
-                    {
-                        if (str_SkillRequiredMaterials_part7[GetValue][j] != null)
-                        {
-                            //region switch j
-                            switch (j) {
-                                case 0://QP
-                                    Edit_SkillQP6.setText("\n"+str_SkillRequiredMaterials_part7[GetValue][j]);
-                                    break;
-
-                                case 1:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials60.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 2:
-                                    Edit_SkillMaterials60.setText("x"+str_SkillRequiredMaterials_part7[GetValue][j]);
-                                    break;
-
-                                case 3:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials61.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 4:
-                                    Edit_SkillMaterials61.setText("x"+str_SkillRequiredMaterials_part7[GetValue][j]);
-                                    break;
-
-                                case 5:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials62.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 6:
-                                    Edit_SkillMaterials62.setText("x"+str_SkillRequiredMaterials_part7[GetValue][j]);
-                                    break;
-
-                                case 7:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials63.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 8:
-                                    Edit_SkillMaterials63.setText("x"+str_SkillRequiredMaterials_part7[GetValue][j]);
-                                    break;
-                            }
-
-                        }
-                    }
-                }
-                //endregion
-
-                //region LV8-LV9
-                if (str_SkillRequiredMaterials_part8[GetValue][0]!=null)
-                {
-                    for (int j = 0; j < 9; j++)//靈基1組9筆資料
-                    {
-                        if (str_SkillRequiredMaterials_part8[GetValue][j] != null)
-                        {
-                            //region switch j
-                            switch (j) {
-                                case 0://QP
-                                    Edit_SkillQP7.setText("\n"+str_SkillRequiredMaterials_part8[GetValue][j]);
-                                    break;
-
-                                case 1:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials70.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 2:
-                                    Edit_SkillMaterials70.setText("x"+str_SkillRequiredMaterials_part8[GetValue][j]);
-                                    break;
-
-                                case 3:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials71.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 4:
-                                    Edit_SkillMaterials71.setText("x"+str_SkillRequiredMaterials_part8[GetValue][j]);
-                                    break;
-
-                                case 5:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials72.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 6:
-                                    Edit_SkillMaterials72.setText("x"+str_SkillRequiredMaterials_part8[GetValue][j]);
-                                    break;
-
-                                case 7:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials73.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 8:
-                                    Edit_SkillMaterials73.setText("x"+str_SkillRequiredMaterials_part8[GetValue][j]);
-                                    break;
-                            }
-
-                        }
-                    }
-                }
-                //endregion
-
-                //region LV9-LV10
-                if (str_SkillRequiredMaterials_part9[GetValue][0]!=null)
-                {
-                    for (int j = 0; j < 9; j++)//靈基1組9筆資料
-                    {
-                        if (str_SkillRequiredMaterials_part9[GetValue][j] != null)
-                        {
-                            //region switch j
-                            switch (j) {
-                                case 0://QP
-                                    Edit_SkillQP8.setText("\n"+str_SkillRequiredMaterials_part9[GetValue][j]);
-                                    break;
-
-                                case 1:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials80.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 2:
-                                    Edit_SkillMaterials80.setText("x"+str_SkillRequiredMaterials_part9[GetValue][j]);
-                                    break;
-
-                                case 3:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials81.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 4:
-                                    Edit_SkillMaterials81.setText("x"+str_SkillRequiredMaterials_part9[GetValue][j]);
-                                    break;
-
-                                case 5:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials82.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 6:
-                                    Edit_SkillMaterials82.setText("x"+str_SkillRequiredMaterials_part9[GetValue][j]);
-                                    break;
-
-                                case 7:
-                                    for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
-                                    {
-                                        if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
-                                        {
-                                            img_SkillMaterials83.setImageResource(img_Required_Materials[materials]);
-                                        }
-                                    }
-                                    break;
-
-                                case 8:
-                                    Edit_SkillMaterials83.setText("x"+str_SkillRequiredMaterials_part9[GetValue][j]);
-                                    break;
+                                    case 8:
+                                        Edit_SkillMaterials33.setText("x"+str_SkillRequiredMaterials_part4[GetValue][j]);
+                                        break;
+                                }
                             }
                         }
                     }
+                    //endregion
+
+                    //region LV5-LV6
+                    if (str_SkillRequiredMaterials_part5[GetValue][0]!=null)
+                    {
+                        for (int j = 0; j < 9; j++)//靈基1組9筆資料
+                        {
+                            if (str_SkillRequiredMaterials_part5[GetValue][j] != null)
+                            {
+                                //region switch j
+                                switch (j) {
+                                    case 0://QP
+                                        Edit_SkillQP4.setText("\n"+str_SkillRequiredMaterials_part5[GetValue][j]);
+                                        break;
+
+                                    case 1:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials40.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 2:
+                                        Edit_SkillMaterials40.setText("x"+str_SkillRequiredMaterials_part5[GetValue][j]);
+                                        break;
+
+                                    case 3:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials41.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 4:
+                                        Edit_SkillMaterials41.setText("x"+str_SkillRequiredMaterials_part5[GetValue][j]);
+                                        break;
+
+                                    case 5:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials42.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 6:
+                                        Edit_SkillMaterials42.setText("x"+str_SkillRequiredMaterials_part5[GetValue][j]);
+                                        break;
+
+                                    case 7:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials43.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 8:
+                                        Edit_SkillMaterials43.setText("x"+str_SkillRequiredMaterials_part5[GetValue][j]);
+                                        break;
+                                }
+
+                            }
+                        }
+                    }
+                    //endregion
+
+                    //region LV6-LV7
+                    if (str_SkillRequiredMaterials_part6[GetValue][0]!=null)
+                    {
+                        for (int j = 0; j < 9; j++)//靈基1組9筆資料
+                        {
+                            if (str_SkillRequiredMaterials_part6[GetValue][j] != null)
+                            {
+                                //region switch j
+                                switch (j) {
+                                    case 0://QP
+                                        Edit_SkillQP5.setText("\n"+str_SkillRequiredMaterials_part6[GetValue][j]);
+                                        break;
+
+                                    case 1:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials50.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 2:
+                                        Edit_SkillMaterials50.setText("x"+str_SkillRequiredMaterials_part6[GetValue][j]);
+                                        break;
+
+                                    case 3:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials51.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 4:
+                                        Edit_SkillMaterials51.setText("x"+str_SkillRequiredMaterials_part6[GetValue][j]);
+                                        break;
+
+                                    case 5:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials52.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 6:
+                                        Edit_SkillMaterials52.setText("x"+str_SkillRequiredMaterials_part6[GetValue][j]);
+                                        break;
+
+                                    case 7:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials53.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 8:
+                                        Edit_SkillMaterials53.setText("x"+str_SkillRequiredMaterials_part6[GetValue][j]);
+                                        break;
+                                }
+
+                            }
+                        }
+                    }
+                    //endregion
+
+                    //region LV7-LV8
+                    if (str_SkillRequiredMaterials_part7[GetValue][0]!=null)
+                    {
+                        for (int j = 0; j < 9; j++)//靈基1組9筆資料
+                        {
+                            if (str_SkillRequiredMaterials_part7[GetValue][j] != null)
+                            {
+                                //region switch j
+                                switch (j) {
+                                    case 0://QP
+                                        Edit_SkillQP6.setText("\n"+str_SkillRequiredMaterials_part7[GetValue][j]);
+                                        break;
+
+                                    case 1:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials60.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 2:
+                                        Edit_SkillMaterials60.setText("x"+str_SkillRequiredMaterials_part7[GetValue][j]);
+                                        break;
+
+                                    case 3:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials61.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 4:
+                                        Edit_SkillMaterials61.setText("x"+str_SkillRequiredMaterials_part7[GetValue][j]);
+                                        break;
+
+                                    case 5:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials62.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 6:
+                                        Edit_SkillMaterials62.setText("x"+str_SkillRequiredMaterials_part7[GetValue][j]);
+                                        break;
+
+                                    case 7:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials63.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 8:
+                                        Edit_SkillMaterials63.setText("x"+str_SkillRequiredMaterials_part7[GetValue][j]);
+                                        break;
+                                }
+
+                            }
+                        }
+                    }
+                    //endregion
+
+                    //region LV8-LV9
+                    if (str_SkillRequiredMaterials_part8[GetValue][0]!=null)
+                    {
+                        for (int j = 0; j < 9; j++)//靈基1組9筆資料
+                        {
+                            if (str_SkillRequiredMaterials_part8[GetValue][j] != null)
+                            {
+                                //region switch j
+                                switch (j) {
+                                    case 0://QP
+                                        Edit_SkillQP7.setText("\n"+str_SkillRequiredMaterials_part8[GetValue][j]);
+                                        break;
+
+                                    case 1:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials70.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 2:
+                                        Edit_SkillMaterials70.setText("x"+str_SkillRequiredMaterials_part8[GetValue][j]);
+                                        break;
+
+                                    case 3:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials71.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 4:
+                                        Edit_SkillMaterials71.setText("x"+str_SkillRequiredMaterials_part8[GetValue][j]);
+                                        break;
+
+                                    case 5:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials72.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 6:
+                                        Edit_SkillMaterials72.setText("x"+str_SkillRequiredMaterials_part8[GetValue][j]);
+                                        break;
+
+                                    case 7:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials73.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 8:
+                                        Edit_SkillMaterials73.setText("x"+str_SkillRequiredMaterials_part8[GetValue][j]);
+                                        break;
+                                }
+
+                            }
+                        }
+                    }
+                    //endregion
+
+                    //region LV9-LV10
+                    if (str_SkillRequiredMaterials_part9[GetValue][0]!=null)
+                    {
+                        for (int j = 0; j < 9; j++)//靈基1組9筆資料
+                        {
+                            if (str_SkillRequiredMaterials_part9[GetValue][j] != null)
+                            {
+                                //region switch j
+                                switch (j) {
+                                    case 0://QP
+                                        Edit_SkillQP8.setText("\n"+str_SkillRequiredMaterials_part9[GetValue][j]);
+                                        break;
+
+                                    case 1:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials80.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 2:
+                                        Edit_SkillMaterials80.setText("x"+str_SkillRequiredMaterials_part9[GetValue][j]);
+                                        break;
+
+                                    case 3:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials81.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 4:
+                                        Edit_SkillMaterials81.setText("x"+str_SkillRequiredMaterials_part9[GetValue][j]);
+                                        break;
+
+                                    case 5:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials82.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 6:
+                                        Edit_SkillMaterials82.setText("x"+str_SkillRequiredMaterials_part9[GetValue][j]);
+                                        break;
+
+                                    case 7:
+                                        for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
+                                        {
+                                            if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
+                                            {
+                                                img_SkillMaterials83.setImageResource(img_Required_Materials[materials]);
+                                            }
+                                        }
+                                        break;
+
+                                    case 8:
+                                        Edit_SkillMaterials83.setText("x"+str_SkillRequiredMaterials_part9[GetValue][j]);
+                                        break;
+                                }
+                            }
+                        }
+                    }
+                    //endregion
+
+
+                    //endregion
                 }
-                //endregion
+                catch (Exception e)
+                {
+                    Log.d("技能素材判斷", "run: 技能素材判斷");
+                }
 
 
-                //endregion
+
 
             }
         }).start();
@@ -2479,6 +2495,41 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                 img_BS.setImageBitmap(result);
                 BS=false;
             }
+            mpg.dismiss();
+        }
+    }
+
+    private class MaterialAsyncTask extends AsyncTask<String, Void, Bitmap> {
+        // new MaterialAsyncTask().execute("URL");
+        protected Bitmap doInBackground(String... params) {
+            try {
+                URL url = new URL(params[0]);
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setDoInput(true);
+                connection.connect();
+                InputStream input = connection.getInputStream();
+                Bitmap myBitmap = BitmapFactory.decodeStream(input);
+                return myBitmap;
+            } catch(IOException e) {
+                Log.d("---MaterialAsyncTask---",e.toString());
+                return null;
+            }
+        }
+
+        protected void onPostExecute(Bitmap result) {
+            //do what you want with your bitmap result on the UI thread
+
+           if (result!=null)
+           {
+               ImageView material01=(ImageView) findViewById(R.id.img_item_AM01);
+               ImageView material02=(ImageView) findViewById(R.id.img_item_AM02);
+               ImageView material03=(ImageView) findViewById(R.id.img_item_AM03);
+               ImageView material04=(ImageView) findViewById(R.id.img_item_AM04);
+               material01.setImageBitmap(result);
+               material02.setImageBitmap(result);
+               material03.setImageBitmap(result);
+               material04.setImageBitmap(result);
+           }
             mpg.dismiss();
         }
     }

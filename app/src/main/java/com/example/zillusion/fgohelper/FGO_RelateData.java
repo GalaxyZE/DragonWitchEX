@@ -30,9 +30,9 @@ public final class FGO_RelateData {
             ,R.drawable.s171,R.drawable.s172,R.drawable.s173,R.drawable.s174,R.drawable.s175,R.drawable.s176,R.drawable.s177,R.drawable.s178,R.drawable.s179,R.drawable.s180
             ,R.drawable.s181,R.drawable.s182,R.drawable.s183,R.drawable.s184,R.drawable.s185,R.drawable.s186,R.drawable.s187,R.drawable.s188,R.drawable.s189,R.drawable.s190
             ,R.drawable.s191,R.drawable.s192,R.drawable.s193,R.drawable.s194,R.drawable.s195,R.drawable.s196,R.drawable.s197,R.drawable.s198,R.drawable.s199,R.drawable.s200
+			,R.drawable.s201,R.drawable.s202,R.drawable.s203,R.drawable.s204,
     };
     //endregion
-
 
     //region Servent_Name
     public static String[] itemname_EN={
@@ -236,6 +236,10 @@ public final class FGO_RelateData {
             "Katsushika Hokusai",
             "Semiramis",
             "Asagami Fujino",
+			"Anastasia Nikolaevna Romanova",
+			"Atalante (Alter)",
+			"Avicebron",
+			"Antonio Salieri",
     };
 
     public static String [] itemname_Chinese={
@@ -439,6 +443,10 @@ public final class FGO_RelateData {
             "葛飾北齋",
             "賽米拉米斯",
             "淺上藤乃",
+			"安娜塔西亞",
+			"阿塔蘭塔[Alter]",
+			"阿維斯布隆",
+			"安東尼奧・薩里耶利",
     };
     //endregion
 
@@ -644,6 +652,10 @@ public final class FGO_RelateData {
             "葛飾北斎",
             "セミラミス",
             "浅上藤乃",
+			"アナスタシア",
+			"アタランテ〔オルタ〕",
+			"アヴィケブロン",
+			"アントニオ・サリエリ",
     };
     //endregion
 
@@ -669,7 +681,6 @@ public final class FGO_RelateData {
 
 
 // endregion
-
 
     //region ServentClass
     public  static Integer[] imgid_ServentClass={
@@ -884,10 +895,11 @@ public final class FGO_RelateData {
             {"197","4","2","1626","1862","1626","11637","11816","16110","12","80"},
             {"198","5","13","1870","1940","12100","13230","13245","14494","16","90"},
             {"199","5","6","1747","1945","11309","13266","12379","14533","16","90"},
-            {"200","4","2","1716","1764","10299","11025","12470","13368","12","80"},
-
-
-
+            {"200","4","2","1716","1764","10299","11025","12470","13368","12","80"},//200
+			{"201","5","5","2091","1629","14259","10546","15621","11544","16","90"},
+			{"202","4","7","1701","1634","10634","9806","12894","11873","12","80"},
+			{"203","3","5","1796","1184","9981","6376","8629","13533","7","70"},
+			{"204","3","10","1411","1509","7840","8125","10996","10630","7","70"},//204
     };
     //endregion
 
@@ -1092,7 +1104,13 @@ public final class FGO_RelateData {
             {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Ridding EX\nIncrease Quick Card effectiveness by 12%","Decline of Civilization EX\nIncreases own critical damage by 10%.","Divinity B\nApplyDamage Plus 175"},
             {"Existence Outside the Domain EX\nGains 2 critical stars every turn.\nIncreases own debuff resistance by 12%.","Item Construction B\nIncrease Debuff Success Rate by 8%","Territory Creation D\nIncrease Arts Card effectiveeness by 4%","Divinity B\nApplyDamage Plus 175"},
             {"Presence Concealment C+\nIncrease Critical Star Drop Rate by 6.5%","Territory Creation EX\nIncrease Arts Card effectiveeness by 12%","Item Construction C\nIncrease Debuff Success Rate by 6%","Divinity C\nApplyDamage Plus 150"},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Independent Action A\nIncrease Critical Strength by 10%","Territory Creation B\nIncrease Arts Card effectiveeness by 8%",null},
+            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Independent Action A\nIncrease Critical Strength by 10%","Territory Creation B\nIncrease Arts Card effectiveeness by 8%",null},//200
+            {"Territory Creation EX\nIncrease your Arts Card effectiveness by 12%.","Contract with the Fairies A\nIncrease your Debuff Resist by 10%.\nIncrease your Debuff Success Rate by 10%.\n",null,null},
+            {"Beast Shape B\nIncrease your Buster Card effectiveness by 8%.\nIncrease your Critical Star Drop Rate by 8%.","Independent Action A\nIncrease your Critical Strength by 10%",null,null},
+            {"erritory Creation B\nIncrease your Arts Card effectiveness by 8%.","Item Construction B+\nIncrease your Debuff Success Rate by 9%.",null,null},
+            {"Avenger C\nDecrease other allies' Debuff Resist by 6%.\nIncrease your NP Gauge gained when hit by 16%.","Oblivion Correction B\nIncrease your Critical Strength by 8%.","Self-Restoration (Magical Energy) C\nGain 3.3% NP Gauge per turn.",null},//204
+
+
     };
     //endregion
 
@@ -1297,7 +1315,11 @@ public final class FGO_RelateData {
             {R.drawable.icon_skill_091,R.drawable.icon_skill_093,R.drawable.icon_skill_001,R.drawable.icon_skill_110},
             {R.drawable.icon_skill_101,R.drawable.icon_skill_094,R.drawable.icon_skill_095,R.drawable.icon_skill_110},
             {R.drawable.icon_skill_096,R.drawable.icon_skill_095,R.drawable.icon_skill_094,R.drawable.icon_skill_110},
-            {R.drawable.icon_skill_091,R.drawable.icon_skill_092,R.drawable.icon_skill_095,null},
+            {R.drawable.icon_skill_091,R.drawable.icon_skill_092,R.drawable.icon_skill_095,null},//200
+            {R.drawable.icon_skill_095,R.drawable.icon_skill_024,null,null},
+            {R.drawable.icon_skill_097,R.drawable.icon_skill_092,null,null},
+            {R.drawable.icon_skill_095,R.drawable.icon_skill_094,null,null},
+            {R.drawable.icon_skill_098,R.drawable.icon_skill_099,R.drawable.icon_skill_100,null},//204
     };
     //endregion
 
@@ -1503,7 +1525,11 @@ public final class FGO_RelateData {
                         {"1","2","2"},
                         {"2","2","1"},
                         {"1","3","1"},
-                        {"2","2","1"},
+                        {"2","2","1"},//200
+                        {"1","3","1"},
+                        {"2","1","2"},
+                        {"1","3","1"},
+                        {"2","2","1"},//204
                 };
         //endregion
 

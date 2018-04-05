@@ -201,7 +201,11 @@ public class FGO_SkillData5 {
             {"2,000,000","槍的秘石","4","世界樹種子","10",null,null,null,null},
             {"4,000,000","鬼魂提燈","12",null,null,null,null,null,null},
             {"4,000,000","殺的秘石","5","萬死毒針","24",null,null,null,null},
-            {"2,000,000","弓的秘石","4","虛影之塵","16",null,null,null,null},
+            {"2,000,000","弓的秘石","4","虛影之塵","16",null,null,null,null},//200
+            {"4,000,000","術的秘石","5","回憶的貝殼","10",null,null,null,null},
+            {"2,000,000","狂的秘石","4","黑獸油脂","5",null,null,null,null},
+            {"1,000,000","術的秘石","4","人造生命","7",null,null,null,null},
+            {"1,000,000","宵哭的鐵釘","10",null,null,null,null,null,null},
 
     };
 }

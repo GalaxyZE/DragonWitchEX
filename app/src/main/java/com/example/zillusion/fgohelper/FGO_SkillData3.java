@@ -201,6 +201,10 @@ public class FGO_SkillData3 {
             {"600,000","槍的魔石","4",null,null,null,null,null,null},
             {"1,200,000","禁斷書頁","12",null,null,null,null,null,null},
             {"1,200,000","殺的魔石","5",null,null,null,null,null,null},
-            {"600,000","弓的魔石","4",null,null,null,null,null,null},
+            {"600,000","弓的魔石","4",null,null,null,null,null,null},//200
+            {"1,200,000","術的魔石","5",null,null,null,null,null,null},
+            {"600,000","狂的魔石","4",null,null,null,null,null,null},
+            {"300,000","術的魔石","4",null,null,null,null,null,null},
+            {"300,000","魔術髓液","10",null,null,null,null,null,null},//204
     };
 }

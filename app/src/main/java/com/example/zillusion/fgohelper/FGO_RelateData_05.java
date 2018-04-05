@@ -203,7 +203,11 @@ public class FGO_RelateData_05 {
             {"50,000","鬍子",null,null,null,null,null,null,null,"150,000","鬍子",null,null,null,null,null,null,null,"500,000","鬍子",null,null,null,null,null,null,null,"1,500,000","鬍子",null,null,null,null,null,null,null},
             {"100,000","龍牙","10","世界樹種子","10",null,null,null,null,"300,000","鳳凰之羽","10","隕蹄鐵","10",null,null,null,null,"1,000,000","原初產毛","10","精靈根","10",null,null,null,null,"3,000,000","枯鎖勾玉","10","智慧聖甲蟲","10",null,null,null,null},
             {"100,000","暗殺者銀棋","5",null,null,null,null,null,null,"300,000","暗殺者銀棋","12","龍牙","18",null,null,null,null,"1,000,000","暗殺者金棋","5","萬死毒針","24","蛇眼寶玉","4",null,null,"3,000,000","暗殺者金棋","12","蛇眼寶玉","8","智慧聖甲蟲","5",null,null},
-            {"50,000","弓兵銀棋","4",null,null,null,null,null,null,"150,000","弓兵銀棋","10","兇骨","18",null,null,null,null,"500,000","弓兵金棋","4","虛影之塵","16","咒獸膽石","2",null,null,"1,500,000","弓兵金棋","10","咒獸膽石","4","血之淚石","6",null,null},
+            {"50,000","弓兵銀棋","4",null,null,null,null,null,null,"150,000","弓兵銀棋","10","兇骨","18",null,null,null,null,"500,000","弓兵金棋","4","虛影之塵","16","咒獸膽石","2",null,null,"1,500,000","弓兵金棋","10","咒獸膽石","4","血之淚石","6",null,null},//200
+            {"100,000","法師銀棋","5",null,null,null,null,null,null,"300,000","法師銀棋","12","虛影之塵","12",null,null,null,null,"1,000,000","法師金棋","5","回憶的貝殼","10","血之淚石","3",null,null,"3,000,000","法師金棋","5","血之淚石","6","結冰","12",null,null},
+            {"50,000","狂戰士銀棋","4",null,null,null,null,null,null,"150,000","狂戰士銀棋","10","世界樹種子","8",null,null,null,null,"500,000","狂戰士金棋","4","黑獸油脂","5","精靈根","2",null,null,"1,500,000","狂戰士金棋","10","精靈根","4","原初產毛","6",null,null},
+            {"30,000","法師銀棋","4",null,null,null,null,null,null,"100,000","法師銀棋","8","八連雙晶","5",null,null,null,null,"300,000","法師金棋","4","人造生命","7","封魔神燈","2",null,null,"900,000","法師金棋","8","封魔神燈","4","智慧聖甲蟲","4",null,null},
+            {"30,000","虛影之塵","8","兇骨","8",null,null,null,null,"100,000","禁斷書頁","8","無間的齒輪","8",null,null,null,null,"300,000","鬼魂提燈","8","封魔神燈","8",null,null,null,null,"900,000","蠻神心臟","8","血之淚石","8",null,null,null,null},//204
     };
     //endregion
 }

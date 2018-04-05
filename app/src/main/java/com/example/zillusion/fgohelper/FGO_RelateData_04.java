@@ -23,7 +23,7 @@ public class FGO_RelateData_04 {
             R.drawable.item_material_08,R.drawable.item_material_09,R.drawable.item_material_10,R.drawable.item_material_11,R.drawable.item_material_12,R.drawable.item_material_13,R.drawable.item_material_14,
             R.drawable.item_material_15,R.drawable.item_material_16,R.drawable.item_material_17,R.drawable.item_material_18,R.drawable.item_material_19,R.drawable.item_material_20,R.drawable.item_material_21,
             R.drawable.item_material_22,R.drawable.item_material_23,R.drawable.item_material_24,R.drawable.item_material_25,R.drawable.item_material_26,R.drawable.item_material_27,R.drawable.item_material_28,
-            R.drawable.item_material_29,R.drawable.item_material_30,R.drawable.item_material_31,R.drawable.item_material_32,
+            R.drawable.item_material_29,R.drawable.item_material_30,R.drawable.item_material_31,R.drawable.item_material_32,R.drawable.item_material_33,R.drawable.item_material_34,
     };
 
 
@@ -42,7 +42,7 @@ public class FGO_RelateData_04 {
                 "蛇の宝玉","無間の歯車","禁断の頁","竜の牙","隕蹄鉄","ホムンクルスベビー","八連双晶",
                 "凶骨","蛮神の心臓","精霊根","戦馬の幼角","血の涙石","黒獣脂","愚者の鎖",
                 "封魔のランプ","大騎士勲章","智慧のスカラベ","追憶の貝殻","万死の毒針","原初の産毛","呪獣胆石",
-                "魔術髄液","奇奇神酒","枯淡勾玉","宵哭きの鉄杭",
+                "魔術髄液","奇奇神酒","枯淡勾玉","宵哭きの鉄杭","永遠結冰","励振火薬",
             },
 
             {
@@ -53,10 +53,10 @@ public class FGO_RelateData_04 {
                 "劍的魔石","弓的魔石","槍的魔石","騎的魔石","術的魔石","殺的魔石","狂的魔石",
                 "劍的秘石","弓的秘石","槍的秘石","騎的秘石","術的秘石","殺的秘石","狂的秘石",
                 "鳳凰之羽","世界樹種子","英雄之證","虛影之塵","龍的逆鱗","渾沌之爪","鬼魂提燈",
-                "蛇眼寶玉","無間的齒輪","禁斷書頁","龍牙","殞蹄鐵","人造生命","八連雙晶",
+                "蛇眼寶玉","無間的齒輪","禁斷書頁","龍牙","隕蹄鐵","人造生命","八連雙晶",
                 "兇骨","蠻神心臟","精靈根","戰馬幼角","血之淚石","黑獸油脂","愚者之鎖",
                 "封魔神燈","騎士勳章","智慧聖甲蟲","回憶的貝殼","萬死毒針","原初產毛","咒獸膽石",
-                "魔術髓液","奇奇神酒","枯鎖勾玉","宵哭的鐵釘",
+                "魔術髓液","奇奇神酒","枯鎖勾玉","宵哭的鐵釘","結冰","火藥",
             },
             //Event Materials
             {

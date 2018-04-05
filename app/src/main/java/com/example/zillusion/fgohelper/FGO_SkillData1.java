@@ -201,6 +201,11 @@ public class FGO_SkillData1{
             {"100,000","槍的輝石","4",null,null,null,null,null,null},
             {"200,000","兇骨","10",null,null,null,null,null,null},
             {"200,000","殺的輝石","5",null,null,null,null,null,null},
-            {"100,000","弓的輝石","4",null,null,null,null,null,null},
+            {"100,000","弓的輝石","4",null,null,null,null,null,null},//200
+            {"200,000","術的輝石","5",null,null,null,null,null,null},
+            {"100,000","狂的輝石","4",null,null,null,null,null,null},
+            {"50,000","術的輝石","4",null,null,null,null,null,null},
+            {"50,000","愚者之鎖","8",null,null,null,null,null,null},
+
     };
 }

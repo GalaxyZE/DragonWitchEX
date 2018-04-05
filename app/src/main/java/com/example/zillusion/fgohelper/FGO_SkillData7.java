@@ -201,7 +201,11 @@ public class FGO_SkillData7 {
             {"5,000,000","隕蹄鐵","8","精靈根","2",null,null,null,null},
             {"10,000,000","龍之逆鱗","15",null,null,null,null,null,null},
             {"10,000,000","龍牙","24","鳳凰之羽","5",null,null,null,null},
-            {"5,000,000","兇骨","24","宵哭的鐵釘","15",null,null,null,null},
+            {"5,000,000","兇骨","24","宵哭的鐵釘","15",null,null,null,null},//200
+            {"10,000,000","虛影之塵","20","禁斷書頁","6",null,null,null,null},
+            {"5,000,000","世界樹種子","10","火藥","15",null,null,null,null},
+            {"2,500,000","八連雙晶","7","結冰","4",null,null,null,null},
+            {"2,500,000","結冰","12",null,null,null,null,null,null},
 
     };
 }

@@ -201,6 +201,10 @@ public class FGO_SkillData4 {
             {"800,000","槍的魔石","10","世界樹種子","5",null,null,null,null},
             {"1,600,000","八連雙晶","12",null,null,null,null,null,null},
             {"1,600,000","殺的魔石","12","萬死毒針","12",null,null,null,null},
-            {"800,000","弓的魔石","10","虛影之塵","8",null,null,null,null},
+            {"800,000","弓的魔石","10","虛影之塵","8",null,null,null,null},//200
+            {"1,600,000","術的魔石","12","回憶的貝殼","5",null,null,null,null},
+            {"800,000","狂的魔石","10","黑獸油脂","3",null,null,null,null},
+            {"400,000","術的魔石","8","人造生命","4",null,null,null,null},
+            {"400,000","鳳凰之羽","10",null,null,null,null,null,null},
     };
 }

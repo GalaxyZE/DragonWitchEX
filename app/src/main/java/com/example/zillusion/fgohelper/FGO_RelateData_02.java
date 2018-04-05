@@ -206,7 +206,11 @@ public class FGO_RelateData_02 {
             {R.drawable.icon_skill_068,R.drawable.icon_skill_111,R.drawable.icon_skill_010},
             {R.drawable.icon_skill_025,R.drawable.icon_skill_004,R.drawable.icon_skill_022},
             {R.drawable.icon_skill_068,R.drawable.icon_skill_069,R.drawable.icon_skill_044},
-            {R.drawable.icon_skill_004,R.drawable.icon_skill_008,R.drawable.icon_skill_023},
+            {R.drawable.icon_skill_004,R.drawable.icon_skill_008,R.drawable.icon_skill_023},//200
+            {R.drawable.icon_skill_010,R.drawable.icon_skill_109,R.drawable.icon_skill_068},
+            {R.drawable.icon_skill_009,R.drawable.icon_skill_002,R.drawable.icon_skill_025},
+            {R.drawable.icon_skill_013,R.drawable.icon_skill_068,R.drawable.icon_skill_017},
+            {R.drawable.icon_skill_072,R.drawable.icon_skill_003,R.drawable.icon_skill_038},//204
     };
     //endregion
 
@@ -304,7 +308,6 @@ public class FGO_RelateData_02 {
                     {"Berserk A\nIncreases own attack (1T)\nIncreases own NP damage (1T)","Self\nCD5","Intuition B\nGain Critical Stars","Self\nCD 5","Battle Continuation B\nGrants self Guts status for 1 time (4T)","Self\nCD7"},
                     {"Stars in Heaven A\nIncreases one ally's NP generation rate (3T)","Allies\nCD7","Flowers on Earth A\nIncreases one ally's attack (3T)\nIncreases their critical star generation rate (3T)","Allies\nCD6","Love to the People A\nRecovers one ally's HP.\nIncreases their defense (3T)","Allies\nCD5"},
                     {"Mystic Eyes of Death Perception C\nIgnores Invincibility (1T)\nIncreases own Arts performance (1T)\nReduces all enemies' Instant-Death resistance (1T)","Self\nAll Enemies\nCD5","Cloud Shine B\nIncreases own attack (3T)\nIncreases own mental debuff resistance (3T)","Self\nCD 5","Yin Yang A\nRecovers own HP.\nReduces own NP gauge by 10%","Self\nCD4"},
-
                     {"Mystic Eyes of Death Perception A\nIgnores Invincibility (1T)\nIncreases own Arts performance (1T)\nReduces all enemies' Instant-Death resistance (1T)","Self\nEnemies\nCD5","Eye of the Mind (False) A\nGrants self Evasion (1T)\nIncreases own criticaldamage(3T) ","Self\nCD6","Yin Yang B\nCharges own NP gauge.\nDeals 1000 damage to self","Self\nCD6"},
                     {"Revelation A\nGains critical stars every turn (3T)","Self\nCD6","Baptism Rite B+\nCharges own NP gauge every turn (5T)\nReduces one Undead or Demon enemy's NP gauge by 1. ","Self\nEnemies\nCD10","God's Resolution (False) C++\nChance to Stun one enemy servant (1T)\nIncreases own Buster performance (3T)","Self\nEnemies\nCD6"},
                     {"Monstrous Strength C+\nIncreases own attack (1T)","Self\nCD5","Trap of Argalia: Down with a Touch! D\nChance to Stun one enemy (1T)","Enemies\nCD8","Evaporation of Sanity D+\n65% Chance to gain critical stars every turn (5T)\n65% Chance to increase own critical star generation rate (5T)\n65% Chance to increase own critical damage (5T)\nCharges own NP gauge","Self\nCD8"},
@@ -413,7 +416,13 @@ public class FGO_RelateData_02 {
                     {"Starman's Gift B\nCharges one ally's NP gauge.\nIncreases one ally's critical star generation rate by 30% (3T)","Allies\nCD5","Rainbow Candy Crafts B\nIncreases one ally's NP damage (1T)\nIncreases their critical damage (1T)","Allies\nCD5","Twinkling Star Crest EX\nIgnores Invincibility (3T)\nIncreases own critical star absorption (3T)\nIncreases own defense (3T)\nStun self for 1 turn after (3T)","Self\nCD5"},
                     {"All Things in Nature A+\nGrants self Evasion (1T)\nCharges own NP gauge. ","Self\nCD 5","Father-Daughter Bond A\nIncreases own Arts performance (3T)\nIncreases own buff removal resistance (1T)\nIncreases own debuff resistance (1T)","Self\nCD 5","Nom de Plume: Extraterrestrial Octopus B\nInflicts Defense Down for 3 turns to enemy when attacking with Arts Cards (3T)","Self\nCD 6"},
                     {"Familiar (Pigeon) D\nCharges own NP gauge.\nReduces all enemies' debuff resistance (1T)","Self\nCD 5","Double Summon B\nIncreases own NP generation rate (3T)\nIgnores the attack and defense advantage of  Caster class (3T)","Self\nCD 5","Sikera Ušum: Arrogant King's Alcohol B+\n(Can only be use when there are 8 critical stars or more.)\nInflicts Poison  to all enemies. (3T)\nReduces their Buster resistance (3T)\nConsumes 8 critical stars","All Enemies\nCD6"},
-                    {"Mystic Eyes of Distortion (Skill) EX\nIncreases own Buster performance (3T)\nIgnores defense buffs (3T)\nIncreases own NP generation rate (3T)","Self\nCD 5","Clairvoyance (Darkness) C\nIgnores Evasion (3T)\nGains critical stars. ","Self\nCD 5","Residual Pain A\nReduces own damage taken (3T)\nGrants self Guts status for 1 time, (3T) (Revives with 1 HP.)\nReduces own Max HP by 2000 (3T)","Self\nCD5"},
+                    {"Mystic Eyes of Distortion (Skill) EX\nIncreases own Buster performance (3T)\nIgnores defense buffs (3T)\nIncreases own NP generation rate (3T)","Self\nCD 5","Clairvoyance (Darkness) C\nIgnores Evasion (3T)\nGains critical stars. ","Self\nCD 5","Residual Pain A\nReduces own damage taken (3T)\nGrants self Guts status for 1 time, (3T) (Revives with 1 HP.)\nReduces own Max HP by 2000 (3T)","Self\nCD5"},//200
+                    {"Clairvoyant Mystic Eyes D\nApply 'Invulnerability Pierce' on Self(1T)\nImproves Self Arts cards' performances(1T)\nnLowers one enemy's debuff resistance","Self and one Enemy\nCD 5","Freezing Charisma B\nncrease all allies' ATK.(3T)\nLowers all enemies' ATK.(3T)","Allies and Enemies\nCD 5","Shvibzik B\nIncrease NP Gauge\nLow Chance to stun one Enemy(1T)","Self and one Enemy\nCD 7"},
+                    {"Self-Evolution EX\nIncrease your Critical Star Gather Rate.(1T)\nGain Critical Stars","Self\nCD 5","Beyond Arcadia A\nIncrease Quick Card Effectiveness for all allies.(1T)","All allies\nCD 5","Wild Beast's Logic B\nApply 'Evade' to self.(1T)\nSelf Critical damage up.(3T)","Self\nCD 6"},
+                    {"Numerous Secret Arts B\nIncrease self Arts Card effectiveness.(3T)\nIncrease self Buster Card effectiveness.(3T)\n","All Allies\nCD 6","Rapid Casting B+\nSignificantly increase your NP Gauge.","Self\nCD 8","Fig Tree of Tranquility EX\n1.Apply a Timer on yourself (5 turns). When defeated, apply the following:\n2.Apply Invulnerable state on your allies (2 hits, 3 if skill is level 10)\n3.Heal allies\n","All Allies\nCD 8"},
+                    {"Innocent Monster EX\nGain Critical Stars each turn(3T)\nImproves Critical damages(3times,5T)","Self\nCD 5","Wailing Armor A\nIncrease your Arts Card effectiveness (3 times,5T)","Self\nCD 5","Wildfire B\nDecrease one enemy's' DEF. (3 times,5T)","One enemy\nCD 5"},//204
+
+
             };
     //endregion
 }

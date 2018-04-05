@@ -103,7 +103,6 @@ public class servent2 extends Fragment {
         mAdView.loadAd(adRequest);
         //endregion
 
-
         //region Fragment ListView
 
         final ListView listView = (ListView) view.findViewById(R.id.listview);
@@ -163,9 +162,9 @@ public class servent2 extends Fragment {
 
         //endregion
 
-
         //region Search View
         final SearchView sv=(SearchView) view.findViewById(R.id.Serach_Servent);
+        sv.setQueryHint("Servent Name");
         sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {

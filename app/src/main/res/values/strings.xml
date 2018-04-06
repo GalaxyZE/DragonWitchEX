@@ -11,7 +11,7 @@
     <string name="action_Sort">Sort</string>
     <string name="action_TestWebView">WebPage</string>
     <string name="action_Test_Tab">Tab</string>
-    <string name="Advertise_Google_Example">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Advertise_Google_Example">ca-app-pub-8418426477328402/5093069229</string>
     <!--ca-app-pub-3940256099942544/6300978111-->
     <string name="Advertise_Google_AD">ca-app-pub-8418426477328402/5093069229</string>
     <string name="Advertise_GoogleApp">ca-app-pub-8418426477328402~2027922183</string>
@@ -91,6 +91,7 @@
     <string name="Status_Count">*77</string>
     <string name="SkillDescribeTittle">Describe</string>
     <string name="SkillTargetCD_Title">Target and CD</string>
+    <string name="NP_Describe">NP Describe</string>
     <string name="Ascension1">\n1st Ascension</string>
     <string name="Ascension2">\n2nd Ascension</string>
     <string name="Ascension3">\n3rd Ascension</string>
@@ -116,6 +117,12 @@
     <string name="ClassAlterDialog_Assassin">Assassin</string>
     <string name="ClassAlterDialog_Berserker">Berserker</string>
     <string name="ClassAlterDialog_Other">Other</string>
+    <string name="NP_Overcharge">Overcharge</string>
+    <string name="NP_Overcharge1">100%</string>
+    <string name="NP_Overcharge2">200%</string>
+    <string name="NP_Overcharge3">300%</string>
+    <string name="NP_Overcharge4">400%</string>
+    <string name="NP_Overcharge5">500%</string>
     <string name="Star5">★★★★★</string>
     <string name="Star4">★★★★☆</string>
     <string name="Star3">★★★☆☆</string>

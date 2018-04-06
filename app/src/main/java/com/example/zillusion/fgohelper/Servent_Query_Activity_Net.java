@@ -44,6 +44,7 @@ import static com.example.zillusion.fgohelper.FGO_RelateData_02.Skill_Describe;
 import static com.example.zillusion.fgohelper.FGO_RelateData_02.imgid_ServentSkill;
 import static com.example.zillusion.fgohelper.FGO_RelateData_03.NP_DescribeEn;
 import static com.example.zillusion.fgohelper.FGO_RelateData_03.Skill_Describe_Effect;
+import static com.example.zillusion.fgohelper.FGO_RelateData_04.img_Required_EventMaterials;
 import static com.example.zillusion.fgohelper.FGO_RelateData_04.img_Required_Materials;
 import static com.example.zillusion.fgohelper.FGO_RelateData_04.str_LanguageRequired_Materials;
 import static com.example.zillusion.fgohelper.FGO_RelateData_05.str_RequiredMaterials;
@@ -1494,13 +1495,34 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                     break;
 
                                                 case 1:
+                                                    boolean find=false;
+
                                                     for (int materials=0;materials<str_LanguageRequired_Materials[1].length;materials++)
                                                     {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM01.setImageResource(img_Required_Materials[materials]);
+                                                            find=true;
+                                                            break;
                                                         }
                                                     }
+                                                    if (!find)
+                                                    {
+                                                        for (int materials=0;materials<str_LanguageRequired_Materials[2].length;materials++)
+                                                        {
+                                                            if (str_RequiredMaterials[GetValue][j]==str_LanguageRequired_Materials[2][materials])
+                                                            {
+                                                                img_item_AM01.setImageResource(img_Required_EventMaterials[materials]);
+                                                                img_item_AM11.setImageResource(img_Required_EventMaterials[materials]);
+                                                                img_item_AM21.setImageResource(img_Required_EventMaterials[materials]);
+                                                                img_item_AM31.setImageResource(img_Required_EventMaterials[materials]);
+                                                                find=true;
+                                                                break;
+                                                            }
+                                                        }
+                                                    }
+
+
                                                     break;
 
                                                 case 2:
@@ -1513,6 +1535,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM02.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1527,6 +1550,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM03.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1541,6 +1565,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM04.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1565,6 +1590,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM11.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1579,6 +1605,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM12.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1593,6 +1620,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM13.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1607,6 +1635,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM14.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1630,6 +1659,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM21.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1644,6 +1674,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM22.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1658,6 +1689,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM23.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1672,6 +1704,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM24.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1695,6 +1728,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM31.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1709,6 +1743,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM32.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1723,6 +1758,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM33.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1737,6 +1773,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                                         if (str_RequiredMaterials[GetValue][j + (i * 9)]==str_LanguageRequired_Materials[1][materials])
                                                         {
                                                             img_item_AM34.setImageResource(img_Required_Materials[materials]);
+                                                            break;
                                                         }
                                                     }
                                                     break;
@@ -1789,6 +1826,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials00.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1803,6 +1841,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials01.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1817,6 +1856,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials02.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1831,6 +1871,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part1[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials03.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1864,6 +1905,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials10.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1878,6 +1920,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials11.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1892,6 +1935,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials12.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1906,6 +1950,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part2[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials13.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1938,6 +1983,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials20.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1952,6 +1998,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials21.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1966,6 +2013,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials22.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -1980,6 +2028,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part3[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials23.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2011,6 +2060,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials30.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2025,6 +2075,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials31.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2039,6 +2090,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials32.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2053,6 +2105,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part4[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials33.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2085,6 +2138,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials40.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2099,6 +2153,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials41.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2113,6 +2168,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials42.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2127,6 +2183,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part5[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials43.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2160,6 +2217,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials50.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2174,6 +2232,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials51.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2188,6 +2247,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials52.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2202,6 +2262,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part6[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials53.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2235,6 +2296,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials60.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2249,6 +2311,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials61.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2263,6 +2326,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials62.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2277,6 +2341,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part7[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials63.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2310,6 +2375,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials70.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2324,6 +2390,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials71.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2338,6 +2405,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials72.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2352,6 +2420,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part8[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials73.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2385,6 +2454,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials80.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2399,6 +2469,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials81.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2413,6 +2484,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials82.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;
@@ -2427,6 +2499,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                                             if (str_SkillRequiredMaterials_part9[GetValue][j]==str_LanguageRequired_Materials[1][materials])
                                             {
                                                 img_SkillMaterials83.setImageResource(img_Required_Materials[materials]);
+                                                break;
                                             }
                                         }
                                         break;

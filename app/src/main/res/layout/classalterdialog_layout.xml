@@ -45,28 +45,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:button="@drawable/custom_checkbox_saber"
-                 />
+                android:checked="false" />
 
             <CheckBox
                 android:id="@+id/checkbox_Archer"
-                android:layout_width="wrap_content"
+                android:layout_width="19dp"
                 android:layout_height="wrap_content"
-                android:button="@drawable/custom_checkbox_archer"
-                 />
+                android:button="@drawable/custom_checkbox_archer" />
 
             <CheckBox
                 android:id="@+id/checkbox_Lancer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:button="@drawable/custom_checkbox_lancer"
-                 />
-
-            <CheckBox
-                android:id="@+id/checkbox_Other"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:button="@drawable/custom_checkbox_other"
-                 />
+                android:button="@drawable/custom_checkbox_lancer" />
 
         </TableRow>
 
@@ -101,15 +90,33 @@
                 android:layout_height="wrap_content"
                  />
 
-            <CheckBox
-                android:id="@+id/checkbox_Berserker"
-                android:button="@drawable/custom_checkbox_berserker"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                 />
+
 
         </TableRow>
+        <TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_span="4"
+                    />
+            </TableRow>
+        </TableRow>
+<TableRow>
+    <CheckBox
+        android:id="@+id/checkbox_Other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/custom_checkbox_other"
+        />
+    <CheckBox
+        android:id="@+id/checkbox_Berserker"
+        android:button="@drawable/custom_checkbox_berserker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
 
+</TableRow>
         <TableRow>
             <TextView
                 android:layout_width="match_parent"
@@ -118,19 +125,7 @@
                 />
         </TableRow>
 
-        <TableRow>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_span="4"
-                android:background="@color/colorDarkBlack"
-                android:text="Star"
-                android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textColor="@color/colorWhite"
-                android:textStyle="bold" />
-        </TableRow>
 
         <TableRow>
             <TextView

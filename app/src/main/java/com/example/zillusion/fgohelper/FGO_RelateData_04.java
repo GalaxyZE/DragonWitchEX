@@ -7,11 +7,6 @@ package com.example.zillusion.fgohelper;
 public class FGO_RelateData_04 {
     //region 靈基再臨 & 技能升級
 
-    public static String [][][] array_Required_Materials={
-        {{"a","b","c","d"},{"a","b","c","d"},{"a","b","c","d"},{"a","b","c","d"}},
-
-    };
-
     public static Integer [] img_Required_Materials={
             R.drawable.item_skill_00,R.drawable.item_qp,
             R.drawable.item_class_01,R.drawable.item_class_02,R.drawable.item_class_03,R.drawable.item_class_04,R.drawable.item_class_05,R.drawable.item_class_06,R.drawable.item_class_07,
@@ -24,6 +19,14 @@ public class FGO_RelateData_04 {
             R.drawable.item_material_15,R.drawable.item_material_16,R.drawable.item_material_17,R.drawable.item_material_18,R.drawable.item_material_19,R.drawable.item_material_20,R.drawable.item_material_21,
             R.drawable.item_material_22,R.drawable.item_material_23,R.drawable.item_material_24,R.drawable.item_material_25,R.drawable.item_material_26,R.drawable.item_material_27,R.drawable.item_material_28,
             R.drawable.item_material_29,R.drawable.item_material_30,R.drawable.item_material_31,R.drawable.item_material_32,R.drawable.item_material_33,R.drawable.item_material_34,
+    };
+
+    public static Integer[] img_Required_EventMaterials={
+            R.drawable.item_eventmaterial_001,R.drawable.item_eventmaterial_002,R.drawable.item_eventmaterial_003,R.drawable.item_eventmaterial_004,
+            R.drawable.item_eventmaterial_005,R.drawable.item_eventmaterial_006,R.drawable.item_eventmaterial_007,R.drawable.item_eventmaterial_008,
+            R.drawable.item_eventmaterial_009,R.drawable.item_eventmaterial_010,R.drawable.item_eventmaterial_011,R.drawable.item_eventmaterial_012,
+            R.drawable.item_eventmaterial_013,R.drawable.item_eventmaterial_014,R.drawable.item_eventmaterial_015,
+
     };
 
 
@@ -60,7 +63,8 @@ public class FGO_RelateData_04 {
             },
             //Event Materials
             {
-
+                "棒棒糖","黃金骷髏","炸雞桶","小刀","水晶球","打火機","樹枝","項鍊","龍珠","娃娃","盒子","緞帶","蘆葦",
+                "方塊","鬍子"
             },
     };
     //endregion

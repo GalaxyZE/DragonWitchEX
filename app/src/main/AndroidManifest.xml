@@ -26,6 +26,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".test" />
         <activity android:name=".EventDetail" />
@@ -34,23 +35,36 @@
             android:name=".TabActivity"
             android:label="@string/title_activity_tab"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".OldNewsActivity" />
+        <activity android:name=".OldNewsActivity"
+            android:launchMode="singleTask"
+
+            />
+
         <activity android:name=".setting" />
-        <activity android:name=".Servent_Query_Activity_Net" />
         <activity
+            android:name=".Servent_Query_Activity_Net"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:launchMode="singleTop"
             android:name=".About"
             android:label="@string/title_activity_about"
             android:theme="@style/AppTheme1.NoActionBar" />
         <activity
-            android:name=".materialcoint"
+            android:name=".MaterialCount"
             android:label="@string/title_activity_materialcoint"
             android:theme="@style/AppTheme1.NoActionBar" />
-        <activity android:name=".Donate" />
+        <activity android:name=".Donate"
+            android:launchMode="singleTask"
+            />
         <activity
             android:name=".serventactivity"
+            android:launchMode="singleTask"
             android:label="@string/title_activity_serventactivity"
             android:theme="@style/AppTheme1.NoActionBar" />
-        <activity android:name=".img_Servent_Zoom"></activity>
+        <activity android:name=".img_Servent_Zoom"
+            android:launchMode="singleTask"
+            ></activity>
     </application>
 
 </manifest>

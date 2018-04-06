@@ -1947,6 +1947,7 @@
 
                                 <TextView
                                     android:id="@+id/Status_NPName_EditTextView01"
+                                    android:background="@drawable/table_row_bg"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:singleLine="false"
@@ -1954,14 +1955,7 @@
                                     android:text="@string/app_name"
                                     android:textAlignment="center" />
 
-                                <TextView
-                                    android:background="@drawable/table_row_start"
-                                    android:id="@+id/Status_Rank_EditTextView01"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:singleLine="false"
-                                    android:textAlignment="center"
-                                    android:text="@string/app_name" />
+
 
                                 <TextView
                                     android:background="@drawable/table_row_start"
@@ -1969,9 +1963,36 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:singleLine="false"
+                                    android:layout_column="4"
                                     android:layout_span="2"
                                     android:text="@string/app_name"
                                     android:textAlignment="center" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_height="match_parent"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginStart="1dp"
+                                android:layout_marginEnd="1dp"
+                                android:background="@drawable/table_row_start"
+                                >
+                                <TextView
+                                    android:layout_height="match_parent"
+                                    android:layout_width="match_parent"
+                                    android:textAlignment="center"
+                                    android:text="@string/Status_NP_Rank"
+                                    />
+
+                                <TextView
+                                    android:background="@drawable/table_row_start"
+                                    android:id="@+id/Status_Rank_EditTextView01"
+                                    android:layout_span="5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:singleLine="false"
+                                    android:textAlignment="center"
+                                    android:text="@string/app_name" />
                             </TableRow>
 
                             <TableRow

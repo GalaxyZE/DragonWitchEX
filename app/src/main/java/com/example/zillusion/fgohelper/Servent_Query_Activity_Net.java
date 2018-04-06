@@ -439,6 +439,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
 
         //endregion
 
+
         //region NP_寶具
         TextView editNP_Name = (TextView) findViewById(R.id.Status_NPName_EditTextView);
         TextView editNP_Rank = (TextView) findViewById(R.id.Status_Rank_EditTextView);
@@ -1231,6 +1232,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
         cardflag = 1;
         //endregion
 
+
         //region NP_寶具
 
         String[][] localNP = NP_DescribeEn;
@@ -1284,6 +1286,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                         break;
                     //endregion
                     case 2:
+
                         //region NP_Describe
                         if (localNP[GetValue][i] != null) {
                             editNP_Descriibe.setText(localNP[GetValue][i]);
@@ -1293,6 +1296,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
 
                         break;
                     //endregion
+
                     case 3:
                         //region NP Rank
                         if (localNP[GetValue][i] != null) {
@@ -1302,6 +1306,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                         }
                         //endregion
                         break;
+
                     case 4:
                         //region NP Target
                         if (localNP[GetValue][i] != null) {
@@ -1314,6 +1319,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                         }
                         //endregion
                         break;
+
                     case 5:
                         //region NP_Level_1-5
                         if (localNP[GetValue][i] != null) {
@@ -1355,7 +1361,9 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                     //endregion
                     case 10:
                         break;
-                    case 11://region SecondRank
+
+                    case 11:
+                        //region SecondRank
                         if (localNP[GetValue][i] != null) {
                             editNP_Rank1.setText(localNP[GetValue][i]);
                         } else {
@@ -1363,6 +1371,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                         }
                         break;
                     //endregion
+
                     case 12:
                         //region Second NP LV1-5
                         if (localNP[GetValue][i] != null) {
@@ -1400,6 +1409,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                         }
                         break;
                     //endregion
+
                 }
                 //endregion
             } else {
@@ -1465,6 +1475,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
 
         }
         //endregion
+
 
         //region 靈基素材
 

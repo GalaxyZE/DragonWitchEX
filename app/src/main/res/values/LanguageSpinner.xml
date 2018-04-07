@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="Setting_Spinner_Language">
+    <string-array name="Setting_Spinner_Language" translatable="false">
         <item>English</item>
         <item>繁體中文</item>
         <item>簡体中文</item>

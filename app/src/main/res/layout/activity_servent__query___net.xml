@@ -216,28 +216,28 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_weight="1"
-                                            android:text="@string/radioButtonS1" />
+                                            android:text="Card-1" />
 
                                         <RadioButton
                                             android:id="@+id/radioButtonBS2"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_weight="1"
-                                            android:text="@string/radioButtonS2" />
+                                            android:text="Card-2" />
 
                                         <RadioButton
                                             android:id="@+id/radioButtonBS3"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_weight="1"
-                                            android:text="@string/radioButtonS3" />
+                                            android:text="Card-3" />
 
                                         <RadioButton
                                             android:id="@+id/radioButtonBS4"
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:layout_weight="1"
-                                            android:text="@string/radioButtonS4" />
+                                            android:text="Cloth" />
 
                                     </RadioGroup>
                                 </LinearLayout>

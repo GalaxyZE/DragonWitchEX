@@ -145,7 +145,7 @@ public class servent2 extends Fragment {
                     {
                         bundle.putString("BundleServent",String.valueOf(i));
                         intent.putExtras(bundle);
-                        Toast.makeText(getActivity(),String.valueOf(i),Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(),"No."+String.valueOf(i+1),Toast.LENGTH_SHORT).show();
                         break;
                     }
                 }
@@ -382,7 +382,7 @@ public class servent2 extends Fragment {
                                                 {
                                                     bundle.putString("BundleServent",String.valueOf(i));
                                                     intent.putExtras(bundle);
-                                                    Toast.makeText(getActivity(),String.valueOf(i),Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(getActivity(),"No."+String.valueOf(i+1),Toast.LENGTH_SHORT).show();
                                                     break;
                                                 }
                                             }

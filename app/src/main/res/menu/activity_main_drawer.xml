@@ -21,20 +21,10 @@
             android:id="@+id/nav_CraftEssence"
             android:icon="@drawable/icon_1000"
             android:title="@string/CraftEssence" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="@string/MaterialCount" />
+       </group>
 
-
-    </group>
-
-    <item android:title="Communicate">
+    <item android:title="Other">
         <menu>
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
             <item
                 android:id="@+id/nav_donate"
                 android:icon="@drawable/icon_9010"
@@ -45,7 +35,7 @@
                 android:title="Share" />
             <item
                 android:id="@+id/nav_about"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/icon_about"
                 android:title="About" />
         </menu>
     </item>

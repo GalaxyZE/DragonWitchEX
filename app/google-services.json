@@ -8,20 +8,12 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:956660193277:android:92e32f4fe6c1155a",
+        "mobilesdk_app_id": "1:956660193277:android:4f227ab7a1a42df1",
         "android_client_info": {
-          "package_name": "com.example.zillusion.fgohelper"
+          "package_name": "com.fate.zillusion.fgohelper"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "956660193277-qfffu9r0rff4ao5tckre96dol8rah5qs.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.zillusion.fgohelper",
-            "certificate_hash": "6aca437ddd00a7d4d3f40311a63114ab41b5195a"
-          }
-        },
         {
           "client_id": "956660193277-bsd0npoimt143vjv3vkb53v2or3snrho.apps.googleusercontent.com",
           "client_type": 3
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "956660193277-bsd0npoimt143vjv3vkb53v2or3snrho.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

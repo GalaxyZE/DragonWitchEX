@@ -7,11 +7,30 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".About"
     tools:showIn="@layout/activity_about">
-
     <TextView
-        android:id="@+id/textview_about"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:singleLine="false"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+
+        android:text="
+
+        This is a simple and fast helper for Fate/Grand Order
+                       Now we have:
+
+                       1.Query Servant
+
+                       2.Query Craft Essence
+
+                       Many functions still in development
+
+                       We wii keep updating.
+
+                       If something wrong or you have good idea
+
+                       Please email us , Thank you."
+        />
 
 </android.support.constraint.ConstraintLayout>

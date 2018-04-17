@@ -7,7 +7,7 @@ package com.fate.zillusion.fgohelper;
 public class FGO_RelateData_03 {
 
     //region Skill Describe Effect 技能效果(%數等...info)
-public static String [][] Skill_Describe_Effect= {
+    public static String [][] Skill_Describe_Effect= {
 
             {"10%", "10.5%", "11%", "11.5%", "12%", "12.5%", "13%", "13.5%", "14%", "14.5%", "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "20%", "200%", "220%", "240%", "260%", "280%", "300%", "320%", "340%", "360%", "400%"},
             {"9%", "9.9%", "10.8%", "11.7%", "12.6%", "13.5%", "14.4%", "15.3%", "16.2%", "18%", "30%", "32%", "34%", "36%", "38%", "40%", "42%", "44%", "46%", "50%", "5 ★", "6 ★", "7 ★", "8 ★", "9 ★", "10 ★", "11 ★", "12 ★", "13 ★", "15 ★"},
@@ -225,14 +225,18 @@ public static String [][] Skill_Describe_Effect= {
                     "54.5%", "57%", "59.5%", "62%", "64.5%", "67%", "69.5%", "72%", "74.5%", "79.5%",
                     "1000", "1100", "1200", "1300", "1400", "1500", "1600", "1700", "1800", "2000"
             },//203
-		
-			{
-				"6\n20%","7\n21%","8\n22%","8\n23%","9\n24%","9\n25%","10\n26%","11\n27%","11\n28%","12\n30%",
-				"20%","21%","22%","23%","24%","25%","26%","27%","28%","30%",
-				"20%","21%","22%","23%","24%","25%","26%","27%","28%","30%"
-			},//204				
 
-};
+            {
+                    "6\n20%","7\n21%","8\n22%","8\n23%","9\n24%","9\n25%","10\n26%","11\n27%","11\n28%","12\n30%",
+                    "20%","21%","22%","23%","24%","25%","26%","27%","28%","30%",
+                    "20%","21%","22%","23%","24%","25%","26%","27%","28%","30%"
+            },//204
+            {
+                    "30%","32%","33%","35%","38%","40%","42%","44%","46%","50%",
+                    "5\n20%", "6\n22%", "6\n24%", "7\n26%", "7\n28%", "8\n30%", "8\n32%", "9\n34%", "9\n36%", "10\n40%",
+                    "10%","11%","12%","13%","14%","15%","16%","17%","18%","20%"
+            },//205
+    };
 //endregion
 
     //region 寶具資料
@@ -442,10 +446,8 @@ public static String [][] Skill_Describe_Effect= {
             {"2","闇天蝕射","Deal very strong damage to a single enemy.\n\nSeal Enemy's NP(1T)\n\nApply Curse to the enemy(5T)(OC)","A","One Enemy","1200%\n\n500\n\n100%","1600%\n\n1000\n\n200%","1800%\n\n1500\n\n300%","1900%\n\n2000\n\n400%","2000%\n\n2500\n\n500%",null,null,null,null,null,null,null},//202
             {"0"," Light of Wisdom","Deal slightly heavy damage to all enemies.\n\nIncrease all allies' NP generation.(3T)(OC)","A+","All enemies","300%\n\n10%\n\n100%","400%\n\n15%\n\n200%","450%\n\n20%\n\n300%","475%\n\n25%\n\n400%","500%\n\n30%\n\n500%",null,null,null,null,null,null,null},//203
             {"1","Supreme God, Have mercy on Me","Deals damage to multiple enemies\n\nLowers Party's Star generation by 20% for 3 turns (Demerit)\n\nLowers Enemy's Art cards resistance(OC)","C","Enemy Party\n\nAlly Party","450%\n\n10%\n\n100%","600%\n\n10%\n\n100%","675%\n\n20%\n\n300%","712.5%\n\n25%\n\n400%","750%\n\n30%\n\n500%",null,null,null,null,null,null,null},//204
-
+            {"0"," Zveri・Krestnyy Khod,The Beast that Accompanied me On My Journeys","Deals damage to all enemies.\n\nReduce their Buster resistance by 20% (3T)\n\nIncrease own NP damage (1T)(OC)","A+","All enemies","300%\n\n30%","400%\n\n40%","450%\n\n50%","475%\n\n60%","500%\n\n70%",null,null,null,null,null,null,null},//205
     };
 
     //endregion
-
-
 }

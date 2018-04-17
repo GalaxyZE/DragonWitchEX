@@ -206,6 +206,6 @@ public class FGO_SkillData7 {
             {"5,000,000","世界樹種子","10","火藥","15",null,null,null,null},
             {"2,500,000","八連雙晶","7","結冰","4",null,null,null,null},
             {"2,500,000","結冰","12",null,null,null,null,null,null},
-
+            {"10,000,000","兇骨","29","萬死毒針","15",null,null,null,null},
     };
 }

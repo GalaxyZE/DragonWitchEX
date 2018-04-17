@@ -10,7 +10,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         //add
         multiDexEnabled true
-        versionCode 8
+        versionCode 10
     }
 
     signingConfigs {

@@ -211,6 +211,7 @@ public class FGO_RelateData_02 {
             {R.drawable.icon_skill_009,R.drawable.icon_skill_002,R.drawable.icon_skill_025},
             {R.drawable.icon_skill_013,R.drawable.icon_skill_068,R.drawable.icon_skill_017},
             {R.drawable.icon_skill_072,R.drawable.icon_skill_003,R.drawable.icon_skill_038},//204
+            {R.drawable.icon_skill_069,R.drawable.icon_skill_072,R.drawable.icon_skill_026},
     };
     //endregion
 
@@ -421,6 +422,7 @@ public class FGO_RelateData_02 {
                     {"Self-Evolution EX\n\nIncrease your Critical Star Gather Rate.(1T)\n\nGain Critical Stars","Self\n\nCD 5","Beyond Arcadia A\n\nIncrease Quick Card Effectiveness for all allies.(1T)","All allies\n\nCD 5","Wild Beast's Logic B\n\nApply 'Evade' to self.(1T)\n\nSelf Critical damage up.(3T)","Self\n\nCD 6"},
                     {"Numerous Secret Arts B\n\nIncrease self Arts Card effectiveness.(3T)\n\nIncrease self Buster Card effectiveness.(3T)\n\n","All Allies\n\nCD 6","Rapid Casting B+\n\nSignificantly increase your NP Gauge.","Self\n\nCD 8","Fig Tree of Tranquility EX\n\n1.Apply a Timer on yourself (5 turns). When defeated, apply the following:\n\n2.Apply Invulnerable state on your allies (2 hits, 3 if skill is level 10)\n\n3.Heal allies\n\n","All Allies\n\nCD 8"},
                     {"Innocent Monster EX\n\nGain Critical Stars each turn(3T)\n\nImproves Critical damages(3times,5T)","Self\n\nCD 5","Wailing Armor A\n\nIncrease your Arts Card effectiveness (3 times,5T)","Self\n\nCD 5","Wildfire B\n\nDecrease one enemy's' DEF. (3 times,5T)","One enemy\n\nCD 5"},//204
+                    {"Contradictive Mind A\n\nIncreases own NP generation rate(3T)\nRemoves own debuffs. ","Self\n\nCD 5","Innocent Monster (Lost) A\n\nGains critical stars every turn (3T)\n\nIncreases own Buster performance (3T)","Self\n\nCD 5","Emergency Powers A \n\n Grants self Invincibility (1T)\n\nReduces all enemies' attack (3T)\n\nRemoves all enemies' buffs. ","Self\n\nAll Enemies\n\nCD6"},//205
             };
     //endregion
 

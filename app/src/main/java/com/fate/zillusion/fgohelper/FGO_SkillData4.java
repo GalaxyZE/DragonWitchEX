@@ -206,5 +206,6 @@ public class FGO_SkillData4 {
             {"800,000","狂的魔石","10","黑獸油脂","3",null,null,null,null},
             {"400,000","術的魔石","8","人造生命","4",null,null,null,null},
             {"400,000","鳳凰之羽","10",null,null,null,null,null,null},
-    };
+            {"1,600,000","騎的魔石","12","隕蹄鐵","5",null,null,null,null},
+	};
 }

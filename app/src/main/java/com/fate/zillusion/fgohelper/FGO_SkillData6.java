@@ -206,7 +206,7 @@ public class FGO_SkillData6 {
             {"2,500,000","狂的秘石","10","世界樹種子","5",null,null,null,null},
             {"1,250,000","術的秘石","8","八連雙晶","4",null,null,null,null},
             {"1,250,000","火藥","12",null,null,null,null,null,null},
-
+            {"5,000,000","騎的秘石","12","兇骨","15",null,null,null,null},
 
     };
 }

@@ -206,7 +206,7 @@ public class FGO_SkillData2 {
             {"200,000","狂的輝石","10",null,null,null,null,null,null},
             {"100,000","術的輝石","8",null,null,null,null,null,null},
             {"100,000","萬死毒針","8",null,null,null,null,null,null},
-
+            {"400,000","騎的輝石","12",null,null,null,null,null,null},
 
 
 

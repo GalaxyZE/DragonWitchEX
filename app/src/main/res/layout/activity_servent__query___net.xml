@@ -1212,7 +1212,6 @@
                                     android:id="@+id/Skill_Describe21"
                                     android:layout_height="match_parent"
                                     android:layout_width="match_parent"
-                                    android:textAlignment="center"
                                     android:layout_column="1"
                                     android:layout_span="3"
                                     android:text="TextView" />

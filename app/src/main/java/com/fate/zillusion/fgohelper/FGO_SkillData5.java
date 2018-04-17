@@ -206,6 +206,6 @@ public class FGO_SkillData5 {
             {"2,000,000","狂的秘石","4","黑獸油脂","5",null,null,null,null},
             {"1,000,000","術的秘石","4","人造生命","7",null,null,null,null},
             {"1,000,000","宵哭的鐵釘","10",null,null,null,null,null,null},
-
+            {"4,000,000","騎的秘石","5","隕蹄鐵","10",null,null,null,null},
     };
 }

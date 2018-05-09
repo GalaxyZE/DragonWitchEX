@@ -236,6 +236,21 @@ public class FGO_RelateData_03 {
                     "5\n20%", "6\n22%", "6\n24%", "7\n26%", "7\n28%", "8\n30%", "8\n32%", "9\n34%", "9\n36%", "10\n40%",
                     "10%","11%","12%","13%","14%","15%","16%","17%","18%","20%"
             },//205
+			{
+                    "20%\n20%","21%\n21%","22%\n22%","23%\n23%","24%\n24%","25%\n25%","26%\n26%","27%\n27%","28%\n28%","30%\n30%",
+                    "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "20%",
+                    "20%\n20%","21%\n21%","22%\n22%","23%\n23%","24%\n24%","25%\n25%","26%\n26%","27%\n27%","28%\n28%","30%\n30%",
+            },//206
+			{
+                    "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "20%",
+                    "30%\n5", "32%\n6", "34%\n7", "36%\n8", "38%\n9", "40%\n10", "42%\n11", "44%\n12", "46%\n13", "50%\n15",
+                    "20%\n20%\n20%","21%\n21%\n%21%","22%\n22%\n%22%","23%\n23%\n23%","24%\n24%\n24%","25%\n25%\n25%","26%\n26%\n26%","27%\n27%\n27%","28%\n28%\n28%","30%\n30%\n30%",
+            },//207
+			{
+                    "20%\n1000","21%\n1100","22%\n1200","%","23%\n1300","24%\n1400","25%\n1500","26%\n1600","27%\n1700","28%\n1800","30%\n2000",
+                    "22%","23.4%", "24.8%", "26.2%", "27.6%", "29%", "30.4%", "31.8%", "33.2%", "36%",
+                    "50%\n20%","55%\n21%","60%\n22%","65%\n23%","70%\n24%","75%\n25%","80\n26%","85%\n27%","90%\n28%","100%\n30%",
+            },//208
     };
 //endregion
 
@@ -447,7 +462,10 @@ public class FGO_RelateData_03 {
             {"0"," Light of Wisdom","Deal slightly heavy damage to all enemies.\n\nIncrease all allies' NP generation.(3T)(OC)","A+","All enemies","300%\n\n10%\n\n100%","400%\n\n15%\n\n200%","450%\n\n20%\n\n300%","475%\n\n25%\n\n400%","500%\n\n30%\n\n500%",null,null,null,null,null,null,null},//203
             {"1","Supreme God, Have mercy on Me","Deals damage to multiple enemies\n\nLowers Party's Star generation by 20% for 3 turns (Demerit)\n\nLowers Enemy's Art cards resistance(OC)","C","Enemy Party\n\nAlly Party","450%\n\n10%\n\n100%","600%\n\n10%\n\n100%","675%\n\n20%\n\n300%","712.5%\n\n25%\n\n400%","750%\n\n30%\n\n500%",null,null,null,null,null,null,null},//204
             {"0"," Zveri・Krestnyy Khod,The Beast that Accompanied me On My Journeys","Deals damage to all enemies.\n\nReduce their Buster resistance by 20% (3T)\n\nIncrease own NP damage (1T)(OC)","A+","All enemies","300%\n\n30%","400%\n\n40%","450%\n\n50%","475%\n\n60%","500%\n\n70%",null,null,null,null,null,null,null},//205
-    };
+			{"2"," Troias Tragōidia,Tempestuous Immortal Chariot","Deals damage to all enemies.\n\nIncreases own Quick performance (1T)(OC)","A+","All enemies\n\nSelf","600%\n\n20%","800%\n\n30%","900%\n\n40%","950%\n\n50%","1000%\n\n60%",null,null,null,null,null,null,null},//206
+			{"1","Antares Snipe,Scorpion Shot","Removes one enemy's defense buffs.\n\nDeals damage to them. \n\nReduces their critical attack chance (3T)(OC)","A","Enemy","900%\n\n20%","1200%\n\n30%","1350%\n\n40%","1425%\n\n50%","1500%\n\n60%",null,null,null,null,null,null,null},//207
+			{"1"," Akafiloga Argrise,The Incandescence​ Dragon's Breath That Can Liquefy All Earth","Deals damage to all enemies. \n\nReduces their defense (3T)(OC)","EX","All enemies","450%\n\n20%","600%\n\n25%","675%\n\n30%","712.5%\n\n35%","750%\n\n40%",null,null,null,null,null,null,null},//208
+   };
 
     //endregion
 }

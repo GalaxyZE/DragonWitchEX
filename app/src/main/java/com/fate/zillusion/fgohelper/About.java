@@ -28,8 +28,8 @@ public class About extends AppCompatActivity {
             public void onClick(View view) {
                 //Toast.makeText(About.this, "Clicked~~~~", Toast.LENGTH_SHORT).show();
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto", "abc@gmail.com", null));
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "This is my subject text");
+                        "mailto", "cosplay50041@gmail.com", null));
+                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "FGOHelper Bug Report");
                 getBaseContext().startActivity(Intent.createChooser(emailIntent, null));
             }
         });

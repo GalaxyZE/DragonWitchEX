@@ -12,11 +12,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ListView
-            android:id="@+id/newslistview"
+        <WebView
+            android:id="@+id/webview_news"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="top" />
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 </FrameLayout>

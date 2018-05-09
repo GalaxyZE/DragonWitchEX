@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,11 +34,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import static com.fate.zillusion.fgohelper.FGO_RelateData.Data_Servent_imgid;
-import static com.fate.zillusion.fgohelper.FGO_RelateData.itemdes;
-import static com.fate.zillusion.fgohelper.FGO_RelateData.itemname_Chinese;
-import static com.fate.zillusion.fgohelper.FGO_RelateData.itemname_EN;
-import static com.fate.zillusion.fgohelper.FGO_RelateData.textid_Servent_Status;
+import static com.fate.zillusion.fgohelper.FGO_RelateData.*;
 
 
 public class servent2 extends Fragment {
@@ -82,6 +79,10 @@ public class servent2 extends Fragment {
         if (Integer.parseInt(str) == 1)
         {
             itemname=itemname_Chinese;
+        }
+        else if (Integer.parseInt(str) == 2)
+        {
+            itemname=itemname_China;
         }
         else
         {
@@ -149,8 +150,9 @@ public class servent2 extends Fragment {
                         break;
                     }
                 }
+                 startActivity(intent);
 
-                startActivity(intent);
+
 
                 //endregion
 

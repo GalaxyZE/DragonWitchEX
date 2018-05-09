@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.messaging.RemoteMessage;
 
 import java.net.HttpURLConnection;
 
@@ -31,9 +32,12 @@ public class MainActivity extends AppCompatActivity
         fragment_Event.OnFragmentInteractionListener,
         servent2.OnFragmentInteractionListener,
         FragmentCraftEssence.OnFragmentInteractionListener,
+        Eventguide.OnFragmentInteractionListener,
+        Quest.OnFragmentInteractionListener,
         NavigationView.OnNavigationItemSelectedListener {
     //region Valueables
     private FirebaseAnalytics mFirebaseAnalytics;
+    private String TAG="MainActivity";
     //endregion
 
     @Override
@@ -168,6 +172,14 @@ public class MainActivity extends AppCompatActivity
         }else if (id==R.id.nav_Event){
             fragment=new fragment_Event();
         }
+        else if(id==R.id.nav_EventGuide)
+        {
+            fragment=new Eventguide();
+        }
+        else if(id==R.id.nav_Quest)
+        {
+            fragment=new Quest();
+        }
         else if (id == R.id.nav_Servent) {
            fragment=new servent2();
         } else if (id == R.id.nav_CraftEssence) {
@@ -199,4 +211,7 @@ public class MainActivity extends AppCompatActivity
     public void onFragmentInteraction(String title) {
         getSupportActionBar().setTitle(title);
     }
+
+
+
 }

@@ -25,7 +25,7 @@ public class FGO_RelateData_04 {
             R.drawable.item_eventmaterial_001,R.drawable.item_eventmaterial_002,R.drawable.item_eventmaterial_003,R.drawable.item_eventmaterial_004,
             R.drawable.item_eventmaterial_005,R.drawable.item_eventmaterial_006,R.drawable.item_eventmaterial_007,R.drawable.item_eventmaterial_008,
             R.drawable.item_eventmaterial_009,R.drawable.item_eventmaterial_010,R.drawable.item_eventmaterial_011,R.drawable.item_eventmaterial_012,
-            R.drawable.item_eventmaterial_013,R.drawable.item_eventmaterial_014,R.drawable.item_eventmaterial_015,
+            R.drawable.item_eventmaterial_013,R.drawable.item_eventmaterial_014,R.drawable.item_eventmaterial_015,R.drawable.item_eventmaterial_016,
 
     };
 
@@ -64,7 +64,7 @@ public class FGO_RelateData_04 {
             //Event Materials
             {
                 "棒棒糖","黃金骷髏","炸雞桶","小刀","水晶球","打火機","樹枝","項鍊","龍珠","娃娃","盒子","緞帶","蘆葦",
-                "方塊","鬍子"
+                "方塊","鬍子","樹葉",
             },
     };
     //endregion

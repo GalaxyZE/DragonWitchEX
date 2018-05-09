@@ -13,22 +13,20 @@
         android:singleLine="false"
         android:layout_marginTop="50dp"
         android:layout_marginStart="5dp"
-        android:layout_gravity="center"
 
         android:text="
 
-        This is a simple and fast helper for Fate/Grand Order
-                       Now we have:
+        This is a simple and fast helper for Fate/Grand Order \n
+                       Now we have:\n
 
-                       1.Query Servant
+                       1.Query Servant\n
 
-                       2.Query Craft Essence
+                       2.Query Craft Essence\n
+                       Many functions still in development\n
 
-                       Many functions still in development
+                       We wii keep updating.\n
 
-                       We wii keep updating.
-
-                       If something wrong or you have good idea
+                       If something wrong or you have good idea\n
 
                        Please email us , Thank you."
         />

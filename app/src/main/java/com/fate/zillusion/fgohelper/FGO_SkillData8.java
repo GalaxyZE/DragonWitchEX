@@ -207,5 +207,8 @@ public class FGO_SkillData8 {
             {"3,000,000","結冰","12","火藥","48",null,null,null,null},
             {"3,000,000","智慧聖甲蟲","12",null,null,null,null,null,null},
 			{"12,000,000","萬死毒針","44","結冰","24",null,null,null,null},
+			{"12,000,000","隕蹄鐵","18","蠻神心臟","10",null,null,null,null},
+			{"6,000,000","蛇眼寶玉","12","萬死毒針","48",null,null,null,null},
+			{"6,000,000","蠻神心臟","6","龍的逆鱗","8",null,null,null,null},
 	};
 }

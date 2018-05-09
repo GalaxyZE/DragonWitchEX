@@ -207,5 +207,8 @@ public class FGO_SkillData1{
             {"50,000","術的輝石","4",null,null,null,null,null,null},
             {"50,000","愚者之鎖","8",null,null,null,null,null,null},
 			{"200,000","騎的輝石","5",null,null,null,null,null,null},
+			{"200,000","騎的輝石","5",null,null,null,null,null,null},
+			{"100,000","弓的輝石","4",null,null,null,null,null,null},
+			{"100,000","術的輝石","4",null,null,null,null,null,null},
     };
 }

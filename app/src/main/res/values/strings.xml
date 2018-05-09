@@ -15,7 +15,7 @@
     <!--ca-app-pub-3940256099942544/6300978111-->
     <string name="Advertise_Google_AD" translatable="false">ca-app-pub-8418426477328402/5093069229</string>
     <string name="Advertise_GoogleApp" translatable="false">ca-app-pub-8418426477328402~2027922183</string>
-
+    <string name="default_notification_channel_id" translatable="false">FGOHelper~</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -24,6 +24,8 @@
     <string name="Servent">Servent</string>
     <string name="CraftEssence">Craft Essence</string>
     <string name="Event">Event</string>
+    <string name="EventGuide">EvenGuide</string>
+    <string name="Quset" translatable="false">Quset</string>
     <string name="Item">Item</string>
     <string name="Skill">Skill</string>
     <string name="MaterialCount">MaterialCount</string>
@@ -129,7 +131,7 @@
     <string name="Star2">★★☆☆☆</string>
     <string name="Star1">★☆☆☆☆</string>
     <string name="ClassDialogShowTitle">Select</string>
-
+    <string name="title_activity_servent__query___database" translatable="false">Servent_Query_Activity_Database</string>
 
 
 </resources>

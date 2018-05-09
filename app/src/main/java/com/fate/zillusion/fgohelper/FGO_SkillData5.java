@@ -207,5 +207,8 @@ public class FGO_SkillData5 {
             {"1,000,000","術的秘石","4","人造生命","7",null,null,null,null},
             {"1,000,000","宵哭的鐵釘","10",null,null,null,null,null,null},
             {"4,000,000","騎的秘石","5","隕蹄鐵","10",null,null,null,null},
+			{"4,000,000","騎的秘石","5","無間的齒輪","10",null,null,null,null},
+			{"2,000,000","弓的秘石","4","禁斷書頁","8",null,null,null,null},
+			{"2,000,000","術的秘石","4","龍牙","20",null,null,null,null},
     };
 }

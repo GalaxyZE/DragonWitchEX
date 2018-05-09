@@ -207,5 +207,8 @@ public class FGO_SkillData7 {
             {"2,500,000","八連雙晶","7","結冰","4",null,null,null,null},
             {"2,500,000","結冰","12",null,null,null,null,null,null},
             {"10,000,000","兇骨","29","萬死毒針","15",null,null,null,null},
+			{"10,000,000","英雄之證","29","隕蹄鐵","6",null,null,null,null},
+			{"5,000,000","隕蹄鐵","8","蛇眼寶玉","4",null,null,null,null},
+			{"5,000,000","騎士勳章","16","蠻神心臟","2",null,null,null,null},
     };
 }

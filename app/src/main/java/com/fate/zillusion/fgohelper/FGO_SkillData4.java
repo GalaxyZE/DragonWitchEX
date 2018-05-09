@@ -207,5 +207,8 @@ public class FGO_SkillData4 {
             {"400,000","術的魔石","8","人造生命","4",null,null,null,null},
             {"400,000","鳳凰之羽","10",null,null,null,null,null,null},
             {"1,600,000","騎的魔石","12","隕蹄鐵","5",null,null,null,null},
+			{"1,600,000","騎的魔石","12","無間的齒輪","5",null,null,null,null},
+			{"800,000","弓的魔石","10","禁斷書頁","4",null,null,null,null},
+			{"800,000","術的魔石","10","龍牙","10",null,null,null,null},
 	};
 }

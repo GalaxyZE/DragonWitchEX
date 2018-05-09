@@ -209,6 +209,9 @@ public class FGO_RelateData_05 {
             {"30,000","法師銀棋","4",null,null,null,null,null,null,"100,000","法師銀棋","8","八連雙晶","5",null,null,null,null,"300,000","法師金棋","4","人造生命","7","封魔神燈","2",null,null,"900,000","法師金棋","8","封魔神燈","4","智慧聖甲蟲","4",null,null},
             {"30,000","虛影之塵","8","兇骨","8",null,null,null,null,"100,000","禁斷書頁","8","無間的齒輪","8",null,null,null,null,"300,000","鬼魂提燈","8","封魔神燈","8",null,null,null,null,"900,000","蠻神心臟","8","血之淚石","8",null,null,null,null},//204
 			{"100,000","騎兵銀棋","5",null,null,null,null,null,null,"300,000","騎兵銀棋","12","兇骨","22",null,null,null,null,"1,000,000","騎兵金棋","5","隕蹄鐵","10","原初產毛","3",null,null,"3,000,000","騎兵金棋","12","原初產毛","6","咒獸膽石","5",null,null},
-   };
+			{"100,000","騎兵銀棋","5",null,null,null,null,null,null,"300,000","騎兵銀棋","12","英雄之證","22",null,null,null,null,"1,000,000","騎兵金棋","5","無間的齒輪","10","戰馬幼角","3",null,null,"3,000,000","騎兵金棋","12","戰馬幼角","6","鳳凰之羽","10",null,null},
+			{"50,000","弓兵銀棋","4",null,null,null,null,null,null,"150,000","弓兵銀棋","10","隕蹄鐵","6",null,null,null,null,"500,000","弓兵金棋","4","禁斷書頁","8","精靈根","2",null,null,"1,500,000","弓兵金棋","10","精靈根","4","智慧聖甲蟲","4",null,null},
+			{"50,000","樹葉",null,null,null,null,null,null,null,"150,000","樹葉",null,null,null,null,null,null,null,"500,000","樹葉",null,null,null,null,null,null,null,"1,500,000","樹葉",null,null,null,null,null,null,null},
+  };
     //endregion
 }

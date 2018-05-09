@@ -214,6 +214,9 @@ public class FGO_RelateData_01 {
             {"af_203a","af_203b","af_203c","af_203d",null,null},
             {"af_204a","af_204b","af_204c","af_204d",null,null},
             {"af_205a","af_205b","af_205c","af_205d",null,null},
+			{"af_206a","af_206b","af_206c","af_206d",null,null},
+			{"af_207a","af_207b","af_207c","af_207d",null,null},
+			{"af_208a","af_208a","af_208a","af_208d",null,null},
             };
     public static  String[][] url_imgid_Servent_BS={
             {"bs_001_1","bs_001_2","bs_001_3","bs_001_4"},
@@ -421,6 +424,9 @@ public class FGO_RelateData_01 {
             {"bs_203_1","bs_203_2","bs_203_3",null},
             {"bs_204_1","bs_204_2","bs_204_3",null},
             {"bs_205_1","bs_205_1","bs_205_3",null},
+			{"bs_206_1","bs_206_2","bs_206_3",null},
+			{"bs_207_1","bs_207_2","bs_207_3",null},
+			{"bs_208_1","bs_208_1","bs_208_1",null},
     };
     //endreion
     //endregion

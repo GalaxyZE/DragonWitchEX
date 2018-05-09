@@ -207,6 +207,9 @@ public class FGO_SkillData6 {
             {"1,250,000","術的秘石","8","八連雙晶","4",null,null,null,null},
             {"1,250,000","火藥","12",null,null,null,null,null,null},
             {"5,000,000","騎的秘石","12","兇骨","15",null,null,null,null},
+			{"5,000,000","騎的秘石","12","英雄之證","15",null,null,null,null},
+			{"2,500,000","弓的秘石","10","隕蹄鐵","4",null,null,null,null},
+			{"2,500,000","術的秘石","10","騎士勳章","8",null,null,null,null},
 
     };
 }

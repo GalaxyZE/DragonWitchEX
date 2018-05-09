@@ -207,5 +207,8 @@ public class FGO_SkillData9 {
             {"5,000,000","傳承結晶","1",null,null,null,null,null,null},
             {"5,000,000","傳承結晶","1",null,null,null,null,null,null},
 			{"20,000,000","傳承結晶","1",null,null,null,null,null,null},
+			{"20,000,000","傳承結晶","1",null,null,null,null,null,null},
+			{"10,000,000","傳承結晶","1",null,null,null,null,null,null},
+			{"10,000,000","傳承結晶","1",null,null,null,null,null,null},
     };
 }

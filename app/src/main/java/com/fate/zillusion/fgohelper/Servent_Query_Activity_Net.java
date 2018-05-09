@@ -2572,7 +2572,6 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                 //img_AF.setImageBitmap();
                 img_AF.setImageBitmap(result);
                 AF=false;
-
             }
             else if (selectedradio!=0 && BS)
             {
@@ -2580,6 +2579,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
                 BS=false;
             }
             mpg.dismiss();
+            result=null;
         }
     }
 

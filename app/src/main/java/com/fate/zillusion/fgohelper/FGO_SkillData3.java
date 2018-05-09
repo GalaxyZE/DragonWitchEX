@@ -207,5 +207,8 @@ public class FGO_SkillData3 {
             {"300,000","術的魔石","4",null,null,null,null,null,null},
             {"300,000","魔術髓液","10",null,null,null,null,null,null},//204
             {"1,200,000","騎的魔石","5",null,null,null,null,null,null},
+			{"1,200,000","騎的魔石","5",null,null,null,null,null,null},
+			{"600,000","弓的魔石","4",null,null,null,null,null,null},
+			{"600,000","術的魔石","4",null,null,null,null,null,null},
    };
 }

@@ -50,13 +50,13 @@ public class img_Servent_Zoom extends AppCompatActivity {
         SubsamplingScaleImageView imageView = (SubsamplingScaleImageView)findViewById(R.id.imageView);
         if (bitmap!=null)
         {
-
             imageView.setImage(ImageSource.bitmap(bitmap));
         }
         else
         {
             Toast.makeText(this,"Image is not found",Toast.LENGTH_LONG);
         }
+        bitmap=null;//release Memory
 
 
 

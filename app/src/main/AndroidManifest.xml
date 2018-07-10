@@ -71,6 +71,10 @@
         <activity
             android:name=".Servent_Query_Activity_Database"
             android:label="@string/title_activity_servent__query___database"
+            android:theme="@style/AppTheme1.NoActionBar" />
+        <activity
+            android:name=".Activity_Query_Quest"
+            android:label="@string/title_activity__query__quest"
             android:theme="@style/AppTheme1.NoActionBar"></activity>
     </application>
 

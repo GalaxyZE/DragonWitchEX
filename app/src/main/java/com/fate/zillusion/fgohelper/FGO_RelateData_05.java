@@ -1,6 +1,7 @@
 package com.fate.zillusion.fgohelper;
 
 public class FGO_RelateData_05 {
+
     //region 從者素材需求表
     //計算方法:7+編號-1=所在位置
     public static String [][] str_RequiredMaterials={

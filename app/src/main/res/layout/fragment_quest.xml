@@ -3,15 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".Quest">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/TextviewQuset"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textAlignment="center"
-        android:text="This Feature when next update come out" />
+        android:background="@drawable/bg"
+        >
+
+        <ListView
+            android:id="@+id/listview_quest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"></ListView>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adview_quest"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/Advertise_Google_Example"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom" />
 
 
 </FrameLayout>

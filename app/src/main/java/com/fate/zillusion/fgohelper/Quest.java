@@ -1,15 +1,22 @@
 package com.fate.zillusion.fgohelper;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -17,6 +24,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 
 
 /**
@@ -33,15 +43,14 @@ public class Quest extends Fragment {
     private View private_view;
     private String TAG="Fragment_Quset";
 
-    private String [][] str_Quest={
-            {
-              "「炎上汚染都市：冬木」","第一節：燃える街","進行度1","第二節：霊脈地へ","進行度1","第三節：大橋を調べる","進行度1","進行度2","進行度3",
-              "第四節：港跡を調べる","進行度1","進行度2","第五節：教会跡を調べる","進行度1","進行度2","第六節：影のサーヴァント",
-              "進行度1","進行度2","進行度3","第七節：大聖杯を目指せ","進行度1","進行度2","第八節：マシュの特訓","進行度1",
-              "進行度2","進行度3","進行度4","進行度5","第九節：暗がりの洞窟","進行度1","進行度2","進行度3","第十節：大聖杯目前",
-              "進行度1","進行度2","進行度3","第十一節：グランドオーダー","進行度1"
-            },//0
+    private Integer []img_mission={//Img Mission List
+            R.drawable.m08,R.drawable.m07,R.drawable.m06,R.drawable.m05,R.drawable.m04,R.drawable.m03,R.drawable.m02,R.drawable.m01,R.drawable.m00,
+
     };
+
+    private String [] str_Clickmission={""};
+
+
     //endregion
 
 
@@ -93,9 +102,49 @@ public class Quest extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_quest, container, false);
         private_view=view;
+
         //region Adview
+        MobileAds.initialize(getActivity(), "ca-app-pub-8418426477328402~2027922183");
+        AdView mAdView = (AdView) view.findViewById(R.id.adview_quest);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        //endregion
+
+        //region Fragment ListView
+
+        ListView listView = (ListView) view.findViewById(R.id.listview_quest);
+        // Each row in the list stores country name, currency and flag
+        List<HashMap<String,String>> aList = new ArrayList<HashMap<String,String>>();
+        for(int i=0;i<img_mission.length;i++){
+            HashMap<String, String> hm = new HashMap<String,String>();
+            hm.put("img", Integer.toString(img_mission[i]) );
+            aList.add(hm);
+        }
+        String[] from = {"img"};
+        int[] to = { R.id.newsimageView};
+        SimpleAdapter adapter = new SimpleAdapter(getActivity().getBaseContext(), aList, R.layout.imagelistviewlayout1, from, to);
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Toast.makeText(getActivity(),"This feature has not been completed", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(),String.valueOf(position), Toast.LENGTH_SHORT).show();//Display position
+                //region 傳值
+                    Intent intent = new Intent();
+                    intent.setClass(getActivity(), Activity_Query_Quest.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("BundleQuest", String.valueOf(+position));
+                    intent.putExtras(bundle);
+                    startActivity(intent);
+
+                //endregion
+
+            }
+        });
 
         //endregion
+
 
 
 

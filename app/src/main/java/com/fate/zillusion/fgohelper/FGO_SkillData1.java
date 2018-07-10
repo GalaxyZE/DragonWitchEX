@@ -1,6 +1,7 @@
 package com.fate.zillusion.fgohelper;
 
 public class FGO_SkillData1{
+	//region Skill_1
     public static String str_SkillRequiredMaterials_part1[][]={
             {"50000","英雄之證","5",null,null,null,null,null,null},
             {"200,000","劍的輝石","5",null,null,null,null,null,null},
@@ -211,4 +212,5 @@ public class FGO_SkillData1{
 			{"100,000","弓的輝石","4",null,null,null,null,null,null},
 			{"100,000","術的輝石","4",null,null,null,null,null,null},
     };
+    //endregion
 }

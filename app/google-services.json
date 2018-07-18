@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "956660193277-2rf81ac1lvdod5qr2pajl6ue0t92h2om.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fate.zillusion.fgohelper",
+            "certificate_hash": "0ad7051717e8d450f5f7c5c073db4bdc8a46ef44"
+          }
+        },
+        {
           "client_id": "956660193277-bsd0npoimt143vjv3vkb53v2or3snrho.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,57 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956660193277-bsd0npoimt143vjv3vkb53v2or3snrho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956660193277:android:482d0f1c495b80b7",
+        "android_client_info": {
+          "package_name": "com.json.zillusion.myjson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956660193277-5m9eiai8j8p7m7oldckffrbtmv8b6haj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.json.zillusion.myjson",
+            "certificate_hash": "321b564ded3d8ccb8788fb2c603a3052b51024c5"
+          }
+        },
+        {
+          "client_id": "956660193277-bsd0npoimt143vjv3vkb53v2or3snrho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU6XTBKBZ_qirZVJdvNdhyjr9k-ohEkhk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956660193277-bsd0npoimt143vjv3vkb53v2or3snrho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

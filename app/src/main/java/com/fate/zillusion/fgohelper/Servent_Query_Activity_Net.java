@@ -23,6 +23,11 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
@@ -66,6 +71,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
     private boolean AF,BS;
     private ProgressDialog mpg;
     private boolean initial=true;
+    private  String strNoServent;
     //https://ms0266378.github.io/fgo.query/images/android/
     //https://raw.githubusercontent.com/ms0266378/fgo.query/master/images/android/
     private String Url_Site="https://ms0266378.github.io/fgo.query/images/android/";
@@ -98,7 +104,7 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
         //region 取值
 
         Bundle bundle = getIntent().getExtras();
-        String strNoServent = bundle.getString("BundleServent");
+        strNoServent = bundle.getString("BundleServent");
 
         int intNoServent = Integer.parseInt(strNoServent);
         GetValue = intNoServent;
@@ -342,19 +348,19 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
         //region 變數宣告
 
         //region Status-region
-        TextView StatusName = (TextView) findViewById(R.id.StatusNameEditTextview);
-        TextView StatusNo = (TextView) findViewById(R.id.StatusNoEditTextview);
-        TextView StatusRarity = (TextView) findViewById(R.id.Status_Rarity_EditTextView);
+        final TextView StatusName = (TextView) findViewById(R.id.StatusNameEditTextview);
+        final TextView StatusNo = (TextView) findViewById(R.id.StatusNoEditTextview);
+        final TextView StatusRarity = (TextView) findViewById(R.id.Status_Rarity_EditTextView);
         TextView StatusClass = (TextView) findViewById(R.id.Status_Class_EditTextView);
-        TextView StatusATK1 = (TextView) findViewById(R.id.Status_AtkLV1_EditTextView);
-        TextView StatusHP1 = (TextView) findViewById(R.id.Status_HPLV1_EditTextView);
-        TextView StatusATK90 = (TextView) findViewById(R.id.Status_AtkLV90_EditTextView);
-        TextView StatusHP90 = (TextView) findViewById(R.id.Status_HPLV90_EditTextView);
-        TextView StatusATK100 = (TextView) findViewById(R.id.Status_AtkLV100_EditTextView);
-        TextView StatusHP100 = (TextView) findViewById(R.id.Status_HPLV100_EditTextView);
-        TextView StatusCost = (TextView) findViewById(R.id.Status_CostEditTextView);
-        TextView StatusMaxLV = (TextView) findViewById(R.id.Status_MaxLVEditTextView);
-        String Star = "";
+        final TextView StatusATK1 = (TextView) findViewById(R.id.Status_AtkLV1_EditTextView);
+        final TextView StatusHP1 = (TextView) findViewById(R.id.Status_HPLV1_EditTextView);
+        final TextView StatusATK90 = (TextView) findViewById(R.id.Status_AtkLV90_EditTextView);
+        final TextView StatusHP90 = (TextView) findViewById(R.id.Status_HPLV90_EditTextView);
+        final TextView StatusATK100 = (TextView) findViewById(R.id.Status_AtkLV100_EditTextView);
+        final TextView StatusHP100 = (TextView) findViewById(R.id.Status_HPLV100_EditTextView);
+        final TextView StatusCost = (TextView) findViewById(R.id.Status_CostEditTextView);
+        final TextView StatusMaxLV = (TextView) findViewById(R.id.Status_MaxLVEditTextView);
+        final String[] Star = {""};
         //img
         ImageView img_StatusClass = (ImageView) findViewById(R.id.img_Status_Class);
         //endregion
@@ -659,12 +665,74 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
         EditQP04.setText("");
 
         //endregion
+        /*
+        //region Firebase get data
+        DatabaseReference database = FirebaseDatabase.getInstance().getReference();
+        DatabaseReference ref=database.child("Servant").child("NO_"+strNoServent);
+        ValueEventListener postListener = new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // Get Post object and use the values to update the UI
+                try{
+                    FB_FGOData FGODataRead = dataSnapshot.getValue(FB_FGOData.class);
+                    Log.d("DataRead", "NO_"+strNoServent+"\n"+FGODataRead.getNameCH());
+                    //region
+                    StatusNo.setText(strNoServent);
+                    StatusATK1.setText(FGODataRead.getStatusATKLV1());
+                    StatusHP1.setText(FGODataRead.getStatus_HPLV1());
+                    StatusATK100.setText(FGODataRead.getStatusATKLV100());
+                    StatusHP100.setText(FGODataRead.getStatus_HPLV100());
+                    StatusName.setText(FGODataRead.getNameJP());
+                    StatusCost.setText(String.valueOf(FGODataRead.getCOST()));
+                    StatusMaxLV.setText(String.valueOf(FGODataRead.getMAX_LV()));
+                    //StatusRarity.setText(textid_Servent_Status[GetValue][1]+"★");
+                    if (textid_Servent_Status[GetValue][1] != "?") {
+                        for (int i = 0; i < Integer.parseInt(textid_Servent_Status[GetValue][1]); i++) {
+                            Star[0] += "★";
+                        }
+                        StatusRarity.setText(Star[0]);
+                    } else {
+                        StatusRarity.setText("Unknow");
+                    }
+                    if (textid_Servent_Status[GetValue][10] != "90" && textid_Servent_Status[GetValue][10] != "?") {
+                        TextView _90atkTitle = (TextView) findViewById(R.id.StatusATKLV90);
+                        TextView _90HPTitle = (TextView) findViewById(R.id.Status_HPLV90);
+                        _90atkTitle.setText("Atk Lv." + textid_Servent_Status[GetValue][10]);
+                        _90HPTitle.setText("HP Lv." + textid_Servent_Status[GetValue][10]);
+                        StatusATK90.setText(textid_Servent_Status[GetValue][5]);
+                        StatusHP90.setText(textid_Servent_Status[GetValue][6]);
+                    } else if (textid_Servent_Status[GetValue][10] != "?") {
+                        StatusATK90.setText(textid_Servent_Status[GetValue][5]);
+                        StatusHP90.setText(textid_Servent_Status[GetValue][6]);
+                    } else if (textid_Servent_Status[GetValue][10] == "?") {
+                        StatusATK90.setText("Unknow");
+                        StatusHP90.setText("Unknow");
+                    }
+                    //endregion
 
+                }catch (Exception e)
+                {
+                    Log.d("DataRead","Error:"+e.toString());
+                }
 
+                // ...
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                // Getting Post failed, log a message
+                Log.w("DataRead", "loadPost:onCancelled", databaseError.toException());
+                // ...
+            }
+        };
+        ref.addValueEventListener(postListener);
+        //endregion
+        */
         //region Data_mangement
 
         //region Servent Status_狀態-名稱-編號-等...
         //{No,Rarity,Class,StatusATKLV1,Status_HPLV1,StatusATKFinal,Status_HPFinal,StatusATKLV100,Status_HPLV100,COST,MAX LV}
+        /*
         StatusNo.setText(textid_Servent_Status[GetValue][0]);
         StatusATK1.setText(textid_Servent_Status[GetValue][3]);
         StatusHP1.setText(textid_Servent_Status[GetValue][4]);
@@ -696,6 +764,8 @@ public class Servent_Query_Activity_Net extends AppCompatActivity {
             StatusATK90.setText("Unknow");
             StatusHP90.setText("Unknow");
         }
+        */
+
 
 
         //region Switch Class

@@ -8,20 +8,15 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.ListView;
 
-import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
@@ -37,7 +32,7 @@ import java.util.List;
 import static com.fate.zillusion.fgohelper.FGO_RelateData.*;
 
 
-public class servent2 extends Fragment {
+public class servant2 extends Fragment {
     //region Valueables
 
         private String [] itemname;
@@ -54,7 +49,7 @@ public class servent2 extends Fragment {
     private String mParam2;
     private OnFragmentInteractionListener mListener;
 
-    public servent2() {
+    public servant2() {
         // Required empty public constructor
     }
 
@@ -137,7 +132,7 @@ public class servent2 extends Fragment {
                 int Bpos=itemname.length-1-(+position);
                 Intent intent=new Intent();
     //            intent.setClass(getActivity(),Servent_Query_Activity.class);
-                intent.setClass(getActivity(),Servent_Query_Activity_Net.class);
+                intent.setClass(getActivity(),Servant_Query_Activity_Net.class);
                 Bundle bundle = new Bundle();
                 //region Judge
                 for (int i=0;i<itemname.length;i++)
@@ -375,7 +370,7 @@ public class servent2 extends Fragment {
 
                                             Intent intent=new Intent();
                                             //intent.setClass(getActivity(),Servent_Query_Activity.class);
-                                            intent.setClass(getActivity(),Servent_Query_Activity_Net.class);
+                                            intent.setClass(getActivity(),Servant_Query_Activity_Net.class);
                                             Bundle bundle = new Bundle();
 
                                             for (int i=0;i<itemname.length;i++)
@@ -429,7 +424,7 @@ public class servent2 extends Fragment {
 
         //region ViewTitle
         if (mListener != null) {
-            mListener.onFragmentInteraction( "Servent");
+            mListener.onFragmentInteraction( "Servant");
         }
         return view;
         //endregion

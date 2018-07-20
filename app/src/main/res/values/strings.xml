@@ -132,7 +132,7 @@
     <string name="Star1">★☆☆☆☆</string>
     <string name="ClassDialogShowTitle">Select</string>
     <string name="title_activity_servent__query___database" translatable="false">Servent_Query_Activity_Database</string>
-    <string name="title_activity__query__quest">Activity_Query_Quest</string>
+    <string name="title_activity__query__quest" translatable="false">Activity_Query_Quest</string>
 
 
 </resources>

@@ -4,6 +4,7 @@ import com.google.firebase.database.Exclude;
 
 import java.util.HashMap;
 import java.util.Map;
+//region
 //FireBase Realtime Database Read & Write
 //  DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 //  DatabaseReference ref=database.child("Servant").child("NO_"+str_selectedno);
@@ -33,7 +34,7 @@ import java.util.Map;
 //        };
 //        ref.addValueEventListener(postListener);
 //
-
+//endregion
 public class FB_FGOData {
     //region Define Valuable
     private String NameCH,NameEN,NameJP,NameChina;
@@ -79,6 +80,11 @@ public class FB_FGOData {
 
     //endregion
 
+    //region image
+    private Integer img_ClassSkill01,img_ClassSkill02,img_ClassSkill03,img_ClassSkill04;
+    private Integer img_Skill01,img_Skill02,img_Skill03;
+
+    //endregion
     //endregion
 
     public FB_FGOData() {
@@ -672,6 +678,24 @@ public class FB_FGOData {
     }//Servant_Name + Servant_Rarity & Information Status + Class Describe(1-4) + CommandCard + SkillDescribe + Skill_Effect+
     //NP_Describe + Skill_Material_(1-10)
 
+    public FB_FGOData(Integer img_ClassSkill01, Integer img_ClassSkill02, Integer img_ClassSkill03, Integer img_ClassSkill04) {
+        this.img_ClassSkill01 = img_ClassSkill01;
+        this.img_ClassSkill02 = img_ClassSkill02;
+        this.img_ClassSkill03 = img_ClassSkill03;
+        this.img_ClassSkill04 = img_ClassSkill04;
+    }
+
+
+    public FB_FGOData(Integer img_ClassSkill01, Integer img_ClassSkill02, Integer img_ClassSkill03, Integer img_ClassSkill04, Integer img_Skill01, Integer img_Skill02, Integer img_Skill03) {
+        this.img_ClassSkill01 = img_ClassSkill01;
+        this.img_ClassSkill02 = img_ClassSkill02;
+        this.img_ClassSkill03 = img_ClassSkill03;
+        this.img_ClassSkill04 = img_ClassSkill04;
+        this.img_Skill01 = img_Skill01;
+        this.img_Skill02 = img_Skill02;
+        this.img_Skill03 = img_Skill03;
+    }
+
     //region GetValue
 
     public String getNameCH()
@@ -791,38 +815,127 @@ public class FB_FGOData {
 
     //endregion
     //region Skill_Effect Info
-    public String getSkill_1_Effect1(){return this.Skill_1_Effect1;}
-    public String getSkill_1_Effect2(){return this.Skill_1_Effect2;}
-    public String getSkill_1_Effect3(){return this.Skill_1_Effect3;}
-    public String getSkill_1_Effect4(){return this.Skill_1_Effect4;}
-    public String getSkill_1_Effect5(){return this.Skill_1_Effect5;}
-    public String getSkill_1_Effect6(){return this.Skill_1_Effect6;}
-    public String getSkill_1_Effect7(){return this.Skill_1_Effect7;}
-    public String getSkill_1_Effect8(){return this.Skill_1_Effect8;}
-    public String getSkill_1_Effect9(){return this.Skill_1_Effect9;}
-    public String getSkill_1_Effect10(){return this.Skill_1_Effect10;}
-    //2
-    public String getSkill_2_Effect1(){return this.Skill_2_Effect1;}
-    public String getSkill_2_Effect2(){return this.Skill_2_Effect2;}
-    public String getSkill_2_Effect3(){return this.Skill_2_Effect3;}
-    public String getSkill_2_Effect4(){return this.Skill_2_Effect4;}
-    public String getSkill_2_Effect5(){return this.Skill_2_Effect5;}
-    public String getSkill_2_Effect6(){return this.Skill_2_Effect6;}
-    public String getSkill_2_Effect7(){return this.Skill_2_Effect7;}
-    public String getSkill_2_Effect8(){return this.Skill_2_Effect8;}
-    public String getSkill_2_Effect9(){return this.Skill_2_Effect9;}
-    public String getSkill_2_Effect10(){return this.Skill_2_Effect10;}
-    //3
-    public String getSkill_3_Effect1(){return this.Skill_3_Effect1;}
-    public String getSkill_3_Effect2(){return this.Skill_3_Effect2;}
-    public String getSkill_3_Effect3(){return this.Skill_3_Effect3;}
-    public String getSkill_3_Effect4(){return this.Skill_3_Effect4;}
-    public String getSkill_3_Effect5(){return this.Skill_3_Effect5;}
-    public String getSkill_3_Effect6(){return this.Skill_3_Effect6;}
-    public String getSkill_3_Effect7(){return this.Skill_3_Effect7;}
-    public String getSkill_3_Effect8(){return this.Skill_3_Effect8;}
-    public String getSkill_3_Effect9(){return this.Skill_3_Effect9;}
-    public String getSkill_3_Effect10(){return this.Skill_3_Effect10;}
+
+    public String getSkill_1_Effect1() {
+        return Skill_1_Effect1;
+    }
+
+    public String getSkill_1_Effect2() {
+        return Skill_1_Effect2;
+    }
+
+    public String getSkill_1_Effect3() {
+        return Skill_1_Effect3;
+    }
+
+    public String getSkill_1_Effect4() {
+        return Skill_1_Effect4;
+    }
+
+    public String getSkill_1_Effect5() {
+        return Skill_1_Effect5;
+    }
+
+    public String getSkill_1_Effect6() {
+        return Skill_1_Effect6;
+    }
+
+    public String getSkill_1_Effect7() {
+        return Skill_1_Effect7;
+    }
+
+    public String getSkill_1_Effect8() {
+        return Skill_1_Effect8;
+    }
+
+    public String getSkill_1_Effect9() {
+        return Skill_1_Effect9;
+    }
+
+    public String getSkill_1_Effect10() {
+        return Skill_1_Effect10;
+    }
+
+    public String getSkill_2_Effect1() {
+        return Skill_2_Effect1;
+    }
+
+    public String getSkill_2_Effect2() {
+        return Skill_2_Effect2;
+    }
+
+    public String getSkill_2_Effect3() {
+        return Skill_2_Effect3;
+    }
+
+    public String getSkill_2_Effect4() {
+        return Skill_2_Effect4;
+    }
+
+    public String getSkill_2_Effect5() {
+        return Skill_2_Effect5;
+    }
+
+    public String getSkill_2_Effect6() {
+        return Skill_2_Effect6;
+    }
+
+    public String getSkill_2_Effect7() {
+        return Skill_2_Effect7;
+    }
+
+    public String getSkill_2_Effect8() {
+        return Skill_2_Effect8;
+    }
+
+    public String getSkill_2_Effect9() {
+        return Skill_2_Effect9;
+    }
+
+    public String getSkill_2_Effect10() {
+        return Skill_2_Effect10;
+    }
+
+    public String getSkill_3_Effect1() {
+        return Skill_3_Effect1;
+    }
+
+    public String getSkill_3_Effect2() {
+        return Skill_3_Effect2;
+    }
+
+    public String getSkill_3_Effect3() {
+        return Skill_3_Effect3;
+    }
+
+    public String getSkill_3_Effect4() {
+        return Skill_3_Effect4;
+    }
+
+    public String getSkill_3_Effect5() {
+        return Skill_3_Effect5;
+    }
+
+    public String getSkill_3_Effect6() {
+        return Skill_3_Effect6;
+    }
+
+    public String getSkill_3_Effect7() {
+        return Skill_3_Effect7;
+    }
+
+    public String getSkill_3_Effect8() {
+        return Skill_3_Effect8;
+    }
+
+    public String getSkill_3_Effect9() {
+        return Skill_3_Effect9;
+    }
+
+    public String getSkill_3_Effect10() {
+        return Skill_3_Effect10;
+    }
+
     //endregion
     //region Level Required Material
 
@@ -1624,8 +1737,61 @@ public class FB_FGOData {
 
     //endregion
 
+    public Integer getImg_ClassSkill01() {
+        return img_ClassSkill01;
+    }
 
+    public void setImg_ClassSkill01(Integer img_ClassSkill01) {
+        this.img_ClassSkill01 = img_ClassSkill01;
+    }
 
+    public Integer getImg_ClassSkill02() {
+        return img_ClassSkill02;
+    }
+
+    public void setImg_ClassSkill02(Integer img_ClassSkill02) {
+        this.img_ClassSkill02 = img_ClassSkill02;
+    }
+
+    public Integer getImg_ClassSkill03() {
+        return img_ClassSkill03;
+    }
+
+    public void setImg_ClassSkill03(Integer img_ClassSkill03) {
+        this.img_ClassSkill03 = img_ClassSkill03;
+    }
+
+    public Integer getImg_ClassSkill04() {
+        return img_ClassSkill04;
+    }
+
+    public void setImg_ClassSkill04(Integer img_ClassSkill04) {
+        this.img_ClassSkill04 = img_ClassSkill04;
+    }
+
+    public Integer getImg_Skill01() {
+        return img_Skill01;
+    }
+
+    public void setImg_Skill01(Integer img_Skill01) {
+        this.img_Skill01 = img_Skill01;
+    }
+
+    public Integer getImg_Skill02() {
+        return img_Skill02;
+    }
+
+    public void setImg_Skill02(Integer img_Skill02) {
+        this.img_Skill02 = img_Skill02;
+    }
+
+    public Integer getImg_Skill03() {
+        return img_Skill03;
+    }
+
+    public void setImg_Skill03(Integer img_Skill03) {
+        this.img_Skill03 = img_Skill03;
+    }
 
 
     //endregion
@@ -1737,36 +1903,127 @@ public class FB_FGOData {
     }
 
     //region Set Skill Effect
-    public void setSkill_1_Effect1(String SkillEffect1){this.Skill_1_Effect1=SkillEffect1;}
-    public void setSkill_1_Effect2(String SkillEffect2){this.Skill_1_Effect1=SkillEffect2;}
-    public void setSkill_1_Effect3(String SkillEffect3){this.Skill_1_Effect1=SkillEffect3;}
-    public void setSkill_1_Effect4(String SkillEffect4){this.Skill_1_Effect1=SkillEffect4;}
-    public void setSkill_1_Effect5(String SkillEffect5){this.Skill_1_Effect1=SkillEffect5;}
-    public void setSkill_1_Effect6(String SkillEffect6){this.Skill_1_Effect1=SkillEffect6;}
-    public void setSkill_1_Effect7(String SkillEffect7){this.Skill_1_Effect1=SkillEffect7;}
-    public void setSkill_1_Effect8(String SkillEffect8){this.Skill_1_Effect1=SkillEffect8;}
-    public void setSkill_1_Effect9(String SkillEffect9){this.Skill_1_Effect1=SkillEffect9;}
-    public void setSkill_1_Effect10(String SkillEffect10){this.Skill_1_Effect1=SkillEffect10;}
-    public void setSkill_2_Effect1(String SkillEffect1){this.Skill_2_Effect1=SkillEffect1;}
-    public void setSkill_2_Effect2(String SkillEffect2){this.Skill_2_Effect1=SkillEffect2;}
-    public void setSkill_2_Effect3(String SkillEffect3){this.Skill_2_Effect1=SkillEffect3;}
-    public void setSkill_2_Effect4(String SkillEffect4){this.Skill_2_Effect1=SkillEffect4;}
-    public void setSkill_2_Effect5(String SkillEffect5){this.Skill_2_Effect1=SkillEffect5;}
-    public void setSkill_2_Effect6(String SkillEffect6){this.Skill_2_Effect1=SkillEffect6;}
-    public void setSkill_2_Effect7(String SkillEffect7){this.Skill_2_Effect1=SkillEffect7;}
-    public void setSkill_2_Effect8(String SkillEffect8){this.Skill_2_Effect1=SkillEffect8;}
-    public void setSkill_2_Effect9(String SkillEffect9){this.Skill_2_Effect1=SkillEffect9;}
-    public void setSkill_2_Effect10(String SkillEffect10){this.Skill_2_Effect1=SkillEffect10;}
-    public void setSkill_3_Effect1(String SkillEffect1){this.Skill_3_Effect1=SkillEffect1;}
-    public void setSkill_3_Effect2(String SkillEffect2){this.Skill_3_Effect1=SkillEffect2;}
-    public void setSkill_3_Effect3(String SkillEffect3){this.Skill_3_Effect1=SkillEffect3;}
-    public void setSkill_3_Effect4(String SkillEffect4){this.Skill_3_Effect1=SkillEffect4;}
-    public void setSkill_3_Effect5(String SkillEffect5){this.Skill_3_Effect1=SkillEffect5;}
-    public void setSkill_3_Effect6(String SkillEffect6){this.Skill_3_Effect1=SkillEffect6;}
-    public void setSkill_3_Effect7(String SkillEffect7){this.Skill_3_Effect1=SkillEffect7;}
-    public void setSkill_3_Effect8(String SkillEffect8){this.Skill_3_Effect1=SkillEffect8;}
-    public void setSkill_3_Effect9(String SkillEffect9){this.Skill_3_Effect1=SkillEffect9;}
-    public void setSkill_3_Effect10(String SkillEffect10){this.Skill_3_Effect1=SkillEffect10;}
+
+    public void setSkill_1_Effect1(String skill_1_Effect1) {
+        Skill_1_Effect1 = skill_1_Effect1;
+    }
+
+    public void setSkill_1_Effect2(String skill_1_Effect2) {
+        Skill_1_Effect2 = skill_1_Effect2;
+    }
+
+    public void setSkill_1_Effect3(String skill_1_Effect3) {
+        Skill_1_Effect3 = skill_1_Effect3;
+    }
+
+    public void setSkill_1_Effect4(String skill_1_Effect4) {
+        Skill_1_Effect4 = skill_1_Effect4;
+    }
+
+    public void setSkill_1_Effect5(String skill_1_Effect5) {
+        Skill_1_Effect5 = skill_1_Effect5;
+    }
+
+    public void setSkill_1_Effect6(String skill_1_Effect6) {
+        Skill_1_Effect6 = skill_1_Effect6;
+    }
+
+    public void setSkill_1_Effect7(String skill_1_Effect7) {
+        Skill_1_Effect7 = skill_1_Effect7;
+    }
+
+    public void setSkill_1_Effect8(String skill_1_Effect8) {
+        Skill_1_Effect8 = skill_1_Effect8;
+    }
+
+    public void setSkill_1_Effect9(String skill_1_Effect9) {
+        Skill_1_Effect9 = skill_1_Effect9;
+    }
+
+    public void setSkill_1_Effect10(String skill_1_Effect10) {
+        Skill_1_Effect10 = skill_1_Effect10;
+    }
+
+    public void setSkill_2_Effect1(String skill_2_Effect1) {
+        Skill_2_Effect1 = skill_2_Effect1;
+    }
+
+    public void setSkill_2_Effect2(String skill_2_Effect2) {
+        Skill_2_Effect2 = skill_2_Effect2;
+    }
+
+    public void setSkill_2_Effect3(String skill_2_Effect3) {
+        Skill_2_Effect3 = skill_2_Effect3;
+    }
+
+    public void setSkill_2_Effect4(String skill_2_Effect4) {
+        Skill_2_Effect4 = skill_2_Effect4;
+    }
+
+    public void setSkill_2_Effect5(String skill_2_Effect5) {
+        Skill_2_Effect5 = skill_2_Effect5;
+    }
+
+    public void setSkill_2_Effect6(String skill_2_Effect6) {
+        Skill_2_Effect6 = skill_2_Effect6;
+    }
+
+    public void setSkill_2_Effect7(String skill_2_Effect7) {
+        Skill_2_Effect7 = skill_2_Effect7;
+    }
+
+    public void setSkill_2_Effect8(String skill_2_Effect8) {
+        Skill_2_Effect8 = skill_2_Effect8;
+    }
+
+    public void setSkill_2_Effect9(String skill_2_Effect9) {
+        Skill_2_Effect9 = skill_2_Effect9;
+    }
+
+    public void setSkill_2_Effect10(String skill_2_Effect10) {
+        Skill_2_Effect10 = skill_2_Effect10;
+    }
+
+    public void setSkill_3_Effect1(String skill_3_Effect1) {
+        Skill_3_Effect1 = skill_3_Effect1;
+    }
+
+    public void setSkill_3_Effect2(String skill_3_Effect2) {
+        Skill_3_Effect2 = skill_3_Effect2;
+    }
+
+    public void setSkill_3_Effect3(String skill_3_Effect3) {
+        Skill_3_Effect3 = skill_3_Effect3;
+    }
+
+    public void setSkill_3_Effect4(String skill_3_Effect4) {
+        Skill_3_Effect4 = skill_3_Effect4;
+    }
+
+    public void setSkill_3_Effect5(String skill_3_Effect5) {
+        Skill_3_Effect5 = skill_3_Effect5;
+    }
+
+    public void setSkill_3_Effect6(String skill_3_Effect6) {
+        Skill_3_Effect6 = skill_3_Effect6;
+    }
+
+    public void setSkill_3_Effect7(String skill_3_Effect7) {
+        Skill_3_Effect7 = skill_3_Effect7;
+    }
+
+    public void setSkill_3_Effect8(String skill_3_Effect8) {
+        Skill_3_Effect8 = skill_3_Effect8;
+    }
+
+    public void setSkill_3_Effect9(String skill_3_Effect9) {
+        Skill_3_Effect9 = skill_3_Effect9;
+    }
+
+    public void setSkill_3_Effect10(String skill_3_Effect10) {
+        Skill_3_Effect10 = skill_3_Effect10;
+    }
+
     //endregion
 
     //region Set NP Describe

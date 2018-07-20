@@ -1,9 +1,6 @@
 package com.fate.zillusion.fgohelper;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -18,19 +15,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
-import com.google.firebase.messaging.RemoteMessage;
-
-import java.net.HttpURLConnection;
 
 public class MainActivity extends AppCompatActivity
         implements
         News.OnFragmentInteractionListener,
         fragment_Event.OnFragmentInteractionListener,
-        servent2.OnFragmentInteractionListener,
+        servant2.OnFragmentInteractionListener,
         FragmentCraftEssence.OnFragmentInteractionListener,
         Eventguide.OnFragmentInteractionListener,
         Quest.OnFragmentInteractionListener,
@@ -99,7 +92,7 @@ public class MainActivity extends AppCompatActivity
         //NOTE:  Open fragment1 initially.
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         //ft.replace(R.id.mainFrame, new News());
-        ft.replace(R.id.mainFrame,new servent2());
+        ft.replace(R.id.mainFrame,new servant2());
         ft.commit();
 
         //endregion
@@ -181,7 +174,7 @@ public class MainActivity extends AppCompatActivity
             fragment=new Quest();
         }
         else if (id == R.id.nav_Servent) {
-           fragment=new servent2();
+           fragment=new servant2();
         } else if (id == R.id.nav_CraftEssence) {
             //fragment=new FragmentCraftEssence();
             Intent myIntent = new Intent(this,WebActivity.class);

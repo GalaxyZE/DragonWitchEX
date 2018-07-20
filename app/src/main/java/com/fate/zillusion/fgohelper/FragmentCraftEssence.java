@@ -8,13 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.content.Context;
-import android.net.Uri;
-import android.os.Bundle;
-import android.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 public class FragmentCraftEssence extends android.support.v4.app.Fragment {
     //region Valueables
@@ -87,7 +80,7 @@ public class FragmentCraftEssence extends android.support.v4.app.Fragment {
                 //region 傳值
 
                 Intent intent=new Intent();
-                intent.setClass(getActivity(),Servent_Query_Activity_Net.class);
+                intent.setClass(getActivity(),Servant_Query_Activity_Net.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("BundleServent",String.valueOf(+position));
                 intent.putExtras(bundle);

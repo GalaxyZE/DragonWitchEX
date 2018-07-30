@@ -41,7 +41,6 @@ import static com.fate.zillusion.fgohelper.FGO_RelateData.imgid_ServentClass;
 import static com.fate.zillusion.fgohelper.FGO_RelateData.itemname_EN;
 import static com.fate.zillusion.fgohelper.FGO_RelateData_01.url_imgid_Servent_AF;
 import static com.fate.zillusion.fgohelper.FGO_RelateData_01.url_imgid_Servent_BS;
-import static com.fate.zillusion.fgohelper.FGO_RelateData_03.NP_DescribeEn;
 import static com.fate.zillusion.fgohelper.FGO_RelateData_04.img_Required_EventMaterials;
 import static com.fate.zillusion.fgohelper.FGO_RelateData_04.img_Required_Materials;
 import static com.fate.zillusion.fgohelper.FGO_RelateData_04.str_LanguageRequired_Materials;
@@ -1200,7 +1199,7 @@ public class Servant_Query_Activity_Net extends AppCompatActivity {
 
                     //region NP_寶具
 
-                    String[][] localNP = NP_DescribeEn;
+
                     String[] arr_str_NP={String.valueOf(FGODataRead.getNP_CardColor()),FGODataRead.getNP_Name1(),FGODataRead.getNP_Describe(),
                             FGODataRead.getNP_Describe_Rank1(),FGODataRead.getNP_Describe_Target(),FGODataRead.getNP_1_Effect1(),FGODataRead.getNP_1_Effect2(),
                             FGODataRead.getNP_1_Effect3(),FGODataRead.getNP_1_Effect4(),FGODataRead.getNP_1_Effect5(),FGODataRead.getNP_Name2(),

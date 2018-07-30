@@ -32,7 +32,8 @@ public final class FGO_RelateData {
             ,R.drawable.s171,R.drawable.s172,R.drawable.s173,R.drawable.s174,R.drawable.s175,R.drawable.s176,R.drawable.s177,R.drawable.s178,R.drawable.s179,R.drawable.s180
             ,R.drawable.s181,R.drawable.s182,R.drawable.s183,R.drawable.s184,R.drawable.s185,R.drawable.s186,R.drawable.s187,R.drawable.s188,R.drawable.s189,R.drawable.s190
             ,R.drawable.s191,R.drawable.s192,R.drawable.s193,R.drawable.s194,R.drawable.s195,R.drawable.s196,R.drawable.s197,R.drawable.s198,R.drawable.s199,R.drawable.s200
-			,R.drawable.s201,R.drawable.s202,R.drawable.s203,R.drawable.s204,R.drawable.s205,R.drawable.s206,R.drawable.s207,R.drawable.s208,
+			,R.drawable.s201,R.drawable.s202,R.drawable.s203,R.drawable.s204,R.drawable.s205,R.drawable.s206,R.drawable.s207,R.drawable.s208,R.drawable.s209,R.drawable.s210
+            ,R.drawable.s211,R.drawable.s212,R.drawable.s213,R.drawable.s214,R.drawable.s215,
     };
     //endregion
 
@@ -248,6 +249,15 @@ public final class FGO_RelateData {
             "Achilleus",
             "Cheiron",
             "Sieg",
+            "Okita Souji (Alter)",
+            "Okada Izou",
+            "Sakamoto Ryouma",
+            "Napoleon",
+            "Sigurd",
+            "Walkure",//214
+            "Scáthach-Skaði",//215
+
+
     };//endregion
 
     //region CH
@@ -460,6 +470,15 @@ public final class FGO_RelateData {
             "阿基里斯",
             "凱隆",
             "齊格",
+            "沖田總司〔Alter〕",
+            "岡田以藏",
+            "坂本龍馬",
+            "拿破崙",
+            "西格魯德",
+            "瓦爾基里",
+            "斯卡哈＝斯卡蒂"
+
+
     };
     //endregion
 
@@ -673,12 +692,19 @@ public final class FGO_RelateData {
             "阿基利斯",
             "凯隆",
             "齐格",
+            "沖田總司〔Alter〕",
+            "岡田以藏",
+            "坂本龍馬",
+            "拿破崙",
+            "西格魯德",
+            "瓦爾基里",
+            "斯卡哈＝斯卡蒂"
     };
     //endregion
 
     //endregion
 
-    //region Servent_Describe
+    //region Servent_Describe_Servant JP Name
     public static String[] itemdes ={
             "マシュ・キリエライト",
             " アルトリア・ペンドラゴン",
@@ -887,10 +913,14 @@ public final class FGO_RelateData {
             "イヴァンライテイ",
 			"アキレウス ",
 			"ケイローン ",
-			"ジーク ",
-            "アキレウス",
-            "ケイローン",
-            "ジーク",
+			"ジーク ",//208
+            "オキタソウジ〔オルタ〕",
+            "オカダイゾウ",
+            "サカモトリョウマ",
+            "ナポレオン",
+            "シグルド",
+            "ワルキューレ",
+            "スカサハ＝スカディ"
     };
     //endregion
 
@@ -1117,245 +1147,44 @@ public final class FGO_RelateData {
             {"184", "4", "2", "1657", "1728", "9946", "10804", "9946", "13100", "12", "80"},
             {"185", "4", "6", "1418", "1862", "8510", "11637", "10304", "14110", "12", "80"},
             {"186", "3", "3", "1261", "1799", "6791", "9996", "9191", "13553", "7", "70"},
-            {"187", "4", "1", "1666", "1781", "9999", "11135", "12107", "13501", "12", "80"},
-            {"188", "4", "6", "1489", "1768", "8935", "11055", "10818", "13404", "12", "80"},
-            {"189", "5", "6", "1672", "2027", "10824", "13822", "11849", "15143", "16", "90"},
-            {"190", "4", "11", "1666", "1744", "9997", "10901", "12104", "13217", "12", "80"},
-            {"191", "4", "11", "1666", "1744", "9997", "10901", "12104", "13217", "12", "80"},
-            {"192", "4", "5", "1445", "1960", "8671", "12250", "10499", "14853", "12", "80"},
-            {"193", "4", "3", "1547", "1938", "9284", "12112", "11241", "14686", "12", "80"},
-            {"194", "4", "5", "1438", "1940", "8629", "12127", "10448", "14704", "12", "80"},
-            {"195", "5", "13", "1870", "2019", "12100", "13370", "13245", "15086", "16", "90"},
-            {"196", "5", "3", "1598", "2356", "1598", "16065", "11322", "17600", "16", "90"},
-            {"197", "4", "2", "1626", "1862", "1626", "11637", "11816", "16110", "12", "80"},
-            {"198", "5", "13", "1870", "1940", "12100", "13230", "13245", "14494", "16", "90"},
-            {"199", "5", "6", "1747", "1945", "11309", "13266", "12379", "14533", "16", "90"},
-            {"200", "4", "2", "1716", "1764", "10299", "11025", "12470", "13368", "12", "80"},//200
-            {"201", "5", "5", "2091", "1629", "14259", "10546", "15621", "11544", "16", "90"},
-            {"202", "4", "7", "1701", "1634", "10634", "9806", "12894", "11873", "12", "80"},
-            {"203", "3", "5", "1796", "1184", "9981", "6376", "8629", "13533", "7", "70"},
-            {"204", "3", "10", "1411", "1509", "7840", "8125", "10996", "10630", "7", "70"},//204
-            {"205", "5", "4", "1795", "1948", "11619", "13284", "12719", "14553", "16", "90"},//205
-            {"206", "5", "4", "1836", "1938", "11883", "13219", "13008", "14482", "16", "90"},//206
-            {"207", "4", "2", "1549", "1960", "9294", "12250", "11253", "14853", "12", "80"},//207
-            {"208", "4", "5", "1399", "1806", "8394", "11288", "10163", "13686", "12", "80"},//208
-    };
-    //endregion
+            {"187", "4", "1",},
+            {"188", "4", "6",},
+            {"189", "5", "6",},
+            {"190", "4", "11"},
+            {"191", "4", "11"},
+            {"192", "4", "5"},
+            {"193", "4", "3"},
+            {"194", "4", "5"},
+            {"195", "5", "13"},
+            {"196", "5", "3"},
+            {"197", "4", "2"},
+            {"198", "5", "13"},
+            {"199", "5", "6"},
+            {"200", "4", "2"},//200
+            {"201", "5", "5"},
+            {"202", "4", "7"},
+            {"203", "3", "5"},
+            {"204", "3", "10"},//204
+            {"205", "5", "4"},//205
+            {"206", "5", "4"},//206
+            {"207", "4", "2"},//207
+            {"208", "4", "5"},//208
+            {"209","5","11"},
+            {"210","3","6"},
+            {"211","4","4"},
+            {"212","5","2"},
+            {"213","5","1"},
+            {"214","4","3"},
+            {"215","5","5"}
 
-    //region Servent_ClassSkill_Describe
-    public static String[][] Servent_Class_Describe={
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Ridding C\nIncrease Quick Card effectiveness by 6%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding C\nIncrease Quick Card effectiveness by 6%",null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Ridding B\nIncrease Quick Card effectiveness by 8%",null,null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Divinity D\nApplyDamage Plus 125","Ridding B\nIncrease Quick Card effectiveness by 8%",null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Divinity B\nApplyDamage Plus 175","Ridding A\nIncrease Quick Card effectiveness by 10%",null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Madness Enhancement EX\nIncrease Buster Card effectiveness by 12%","Ridding B\nIncrease Quick Card effectiveness by 8%",null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Independent Action B\nIncrease Critical Strength by 8%","Magic Resistanve D\nIncrease Debuff Resist by 12.5%",null,null},
-            {"Independent Action A+\nIncrease Critical Strength by 11%","Magic Resistanve E\nIncrease Debuff Resist by 10%","Divinity B\nApplyDamage Plus 175",null},
-            {"Independent Action A\nIncrease Critical Strength by 10%","Magic Resistanve D\nIncrease Debuff Resist by 12.5%",null,null},
-            {"Independent Action A\nIncrease Critical Strength by 10%","Magic Resistanve D\nIncrease Debuff Resist by 12.5%",null,null},
-            {"Independent Action A+\nIncrease Critical Strength by 11%","Core of the Goddess EX\nApplyDamage Plus 300\nIncrease Quick Card effectiveness by 30%","Magic Resistanve A\nIncrease Debuff Resist by 20%",null},
-            {"Independent Action C\nIncrease Critical Strength by 6%","Magic Resistanve C\nIncrease Debuff Resist by 15%",null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Divinity B\nApplyDamage Plus 175",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Territory Creation B\nIncrease Arts Card effectiveeness by 8%",null,null},
-            {"Magic Resistanve C+\nIncrease Debuff Resist by 16%",null,null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Divinity B\nApplyDamage Plus 175",null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Independent Action C\nIncrease Critical Strength by 6%","Divinity E-\nApplyDamage Plus 95","Ridding A+\nIncrease Quick Card effectiveness by 11%"},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Magic Resistanve E\nIncrease Debuff Resist by 10%",null,null,null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Ridding A\nIncrease Quick Card effectiveness by 10%",null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Ridding A+\nIncrease Quick Card effectiveness by 11%",null,null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Divinity E\nApplyDamage Plus 100","Ridding A+\nIncrease Quick Card effectiveness by 11%",null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Ridding A+\nIncrease Quick Card effectiveness by 11%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Divinity C\nApplyDamage Plus 150","Ridding A++\nIncrease Quick Card effectiveness by 11.5%",null},
-            {"Item Construction A\nIncrease Debuff Success Rate by 10%","Territory Creation A\nIncrease Arts Card effectiveeness by 10%",null,null},
-            {"Territory Creation B\nIncrease Arts Card effectiveeness by 8%",null,null,null},
-            {"Item Construction C\nIncrease Debuff Success Rate by 6%","Territory Creation D\nIncrease Arts Card effectiveeness by 4%",null,null},
-            {"Territory Creation C\nIncrease Arts Card effectiveeness by 6%",null,null,null},
-            {"Item Construction B\nIncrease Debuff Success Rate by 8%","Territory Creation C+\nIncrease Arts Card effectiveeness by 7%",null,null},
-            {"Territory Creation B\nIncrease Arts Card effectiveeness by 8%",null,null,null},
-            {"Item Construction B\nIncrease Debuff Success Rate by 8%","Territory Creation A\nIncrease Arts Card effectiveeness by 10%",null,null},
-            {"Divinity B\nApplyDamage Plus 175","Territory Creation B\nIncrease Arts Card effectiveeness by 8%",null,null},
-            {"Presence Concealment D\nIncrease Critical Star Drop Rate by 4%",null,null,null},
-            {"Presence Concealment A+\nIncrease Critical Star Drop Rate by 10.5%",null,null,null},
-            {"Core of the Goddess EX\nApplyDamage Plus 300  Increase Quick Card effectiveness by 30%","Magic Resistanve A\nIncrease Debuff Resist by 20%","Presence Concealment A+\nIncrease Critical Star Drop Rate by 10.5%",null},
-            {"Presence Concealment B\nIncrease Critical Star Drop Rate by 8%",null,null,null},
-            {"Presence Concealment D\nIncrease Critical Star Drop Rate by 4%",null,null,null},
-            {"Presence Concealment A\nIncrease Critical Star Drop Rate by 10%",null,null,null},
-            {"Presence Concealment D\nIncrease Critical Star Drop Rate by 4%",null,null,null},
-            {"Madness Enhancement B\nIncrease Buster Card effectiveness by 8%","Divinity A\nApplyDamage Plus 200",null,null},
-            {"Madness Enhancement C\nIncrease Buster Card effectiveness by 6%","Magic Resistanve E\nIncrease Debuff Resist by 10%",null,null},
-            {"Madness Enhancement A\nIncrease Buster Card effectiveness by 10%",null,null,null},
-            {"Madness Enhancement A\nIncrease Buster Card effectiveness by 10%",null,null,null},
-            {"Madness Enhancement EX\nIncrease Buster Card effectiveness by 12%",null,null,null},
-            {"Madness Enhancement E\nIncrease Buster Card effectiveness by 2%","Divinity D\nApplyDamage Plus 125",null,null},
-            {"Madness Enhancement EX\nIncrease Buster Card effectiveness by 12%",null,null,null},
-            {"Madness Enhancement B\nIncrease Buster Card effectiveness by 8%",null,null,null},
-            {"Madness Enhancement A+\nIncrease Buster Card effectiveness by 11%",null,null,null},
-            {"Madness Enhancement B\nIncrease Buster Card effectiveness by 8%",null,null,null},
-            {"Madness Enhancement EX\nIncrease Buster Card effectiveness by 12%",null,null,null},
-            {"Madness Enhancement B\nIncrease Buster Card effectiveness by 8%",null,null,null},
-            {"Madness Enhancement C\nIncrease Buster Card effectiveness by 6%",null,null,null},
-            {"Magic Resistanve EX\nIncrease Debuff Resist by 25%",null,null,null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Independent Action A+\nIncrease Critical Strength by 11%",null,null},
-            {"Territory Creation B\nIncrease Arts Card effectiveeness by 8%","Item Construction A\nIncrease Debuff Success Rate by 10%",null,null},
-            {"Territory Creation C\nIncrease Arts Card effectiveeness by 6%","Divinity A\nApplyDamage Plus 200",null,null},
-            {"Independent Action A\nIncrease Critical Strength by 10%","Magic Resistanve A\nIncrease Debuff Resist by 20%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%",null,null,null},
-            {"Territory Creation B\nIncrease Arts Card effectiveeness by 8%","Independent Action B\nIncrease Critical Strength by 8%",null,null},
-            {"Magic Resistanve E\nIncrease Debuff Resist by 10%","Ridding E\nIncrease Quick Card effectiveness by 2%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Independent Action B\nIncrease Arts Card effectiveeness by 8%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Ridding A\nIncrease Quick Card effectiveness by 10%",null,null},
-            {"Territory Creation A\nIncrease Arts Card effectiveeness by 10%",null,null,null},
-            {"Presence Concealment A+\nIncrease Critical Star Drop Rate by 10.5%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Independent Action B\nIncrease Critical Strength by 8%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding A\nIncrease Quick Card effectiveness by 10%",null,null},
-            {"Item Construction EX\nIncrease Debuff Success Rate by 12%","Territory Creation A\nIncrease Arts Card effectiveeness by 10%",null,null},
-            {"Item Construction (Fake) EX\nIncrease Debuff Success Rate by 10%",null,null,null},
-            {"Presence Concealment A\nIncrease Critical Star Drop Rate by 10%",null,null,null},
-            {"Madness Enhancement D\nIncrease Buster Card effectiveness by 4%",null,null,null},
-            {null,null,null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Independent Action A\nIncrease Critical Strength by 10%","Divinity B\nApplyDamage Plus 175",null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Divinity A\nApplyDamage Plus 200","Ridding A\nIncrease Quick Card effectiveness by 10%",null},
-            {"Cosmo Reactor A\nIncrease Crirical Star Drop Rate by 10%","Ridding EX\nIncrease Quick Card effectiveness by 12%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Divinity D\nApplyDamage Plus 125",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding A\nIncrease Quick Card effectiveness by 10%","Divinity E\nApplyDamage Plus 100",null},
-            {"Madness Enhancement E-\nIncrease Buster Card effectiveness by 1%",null,null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Independent Manifestation C\nIncreases own critical damage by 6%\nIncreases own mental debuff resistance by 6%\nIncreases own Instant-Death resistance by 6%\n","Connection to the Root A\nIncreases own Quick performance by 6%\nIncreases own Arts performance by 6%\nIncreases own Buster performance by 6%\n",null},
-            {"Presence Concealment C\nIncrease Critical Star Drop Rate by 10.5%","Independent Action A\nIncrease Critical Strength by 10%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%",null,null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Ridding A+\nIncrease Quick Card effectiveness by 11%","Independent Action B\nIncrease Critical Strength by 8%",null},
-            {"Magic Resistanve E\nIncrease Debuff Resist by 10%","Independent Action A\nIncrease Critical Strength by 10%","Divinity B\nApplyDamage Plus 175",null},
-            {"Avenger A\nIncrease NP Gain when receiving damage by 20%\nDecerease Debuff Resist of all allies except self by 10%","Oblivion Correction B\nIncrease Critical Strength by 8%","Self-Restoration(Magical Energy )D\nIncrease NP Gauge per turn by 3%",null},
-            {"Madness Enhancement EX\nIncrease Buster Card effectiveness by 12%",null,null,null},
-            {"Madness Enhancement EX(Equuvalent to C)\nIncrease Buster Card effectiveness by 6%","Divinity C\nApplyDamage Plus 150",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding A\nIncrease Quick Card effectiveness by 10%",null,null},
-            {"Territory Creation A\nIncrease Arts Card effectiveeness by 10%","Item Construction B\nIncrease Debuff Success Rate by 8%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Ridding A+\nIncrease Quick Card effectiveness by 11%","Divinity A\nApplyDamage Plus 200",null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%",null,null,null},
-            {"Item Construction EX(Equivalent to D)\nIncrease Debuff Success Rate by 4%","Territory Creation EX(Equivalent to D)\nIncrease Arts Card effectiveeness by 4%",null,null},
-            {"Territory Creation B\nIncrease Arts Card effectiveeness by 8%","Item Construction C\nIncrease Debuff Success Rate by 6%",null,null},
-            {"Independent Action A\nIncrease Critical Strength by 10%","Ridding C+\nIncrease Quick Card effectiveness by 7%",null,null},
-            {"Avenger B\nIncrease NP Gain when receiving damage by 18%\nDecerease Debuff Resist of all allies except self by 8%","Oblivion Correction A\nIncrease Critical Strength by 10%","Self-Restoration(Magical Energy )A+\nIncrease NP Gauge per turn by 4%",null},
-            {"Avenger A\nIncrease NP Gain when receiving damage by 20%\nDecerease Debuff Resist of all allies except self by 10%","Oblivion Correction A\nIncrease Critical Strength by 10%","Self-Restoration(Magical Energy )E\nIncrease NP Gauge per turn by 2%",null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Ridding A+\nIncrease Quick Card effectiveness by 11%","Divinity D\nApplyDamage Plus 150",null},
-            {"Presence Concealment A+\nIncrease Critical Star Drop Rate by 10.5%","Independent Action A\nIncrease Critical Strength by 10%",null,null},
-            {"Presence Concealment A\nIncrease Critical Star Drop Rate by 10%",null,null,null},
-            {"Territory Creation B\nIncrease Arts Card effectiveeness by 6%","Core of the Goddess C\nApplyDamage Plus 200  Increase Quick Card effectiveness by 20%",null,null},
-            {"Presence Concealment C\nIncrease Critical Star Drop Rate by 6%","Divinity C\nApplyDamage Plus 150",null,null},
-            {"Territory Creation A+\nIncrease Critical Star Drop Rate by 11%",null,null,null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Madness Enhancement EX\nIncrease Buster Card effectiveness by 12%","Ridding A+\nIncrease Quick Card effectiveness by 11%","Divinity C\nApplyDamage Plus 150"},
-            {"Divinity C\nApplyDamage Plus 150",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%",null,null,null},
-            {"Presence Concealment A+\nIncrease Critical Star Drop Rate by 10.5%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding A+\nIncrease Quick Card effectiveness by 11%","Divinity B\nApplyDamage Plus 175",null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding A\nIncrease Quick Card effectiveness by 10%",null,null},
-            {"Territory Creation A\nIncrease Arts Card effectiveeness by 10%","Item Construction B+\nIncrease Debuff Success Rate by 9%","Divinity B\nApplyDamage Plus 175",null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Independent Action B\nIncrease Critical Strength by 8%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Presence Concealment A+\nIncrease Critical Star Drop Rate by 10.5%","Independent Action A\nIncrease Critical Strength by 10%",null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Independent Action B\nIncrease Critical Strength by 8%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding A\nIncrease Quick Card effectiveness by 10%",null,null},
-            {"Territory Creation A\nIncrease Arts Card effectiveeness by 10%","Item Construction A\nIncrease Debuff Success Rate by 10%",null,null},
-            {"Ridding A\nIncrease Quick Card effectiveness by 10%","Territory Creation A\nIncrease Arts Card effectiveeness by 10%","Divinity A++\nApplyDamage Plus 230",null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Independent Action A\nIncrease Critical Strength by 10%","Territory Creation A\nIncrease Arts Card effectiveeness by 10%",null},
-            {"Territory Creation A\nIncrease Arts Card effectiveeness by 10%","Item Construction D\nIncrease Debuff Success Rate by 4%",null,null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Independent Action A+\nIncrease Critical Strength by 11%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","SurfingA\nIncrease Arts Card effectiveeness by 5%\nIncrease Critical Star Drop Rate by 5%",null,null},
-            {"Presence Concealment E\nIncrease Critical Star Drop Rate by 2%",null,null,null},
-            {"Madness Enhancement EX\nIncrease Buster Card effectiveness by 12%","Magic Resistanve D\nIncrease Debuff Resist by 12.5%",null,null},
-            {"Magic Resistanve EX\nIncrease Debuff Resist by 25%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Unlimited Mana Supply C\nIncrease NP Gauge per tern by 3%np",null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Independent Action B\nIncrease Critical Strength by 8%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Territory Creation C\nIncrease Arts Card effectiveeness by 6%",null,null},
-            {"Presence Concealment B\nIncrease Critical Star Drop Rate by 8%","Divinity D\nApplyDamage Plus 125",null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%",null,null,null},
-            {"Magic Resistanve A+\nIncrease Debuff Resist by 21%",null,null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Independent Action A\nIncrease Critical Strength by 10%","Core of the Goddess B\nApplyDamage Plus 225  Increase Quick Card effectiveness by 22.5%",null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%",null,null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Ridding EX\nIncrease Quick Card effectiveness by 12%","Core of the Goddess EX\nApplyDamage Plus 300  Increase Quick Card effectiveness by 30%",null},
-            {"Item Construction (Fake) A\nIncrease Debuff Success Rate by 10%","Territory Creation A\nIncrease Arts Card effectiveeness by 10%","Divinity B\nApplyDamage Plus 175",null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Core of the Goddess A\nApplyDamage Plus 250  Increase Quick Card effectiveness by 25%",null,null},
-            {"Avenger B\nIncrease NP Gain when receiving damage by 18%\nDecerease Debuff Resist of all allies except self by 8%","Oblivion Correction C\nIncrease Critical Strength by 6%","Self-Restoration(Magical Energy )A\nIncrease NP Gauge per turn by 3.8%",null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%,Madness Enhancement E\nIncrease Buster Card effectiveness by 2%","Divinity A\nApplyDamage Plus 200",null,null},
-            {null,null,null,null},
-            {"Territory Creation C\nIncrease Arts Card effectiveeness by 6%","Item Construction C\nIncrease Debuff Success Rate by 5%","Mixed-Blood EX\nincrease NP Gauge per turn by 5%",null},
-            {null,null,null,null},
-            {"Territory Creation A\nIncrease Arts Card effectiveeness by 10%","Item Construction C\nIncrease Debuff Success Rate by 6%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Presence Concealment A\nIncrease Critical Star Drop Rate by 10%","Independent Action B\nIncrease Critical Strength by 8%","At the Boundaryary\nImmune to Death\nIncrease Charm Resist by 100%\n5% Chance to inflict Death each time you attack "},
-            {"Madness Enhancement C\nIncrease Buster Card effectiveness by 6%","Altereactor A\nIncrease Debuff Resist by 20%",null,null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Independent Action A+\nIncrease Critical Strength by 11%",null,null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Independent Action A\nIncrease Critical Strength by 10%",null,null},
-            {"Avenger A\nIncrease NP Gain when receiving damage by 20%\nDecerease Debuff Resist of all allies except self by 10%","Oblivion Correction B\nIncrease Critical Strength by 8%","Self-Restoration(Magical Energy )B\nIncrease NP Gauge per turn by 3.5%",null},
-            {"Presence Concealment C\nIncrease Critical Star Drop Rate by 6%","Ruffian A\nIncrease Quick Card effectiveness by 5%\n Increase Critical Strength by 5%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Madness Enhancement D+\nIncrease Buster Card effectiveness by 5%",null,null,null},
-            {"Madness Enhancement E+\nIncrease Buster Card effectiveness by 3%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding B\nIncrease Quick Card effectiveness by 8%","Independent Action A\nIncrease Critical Strength by 10%","Core of the Goddess B\nApplyDamage Plus 225  Increase Quick Card effectiveness by 22.5%"},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Independent Action C\nIncrease Critical Strength by 6%","Presence Concealment A+\nIncrease Critical Star Drop Rate by 10.5%","Core of the Goddess C\nApplyDamage Plus 200  Increase Quick Card effectiveness by 20%"},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Ridding B\nIncrease Quick Card effectiveness by 8%","Divinity A\nApplyDamage Plus 200",null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Item Construction  A\nIncrease Debuff Success Rate by 10%","Territory Creation A\nIncrease Arts Card effectiveeness by 10%",null},
-            {"Authority of the Beast D\nIncrease Critical Star Drop Rate by 8%","Independent Action AIndependent Manifestation E\nIncreases own critical damage by 2%\nIncreases own mental debuff resistance by 2%\nIncreases own Instant-Death resistance by 2%","Logos Eater C\nIncreases own defense against Humanoid enemies by 16%","Nega Savior A\nIncrease damage againest [Ruler] class by 150%"},
-            {null,null,null,null},
-            {"Territory Creation A++\nIncrease Arts Card effectiveeness by 11.5%",null,null,null},
-            {"Presence Concealment D\nIncrease Critical Star Drop Rate by 4%",null,null,null},
-            {"Madness Enhancement EX\nIncrease Buster Card effectiveness by 12%","Divinity B\nApplyDamage Plus 175",null,null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Territory Creation EX\nIncrease Arts Card effectiveeness by 12%",null,null,null},
-            {"Madness Enhancement D\nIncrease Buster Card effectiveness by 4%",null,null,null},
-            {"Ridding B\nIncrease Quick Card effectiveness by 8%","Territory Creation A+\nIncrease Arts Card effectiveeness by 11%","Item Construction (Strange) EX\nIncrease Debuff Success Rate by 10%",null},
-            {"Magic Resistanve E\nIncrease Debuff Resist by 10%","Ridding EX\nIncrease Quick Card effectiveness by 12%","\nMadness Enhancement E","Increase Buster Card effectiveness by 2%\n"},
-            {"Presence Concealment A\nIncrease Critical Star Drop Rate by 10%","Divinity B+\nApplyDamage Plus 185",null,null},
-            {"Madness Enhancement C\nIncrease Buster Card effectiveness by 6%",null,null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Ridding B\nIncrease Quick Card effectiveness by 8%","Item Construction  EX\nIncrease Debuff Success Rate by 12%",null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Independent Action C\nIncrease Critical Strength by 6%",null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Ridding A+\nIncrease Quick Card effectiveness by 11%","Madness Enhancement C\nIncrease Buster Card effectiveness by 6%","Divinity C\nApplyDamage Plus 150"},
-            {"Ridding EX\nIncrease Quick Card effectiveness by 12%","Independent Action A\nIncrease Critical Strength by 10%","Core of the Goddess B\nApplyDamage Plus 225  Increase Quick Card effectiveness by 22.5%",null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%","Core of the Goddess B\nApplyDamage Plus 225  Increase Quick Card effectiveness by 22.5%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Independent Action A\nIncrease Critical Strength by 10%","Madness Enhancement E\nIncrease Buster Card effectiveness by 2%",null},
-            {"Presence Concealment A+\nIncrease Critical Star Drop Rate by 10.5%",null,null,null},
-            {"Magic Resistanve D+\nIncrease Debuff Resist by 13%",null,null,null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Ridding B\nIncrease Quick Card effectiveness by 8%",null,null},
-            {"Presence Concealment A\nIncrease Critical Star Drop Rate by 10%",null,null,null},
-            {"Territory Creation A+\nIncrease Arts Card effectiveeness by 11%","Presence Concealment (Shandow) B\nIncrease Critical Star Drop Rate by 8%\n Decrease Debuff Resist by 10%","Divinity C\nApplyDamage Plus 150",null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Item Construction B\nIncrease Debuff Success Rate by 8%",null,null},
-            {"Magic Resistanve B\nIncrease Debuff Resist by 17.5%","Item Construction B\nIncrease Debuff Success Rate by 8%",null,null},
-            {"Territory Creation B\nIncrease Arts Card effectiveeness by 8%","Item Construction A\nIncrease Debuff Success Rate by 10%",null,null},
-            {"Magic Resistanve A\nIncrease Debuff Resist by 20%",null,null,null},
-            {"Territory Creation C\nIncrease Arts Card effectiveeness by 6%","Magic Resistanve A\nIncrease Debuff Resist by 20%",null,null},
-            {"Existence Outside the Domain EX\nGains 2 critical stars every turn.\nIncreases own debuff resistance by 12%.","Insanity B\nIncreases own Buster performance by 8%.","Divinity B\nApplyDamage Plus 175",null},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Territory Creation A+\nIncrease Arts Card effectiveeness by 11%","Core of the Goddess B\nApplyDamage Plus 225  Increase Quick Card effectiveness by 22.5%",null},
-            {"Magic Resistanve C\nIncrease Debuff Resist by 15%","Ridding EX\nIncrease Quick Card effectiveness by 12%","Decline of Civilization EX\nIncreases own critical damage by 10%.","Divinity B\nApplyDamage Plus 175"},
-            {"Existence Outside the Domain EX\nGains 2 critical stars every turn.\nIncreases own debuff resistance by 12%.","Item Construction B\nIncrease Debuff Success Rate by 8%","Territory Creation D\nIncrease Arts Card effectiveeness by 4%","Divinity B\nApplyDamage Plus 175"},
-            {"Presence Concealment C+\nIncrease Critical Star Drop Rate by 6.5%","Territory Creation EX\nIncrease Arts Card effectiveeness by 12%","Item Construction C\nIncrease Debuff Success Rate by 6%","Divinity C\nApplyDamage Plus 150"},
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Independent Action A\nIncrease Critical Strength by 10%","Territory Creation B\nIncrease Arts Card effectiveeness by 8%",null},//200
-            {"Territory Creation EX\nIncrease your Arts Card effectiveness by 12%.","Contract with the Fairies A\nIncrease your Debuff Resist by 10%.\nIncrease your Debuff Success Rate by 10%.\n",null,null},
-            {"Beast Shape B\nIncrease your Buster Card effectiveness by 8%.\nIncrease your Critical Star Drop Rate by 8%.","Independent Action A\nIncrease your Critical Strength by 10%",null,null},
-            {"erritory Creation B\nIncrease your Arts Card effectiveness by 8%.","Item Construction B+\nIncrease your Debuff Success Rate by 9%.",null,null},
-            {"Avenger C\nDecrease other allies' Debuff Resist by 6%.\nIncrease your NP Gauge gained when hit by 16%.","Oblivion Correction B\nIncrease your Critical Strength by 8%.","Self-Restoration (Magical Energy) C\nGain 3.3% NP Gauge per turn.",null},//204
-            {"Magic Resistanve D\nIncrease Debuff Resist by 12.5%","Ridding EX\nIncrease Quick Card effectiveness by 12%",null,null},
-			{"Magic Resistanve C\nIncrease Debuff Resist by 15%","Ridding A+\nIncrease Quick Card effectiveness by 11%","Divinity C\nApplyDamage Plus 150",null},
-			{"Magic Resistanve B\nIncrease Debuff Resist by 20%","Independent Action A\nIncreases own critical damage by 10%.","Divinity\nApplyDamage Plus 150",null},
-			{"Independent Action EX\nIncreases own critical damage by 12%.","Homunculus (Skill) C+\nIncreases own Arts performance by 6.5%.\nIncreases own debuff resistance by 6.5%.",null,null},
+
     };
-    //endregion
+    //endregion0
+
+
 
     //region Servent_ClassSkill_image
+
     //region iconServant[][]
     public static Integer[][] icon_ServentClassSkill={
             {R.drawable.icon_skill_091,R.drawable.icon_skill_093,null,null},
@@ -1568,6 +1397,7 @@ public final class FGO_RelateData {
 			{R.drawable.icon_skill_092,R.drawable.icon_skill_003, null,null},
     };
     //endregion
+
     //region 對照表
     public static Integer []img_iconClassskill={R.drawable.icon_skill_001,
             R.drawable.icon_skill_002,

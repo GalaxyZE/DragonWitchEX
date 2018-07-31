@@ -49,6 +49,9 @@ public class Eventguide extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    //TODO: Set a graph Source
+    private String str_SourceUrl="http://fategrandorder.wikia.com/wiki/Fate/Grand_Order_Wikia";
+
     private OnFragmentInteractionListener mListener;
 
     public Eventguide() {
@@ -105,7 +108,7 @@ public class Eventguide extends Fragment {
                 @Override
                 public void onClick(View v) {
 
-                    Uri uri = Uri.parse("https://goo.gl/paEJqz");
+                    Uri uri = Uri.parse(str_SourceUrl);
                     Intent it = new Intent(Intent.ACTION_VIEW, uri);
                     startActivity(it);
                 }

@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
+
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="true"
@@ -19,6 +20,8 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="@string/default_notification_channel_id" />
+
+
 
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
@@ -72,6 +75,11 @@
             android:name=".Activity_Query_Quest"
             android:label="@string/title_activity__query__quest"
             android:theme="@style/AppTheme1.NoActionBar"></activity>
+
+
+
     </application>
+
+
 
 </manifest>

@@ -18,6 +18,7 @@ import android.view.WindowManager;
 
 import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 public class MainActivity extends AppCompatActivity
         implements
@@ -204,6 +205,8 @@ public class MainActivity extends AppCompatActivity
     public void onFragmentInteraction(String title) {
         getSupportActionBar().setTitle(title);
     }
+
+
 
 
 

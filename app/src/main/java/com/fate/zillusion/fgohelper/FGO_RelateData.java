@@ -1,5 +1,4 @@
 package com.fate.zillusion.fgohelper;
-
 import android.support.v4.app.NavUtils;
 
 /**
@@ -33,7 +32,9 @@ public final class FGO_RelateData {
             ,R.drawable.s181,R.drawable.s182,R.drawable.s183,R.drawable.s184,R.drawable.s185,R.drawable.s186,R.drawable.s187,R.drawable.s188,R.drawable.s189,R.drawable.s190
             ,R.drawable.s191,R.drawable.s192,R.drawable.s193,R.drawable.s194,R.drawable.s195,R.drawable.s196,R.drawable.s197,R.drawable.s198,R.drawable.s199,R.drawable.s200
 			,R.drawable.s201,R.drawable.s202,R.drawable.s203,R.drawable.s204,R.drawable.s205,R.drawable.s206,R.drawable.s207,R.drawable.s208,R.drawable.s209,R.drawable.s210
-            ,R.drawable.s211,R.drawable.s212,R.drawable.s213,R.drawable.s214,R.drawable.s215,
+            ,R.drawable.s211,R.drawable.s212,R.drawable.s213,R.drawable.s214,R.drawable.s215,R.drawable.s216,R.drawable.s217,R.drawable.s218,R.drawable.s219,R.drawable.s220,
+            R.drawable.s221,R.drawable.s222,R.drawable.s223,R.drawable.s224,R.drawable.s225,R.drawable.s226,R.drawable.s227,R.drawable.s228,R.drawable.s229,R.drawable.s230,
+            R.drawable.s231,
     };
     //endregion
 
@@ -254,10 +255,24 @@ public final class FGO_RelateData {
             "Sakamoto Ryouma",
             "Napoleon",
             "Sigurd",
-            "Walkure",//214
+            "Walkure",
             "Scáthach-Skaði",//215
-
-
+            "Jeanne d'Arc",//216
+            "Ibaraki Dōji ",//217
+            "Ushiwakamaru",//218
+            "Jeanne d'Arc (Alter)",//219
+            "B B",//220
+            "Medb",//221
+            "Mysterious Heroine XX",//222
+            "Diarmuid Ua Duibhne",//223
+            "Sitonai",//224
+            "Shuten Dōji",//225
+            "Xiang Yu",//226
+            "Lanling Wang",//227
+            "Qin Liangyu",//228
+            "始皇帝",//229
+            "虞美人",//230
+            "赤兔馬",//231
     };//endregion
 
     //region CH
@@ -476,9 +491,23 @@ public final class FGO_RelateData {
             "拿破崙",
             "西格魯德",
             "瓦爾基里",
-            "斯卡哈＝斯卡蒂"
-
-
+            "斯卡哈＝斯卡蒂",
+            "貞德",
+            "茨木童子",
+            "牛若丸",
+            "貞德〔Alter〕",
+            "ＢＢ",
+            "女王梅芙",
+            "謎之女主角XX",
+            "迪爾姆德・奧德利暗",
+            "志度內",
+            "酒吞童子",
+            "項羽",
+            "蘭陵王",
+            "秦良玉",
+            "始皇帝",
+            "虞美人",
+            "赤兔馬",
     };
     //endregion
 
@@ -698,7 +727,23 @@ public final class FGO_RelateData {
             "拿破崙",
             "西格魯德",
             "瓦爾基里",
-            "斯卡哈＝斯卡蒂"
+            "斯卡哈＝斯卡蒂",
+            "貞德",
+            "茨木童子",
+            "牛若丸",
+            "貞德〔Alter〕",
+            "ＢＢ",
+            "女王梅芙",
+            "謎之女主角XX",
+            "迪爾姆德・奧德利暗",
+            "志度內",
+            "酒吞童子",
+            "項羽",
+            "蘭陵王",
+            "秦良玉",
+            "始皇帝",
+            "虞美人",
+            "赤兔馬",
     };
     //endregion
 
@@ -920,7 +965,23 @@ public final class FGO_RelateData {
             "ナポレオン",
             "シグルド",
             "ワルキューレ",
-            "スカサハ＝スカディ"
+            "スカサハ＝スカディ",//215
+            "ジャンヌ・ダルク",//216
+            "イバラキドウジ",//217
+            "ウシワカマル",//218
+            "ジャンヌ・ダルク〔オルタ〕",//219
+            "BB",//220
+            "ジョオウメイヴ",//221
+            "謎のヒロインＸＸ",//222
+            "ディルムッド・オディナ",//223
+            "シトナイ",//224
+            "シュテンドウジ",//225
+            "コウウ",//226
+            "ランリョウオウ",//227
+            "シン・リョウギョク",//228
+            "シコウテイ",//229
+            "グ・ビジン",//230
+            "セキトバ",//221
     };
     //endregion
 
@@ -1175,7 +1236,23 @@ public final class FGO_RelateData {
             {"212","5","2"},
             {"213","5","1"},
             {"214","4","3"},
-            {"215","5","5"}
+            {"215","5","5"},
+            {"216","5","2"},
+            {"217","4","3"},
+            {"218","4","6"},
+            {"219","4","7"},
+            {"220","5","12"},
+            {"221","4","1"},
+            {"222","4","13"},
+            {"223","4","1"},
+            {"224","5","11"},
+            {"225","4","5"},
+            {"226","5","7"},
+            {"227","4","1"},
+            {"228","4","3"},
+            {"229","5","9"},
+            {"230","4","6"},
+            {"231","3","4"},
 
 
     };
@@ -1299,6 +1376,7 @@ public final class FGO_RelateData {
             R.drawable.icon_skill_111,
             R.drawable.icon_skill_112,
             R.drawable.icon_skill_113,
+            R.drawable.icon_skill_114,
 
     };
     //endregion

@@ -224,6 +224,23 @@ public class FGO_RelateData_01 {
 			{"af_213a","af_213b","af_213c","af_213d",null,null},
 			{"af_214a","af_214b","af_214c","af_214d",null,null},
 			{"af_215a","af_215b","af_215c","af_215d",null,null},
+
+			{"af_216a","af_216b","af_216c","af_216d",null,null},
+			{"af_217a","af_217b","af_217c","af_217d",null,null},
+			{"af_218a","af_218b","af_218c","af_218d",null,null},
+			{"af_219a",null,null,null,null,null},
+			{"af_220a","af_220b","af_220c","af_220d",null,null},
+			{"af_221a","af_221b","af_221c","af_221d",null,null},
+			{"af_222a","af_222b","af_222c","af_222d",null,null},
+			{"af_223a","af_223b","af_223c","af_223d",null,null},
+			{"af_224a","af_224b","af_224c","af_224d",null,null},
+			{"af_225a",null,null,null,null,null},
+			{"af_226a","af_226b","af_226c","af_226d",null,null},
+			{"af_227a","af_227b","af_227c","af_227d",null,null},
+			{"af_228a","af_228b","af_228c","af_228d",null,null},
+			{"af_229a","af_229b","af_229c","af_229d",null,null},
+			{"af_230a","af_230b","af_230c","af_230d",null,null},
+			{"af_231a","af_231b","af_231c","af_231d",null,null},
             };
     public static  String[][] url_imgid_Servent_BS={
             {"bs_001_1","bs_001_2","bs_001_3","bs_001_4"},
@@ -441,6 +458,23 @@ public class FGO_RelateData_01 {
 			{"bs_213_1","bs_213_2","bs_213_3",null},
 			{"bs_214_1","bs_214_2","bs_214_3",null},
 			{"bs_215_1","bs_215_2","bs_215_3",null},
+			{"bs_216_1","bs_216_2","bs_216_3",null},
+			{"bs_217_1","bs_217_2","bs_217_3",null},
+			{"bs_218_1","bs_218_2","bs_218_3",null},
+			{"bs_219_1",null,null,null},
+			{"bs_220_1","bs_220_2","bs_220_3","bs_220_4"},
+			{"bs_221_1","bs_221_2","bs_221_3",null},
+			{"bs_222_1","bs_222_2","bs_222_3",null},
+			{"bs_223_1","bs_223_2","bs_223_3",null},
+			{"bs_224_1","bs_224_2","bs_224_3",null},
+			{"bs_225_1",null,null,null},
+			{"bs_226_1","bs_226_2","bs_226_3",null},
+			{"bs_227_1","bs_227_2","bs_227_3",null},
+			{"bs_228_1","bs_228_2","bs_228_3",null},
+			{"bs_229_1","bs_229_2","bs_229_3",null},
+			{"bs_230_1","bs_230_2","bs_230_3",null},
+			{"bs_231_1","bs_231_2","bs_231_3",null},
+
     };
     //endreion
     //endregion

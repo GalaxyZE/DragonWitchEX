@@ -19,7 +19,7 @@ public class FGO_RelateData_04 {
             R.drawable.item_material_15,R.drawable.item_material_16,R.drawable.item_material_17,R.drawable.item_material_18,R.drawable.item_material_19,R.drawable.item_material_20,R.drawable.item_material_21,
             R.drawable.item_material_22,R.drawable.item_material_23,R.drawable.item_material_24,R.drawable.item_material_25,R.drawable.item_material_26,R.drawable.item_material_27,R.drawable.item_material_28,
             R.drawable.item_material_29,R.drawable.item_material_30,R.drawable.item_material_31,R.drawable.item_material_32,R.drawable.item_material_33,R.drawable.item_material_34,R.drawable.item_material_35,
-            R.drawable.item_material_36,
+            R.drawable.item_material_36,R.drawable.item_material_37,R.drawable.item_material_38
     };
 
     public static Integer[] img_Required_EventMaterials={
@@ -27,7 +27,7 @@ public class FGO_RelateData_04 {
             R.drawable.item_eventmaterial_005,R.drawable.item_eventmaterial_006,R.drawable.item_eventmaterial_007,R.drawable.item_eventmaterial_008,
             R.drawable.item_eventmaterial_009,R.drawable.item_eventmaterial_010,R.drawable.item_eventmaterial_011,R.drawable.item_eventmaterial_012,
             R.drawable.item_eventmaterial_013,R.drawable.item_eventmaterial_014,R.drawable.item_eventmaterial_015,R.drawable.item_eventmaterial_016,
-            R.drawable.item_other_302
+            R.drawable.item_other_302,R.drawable.item_eventmaterial_017,R.drawable.item_eventmaterial_018
 
     };
 
@@ -61,12 +61,13 @@ public class FGO_RelateData_04 {
                 "蛇眼寶玉","無間的齒輪","禁斷書頁","龍牙","隕蹄鐵","人造生命","八連雙晶",
                 "兇骨","蠻神心臟","精靈根","戰馬幼角","血之淚石","黑獸油脂","愚者之鎖",
                 "封魔神燈","騎士勳章","智慧聖甲蟲","回憶的貝殼","萬死毒針","原初產毛","咒獸膽石",
-                "魔術髓液","奇奇神酒","枯鎖勾玉","宵哭的鐵釘","結冰","火藥","極光鋼","巨人的戒指"
+                "魔術髓液","奇奇神酒","枯鎖勾玉","宵哭的鐵釘","結冰","火藥","極光鋼","巨人的戒指",
+                "閑古鈴","曉光爐心"
             },
             //Event Materials
             {
                 "棒棒糖","黃金骷髏","炸雞桶","小刀","水晶球","打火機","樹枝","項鍊","龍珠","娃娃","盒子","緞帶","蘆葦",
-                "方塊","鬍子","樹葉","海盜旗"
+                "方塊","鬍子","樹葉","海盜旗","漆黑的羽毛","護法"
             },
     };
     //endregion
